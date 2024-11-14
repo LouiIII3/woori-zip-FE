@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f6fb;
+  }
+  
+  .formContainer {
+    width: 350px;
+    height: 450px;
+    padding: 60px 40px;
+    background-color: #f4fcff;
+    border-radius: 8px;
+    border: 1px solid #d0e4f5; /* 테두리 선 추가 */
+    text-align: center;
+  }
+  
+  .loginBox p {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+  
+  .loginButton {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 14px;
+    color: white;
+    background-color: #0080CD;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .loginButton:hover {
+    background-color: #466ea3;
+  }
+
+  .inputField {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #f4fcff;
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  .errorMessage {
+    color: red;
+    font-size: 10px;
+    margin-bottom: 15px;
+  }
+
+  .links.p {
+    font-size: 10px;
+  }
+
+  .link {
+    font-size: 10px;
+    color: #0080CD; 
+    font: bold;
+
+    display: inline;
+  }
+
+  .link:hover {
+    color: #466ea3;
+    font: bold;
+    text-decoration: underline;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+
+  }
+
+  .semiTitle { 
+    fontSize: 8px; 
+    marginBottom: 5px;
+}
