@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #f8f9fb;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #ddd;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.navBarWrapper {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contentArea {
+    display: flex;
+    height: calc(100vh - 60px); /* 상단 NavBar 높이 제외 */
+}
+
+/* 웹 환경에서 PropertyList가 왼쪽에 고정되도록 설정 */
+.webPropertyList {
+    width: 380px;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+    order: -1; /* 웹에서 항상 왼쪽에 위치하게 설정 */
+    flex-shrink: 0;
+}
+
+/* 모바일 환경 (393px 이하) */
+@media (max-width: 393px) {
+    .container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .mainContent {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mapContainer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    /* 모바일 전용 PropertyList 슬라이드 스타일 */
+    .mobilePropertyList {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 20vh; /* 초기 높이 */
+        max-height: 50vh; /* 최대 높이 */
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        border-radius: 12px 12px 0 0;
+        overflow-y: auto;
+        z-index: 10;
+        transition: height 0.3s ease-in-out; /* 높이 변화 시 부드러운 애니메이션 */
+    }
+
+    /* 손잡이 스타일 */
+    .mobilePropertyList .handle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    /* 화살표 아이콘 스타일 */
+    .mobilePropertyList .handle::before {
+        content: '↑'; /* 화살표 모양 */
+        font-size: 16px;
+        color: #888;
+        margin-bottom: 4px;
+    }
+
+    /* 텍스트 스타일 */
+    .mobilePropertyList .handleText {
+        font-size: 14px;
+        color: #888;
+    }
+
+    /* PropertyList 아이템 스타일 */
+    .propertyItem {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .propertyImage {
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+        margin-right: 10px;
+        object-fit: cover;
+    }
+
+    .propertyDetails {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .propertyTitle {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .propertyLocation {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 3px;
+    }
+
+    .propertyInfo {
+        font-size: 12px;
+        color: #888;
+    }
+}

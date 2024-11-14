@@ -1,0 +1,66 @@
+.footerWrapper {
+  width: 100%;
+  background-color: #014C92;
+  padding: 20px 0;
+}
+
+.footer {
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;  /* 추가 */
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;  /* 추가 */
+}
+
+.footerTop, 
+.footerBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;  /* 추가 */
+  gap: 8px;
+  color: #FFFFFF;
+  font-size: 0.875rem;
+}
+
+.divider {
+  color: #FFFFFF;
+}
+
+.copyright {
+  color: #FFFFFF;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  text-align: center;  /* 추가 */
+}
+
+@media screen and (max-width: 393px) {
+  .footerWrapper {
+    padding: 16px;
+  }
+
+  .footerContent {
+    font-size: 0.75rem;
+  }
+
+  .footerTop, 
+  .footerBottom {
+    font-size: 0.5rem;
+  }
+
+  .footerTop {
+    margin-bottom: 4px;
+  }
+
+  .divider {
+    margin: 0 4px;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+  }
+}

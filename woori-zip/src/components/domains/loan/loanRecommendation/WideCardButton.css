@@ -1,0 +1,23 @@
+.button-container {
+    position: absolute;           
+    bottom: 20px;                
+    right: 20px;                 
+    display: flex;               
+    flex-direction: row;    
+    gap: 10px;                             
+  }
+
+.button {
+    padding: 10px 20px;           
+    font-size: 16px;               
+    background-color: #0065C4;   
+    color: white;               
+    border: none;                 
+    border-radius: 5px;          
+    cursor: pointer;              
+    transition: background-color 0.1s ease; 
+}
+
+.button:hover {
+    background-color: #015f99;
+  }

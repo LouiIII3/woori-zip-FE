@@ -1,0 +1,80 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #F4FCFF;
+  font-family: var(--font-Gmarket), sans-serif;
+}
+
+.header_left {
+  margin-right: auto;
+}
+
+.header_title {
+  color: #0065C4;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup_link {
+  color: #0065C4;
+  margin-right: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signup_link:hover {
+  text-decoration: underline;
+}
+
+.login_button {
+  padding: 0.5rem 1.5rem;
+  background-color: #0065C4;
+  color: white;
+  border: 2px solid #0065C4;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login_button:hover {
+  background-color: #0065C4;
+  color: white;
+}
+
+/* 모바일 웹뷰 (393px) 미디어쿼리 */
+@media screen and (max-width: 393px) {
+  .header {
+    padding: 0.75rem 1rem;
+    background-color: #F4FCFF;
+  }
+
+  .header_title {
+    font-size: 1.5rem;
+  }
+
+  .signup_link {
+    margin-right: 1rem;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: #0065C4;
+  }
+
+  .login_button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #0065C4;
+    font-size: 0.8rem;
+    font-weight: normal;
+  }
+
+  .login_button:hover {
+    background: none;
+    color: #0065C4;
+  }
+}

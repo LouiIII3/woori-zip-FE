@@ -1,0 +1,155 @@
+/* components/map/CategoryMenu.module.css */
+
+.menu {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    padding: 16px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    color: #333;
+    top: 10px; /* 살짝 아래로 위치 조정 */
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  
+  .menuTitle {
+    font-size: 13px;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap;
+  }
+  
+  .menuDescription {
+    font-size: 10px;
+    color: #888;
+    white-space: nowrap;
+  }
+  
+  .options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .optionButton {
+    padding: 4px 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 12px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  
+  .optionButton:focus,
+  .optionButton.active {
+    border-color: #000;
+    font-weight: bold;
+  }
+  
+  .optionButton:hover {
+    border-color: #333;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+  
+  .inputLabel {
+    font-size: 12px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .inputFieldWrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .inputField {
+    width: 80px; /* 입력창의 가로 길이 조정 */
+    padding: 5px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: left; /* 왼쪽 정렬 */
+    background-color: #fff; /* 흰색 배경 */
+    transition: border-color 0.2s;
+  }
+  
+  .inputField:focus {
+    border-color: #000;
+    outline: none;
+  }
+  
+  .unitLabel {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .applyButton {
+    width: 100%;
+    padding: 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s;
+  }
+  
+  .applyButton:hover {
+    background-color: #005bb5;
+  }
+  
+
+  @media (max-width: 393px) {
+    .menu {
+      width: 90%;
+      left: 5%;
+      top: 10%;
+    }
+  
+    .menuTitle,
+    .menuDescription,
+    .inputLabel,
+    .unitLabel {
+      font-size: 11px;
+    }
+  
+    .options {
+      gap: 4px;
+    }
+  
+    .optionButton {
+      padding: 4px 8px;
+      font-size: 10px;
+    }
+  
+    .inputField {
+      width: 60px;
+      padding: 4px;
+    }
+  
+    .applyButton {
+      padding: 8px;
+      font-size: 13px;
+    }
+  }

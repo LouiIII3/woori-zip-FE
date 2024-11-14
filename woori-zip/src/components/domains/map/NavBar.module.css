@@ -1,0 +1,145 @@
+/* styles/NavBar.module.css */
+
+.navBar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  }
+  
+  .filterSelect,
+  .categoryButton,
+  .applyButton {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .filterSelect {
+    color: #333;
+  }
+  
+  .categoryButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
+  
+  .applyButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .filterSelect:hover,
+  .categoryButton:hover,
+  .applyButton:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .applyButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .filterSelect:focus,
+  .categoryButton:focus,
+  .applyButton:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px rgba(0, 112, 243, 0.6);
+  }
+  
+
+  /* 모바일 반응형 */
+  .webNav {
+    display: flex;
+    gap: 12px;
+}
+
+.filterSelect,
+.categoryButton,
+.applyButton {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 모바일 버전 필터 버튼 (기본적으로 숨김) */
+.mobileFilterButton {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 반응형 스타일 - 모바일 (768px 이하) */
+@media (max-width: 393px) {
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 10;
+    }
+
+    .mobileFilterButton {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #0070f3;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .mobileFilterMenu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding: 10px;
+        border-radius: 8px;
+        z-index: 10;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .filterSelect,
+    .categoryButton,
+    .applyButton {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-bottom: 8px;
+    }
+
+    .applyButton {
+        background-color: #0070f3;
+        color: white;
+    }
+}

@@ -1,0 +1,51 @@
+.container {
+    background-color:#F3F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 230vh;
+    margin: 0;
+    flex-direction: column;
+}
+.top-box {
+    width: 90vh;
+    height: 40vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top : 10vh;
+    margin-bottom: 20px;
+}
+
+.bottom-box {
+    width: 90vh;
+    height: 80vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* 내용이 넘치면 세로 스크롤 */
+    padding: 10px;
+}
+
+#other-loan-text{
+    margin-top: 150px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#go-to-checklist-button{
+    padding: 10px 20px;           
+    font-size: 16px;               
+    background-color: #232A60;   
+    color: white;               
+    border: none;                 
+    border-radius: 5px;          
+    cursor: pointer;              
+    transition: background-color 0.1s ease; 
+    margin-top: 50px;
+}
+
+
+.go-to-checklist-button:hover {
+    background-color: #0e76dd;
+  }

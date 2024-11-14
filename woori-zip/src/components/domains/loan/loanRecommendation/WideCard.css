@@ -1,0 +1,25 @@
+.wide-card {
+    position: relative;         
+    width: 700px;
+    height: 280px;
+    background-color: #ffffff;
+    margin-top: 30px; 
+    border-radius: 20px;
+}
+.loan-name {
+    font-size :20px;
+    text-align: left;  
+    margin-left: 40px;
+    padding-top: 30px;
+
+}
+#top-text {
+    position: absolute;             
+    top: 0;                        
+    left: 50%;   
+    font-size: 20px;  
+    color: #ffffff;                 
+    transform: translateX(-50%);  
+    margin-top: 90px; 
+}
+
