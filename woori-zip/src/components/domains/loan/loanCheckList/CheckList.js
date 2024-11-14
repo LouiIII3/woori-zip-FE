@@ -181,4 +181,4 @@ const CheckList = () => {
     );
   };
   
-  export default Checklist;
+  export default CheckList;
