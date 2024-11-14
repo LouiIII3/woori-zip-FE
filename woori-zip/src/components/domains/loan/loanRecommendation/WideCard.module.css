@@ -1,4 +1,4 @@
-.wide-card {
+.wideCard {
     position: relative;         
     width: 700px;
     height: 280px;
@@ -6,14 +6,14 @@
     margin-top: 30px; 
     border-radius: 20px;
 }
-.loan-name {
+.loanName {
     font-size :20px;
     text-align: left;  
     margin-left: 40px;
     padding-top: 30px;
 
 }
-#top-text {
+#topText {
     position: absolute;             
     top: 0;                        
     left: 50%;   
@@ -22,4 +22,3 @@
     transform: translateX(-50%);  
     margin-top: 90px; 
 }
-

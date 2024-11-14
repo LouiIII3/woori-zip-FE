@@ -1,11 +1,12 @@
-import React from 'react'
-import './TrueFalseButton.css'
+"use client";
+import React from 'react';
+import styles from './TrueFalseButton.module.css';  
 
 const TrueFalseButton = ({ options, name, selectedValue, onChange }) => {
   return (
-    <div className="btn-container">
+    <div className={styles.btnContainer}>
       {options.map((option, index) => (
-        <div key={`${name}-${index}`} className="form_radio_btn">
+        <div key={`${name}-${index}`} className={styles.formRadioBtn}>
           <input
             id={`${name}-${index}`}
             type="radio"

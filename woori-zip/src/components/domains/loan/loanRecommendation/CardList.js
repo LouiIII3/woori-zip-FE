@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./CardList.css";
+import styles from "./CardList.module.css";  
 
 const dummyData = [
   { id: 1, image: "/api/placeholder/300/200?text=Item+1" },
@@ -59,24 +59,24 @@ const CardList = () => {
   const visibleCards = dummyData.slice(currentIndex, currentIndex + 2);
 
   return (
-    <div className="card-container">
+    <div className={styles.cardContainer}>
       <div
-        className="card-slider"
+        className={styles.cardSlider}
         onTouchStart={onTouchStart}
         onTouchMove={onTouchMove}
         onTouchEnd={onTouchEnd}
       >
         {visibleCards.map((item) => (
-          <div key={item.id} className="card-item">
-            <div className="image-container">
+          <div key={item.id} className={styles.cardItem}>
+            <div className={styles.imageContainer}>
               <img
-                className="card-image"
+                className={styles.cardImage}
                 src={item.image}
                 alt={`Item ${item.id}`}
               />
             </div>
-            <div className="card-content">
-              <button className="detail-button">상세보기</button>
+            <div className={styles.cardContent}>
+              <button className={styles.detailButton}>상세보기</button>
             </div>
           </div>
         ))}
@@ -85,29 +85,31 @@ const CardList = () => {
       {currentIndex > 0 && (
         <button
           onClick={handlePrev}
-          className="nav-button prev"
+          className={`${styles.navButton} ${styles.prev}`}
           aria-label="이전 슬라이드"
         >
           ←
         </button>
       )}
-      
+
       {currentIndex < dummyData.length - 2 && (
         <button
           onClick={handleNext}
-          className="nav-button next"
+          className={`${styles.navButton} ${styles.next}`}
           aria-label="다음 슬라이드"
         >
           →
         </button>
       )}
 
-      <div className="pagination">
+      <div className={styles.pagination}>
         {Array.from({ length: totalSlides }).map((_, index) => (
           <button
             key={index}
             onClick={() => setCurrentIndex(index * 2)}
-            className={`dot-button ${currentIndex / 2 === index ? 'active' : ''}`}
+            className={`${styles.dotButton} ${
+              currentIndex / 2 === index ? styles.active : ""
+            }`}
             aria-label={`슬라이드 ${index + 1}로 이동`}
           />
         ))}

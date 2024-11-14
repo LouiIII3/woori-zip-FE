@@ -1,4 +1,4 @@
-import Login from '../../../components/domains/user/LoginForm';
+import Login from '../../../components/domains/user/login/LoginPage.js';
 
 
 function LoginPage() {

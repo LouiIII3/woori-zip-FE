@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './login.module.css';
+import styles from './Login.module.css';
 
 import { useFormStatus } from "react-dom";
 
@@ -84,8 +84,8 @@ function Login() {
   return (
     <div className={styles.container}>
       <div className={styles.formContainer}>
-        <h1 className={styles.title}>로그인</h1>
-
+        
+        <p>우리집 아이디와 비밀번호로  로그인하기</p>
         <form onSubmit={handleSubmit}>
           <div>
             <p style={{ fontSize: '10px', marginBottom: '5px'}}>아이디</p>
@@ -123,9 +123,8 @@ function Login() {
         </form>
 
         <div className={styles.links}>
+          <p> 아직 회원이 아니신가요?</p>
           <a href="#" className={styles.link} onClick={handleSignupClick}>회원가입 하기</a>
-          <a href="#" className={styles.link}>아이디 찾기</a>
-          <a href="#" className={styles.link}>비밀번호 찾기</a>
         </div>
       </div>
     </div>

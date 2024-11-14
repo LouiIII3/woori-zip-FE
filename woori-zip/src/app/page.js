@@ -1,4 +1,4 @@
-import Login from "@/components/domains/user/LoginForm";
+import Login from "@/components/domains/user/login/LoginPage";
 import Header from "../components/layout/Header/Header";
 import Footer from "../components/layout/Footer/Footer";
 import PropertyGrid from "@/components/domains/main/PropertyGrid/PropertyGrid";

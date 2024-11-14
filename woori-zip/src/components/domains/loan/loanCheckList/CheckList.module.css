@@ -1,4 +1,4 @@
-.checklist-container {
+.checklistContainer {
     background-color:#F3F5F7;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
 }
 
 
-#loan-result-button{
+#loanResultButton{
     padding: 10px 20px;           
     font-size: 16px;               
     background-color: #232A60;   
@@ -30,20 +30,21 @@
     cursor: pointer;              
     transition: background-color 0.1s ease; 
     margin-top: 50px;
+    
 }
 
 
-#loan-result-button:hover {
+#loanResultButton:hover {
     background-color: #0e76dd;
   }
 
-#checklist-text {
+#checklistText {
     margin-left: 20px;
     margin-top: 10px;
     font-size: 30px;
 }
 
-.checklist-advice {
+.checklistAdvice {
     margin-top: 20px;
     margin-left: 20px;
     border-radius: 10px;    
@@ -55,7 +56,7 @@
     width: 90vh;
     height: 20vh;
 }
-#checklist-advice-img {
+#checklistAdviceImg {
     margin-left: 10px;
     margin-top: 5px;
     width: 105px;
@@ -63,25 +64,25 @@
     margin-right: 20px; /* 이미지와 텍스트 사이에 간격을 추가 */
     object-fit: cover;
 }
-.checklist-advice-text-container {
+.checklistAdviceTextContainer {
     display: flex;
     flex-direction: column;
     gap: 10px; 
 }
-.checklist-advice-text1 {
+.checklistAdviceText1 {
     flex-direction: column; 
     font-size: 20px;
     text-align: left; 
     display: flex;
     justify-content: center; 
 }
-.checklist-advice-text2 {
+.checklistAdviceText2 {
     font-size: 20px;
     flex-direction: column; 
     text-align: left; 
     display: flex;
     justify-content: center; 
 }
-.checklist-content {
+.checklistContent {
    padding: 20px;
 }
