@@ -28,10 +28,6 @@ const Details = () => {
       <button className={styles.goToChecklistButton}>
         대출 자격 요건 확인
       </button>
-      <div className={styles.otherLoanContainer}>
-        <h1 className={styles.otherLoanText}>000님께 추천하는 다른 대출상품도 있어요</h1>
-        <CardList className={styles.otherLoanBox}></CardList>
-      </div>  
     </div>
   );
 };

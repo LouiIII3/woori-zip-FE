@@ -1,0 +1,51 @@
+.headerNav {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+    padding: 0 20px;
+    background-color: #F4FCFF;
+  }
+  
+  .navList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navItem {
+    padding: 16px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #eef2f6;
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+  }
+  
+  .activeItem {
+    color: #0065C4;
+    border-bottom: 2px solid #0065C4;
+  }
+  
+  .navItem:hover {
+    color: #0065C4;
+  }
+  
+  @media screen and (max-width: 393px) {
+    .headerNav {
+      padding: 0 16px;
+    }
+  
+    .navItem {
+      padding: 12px 0;
+      font-size: 14px;
+    }
+  }
+  

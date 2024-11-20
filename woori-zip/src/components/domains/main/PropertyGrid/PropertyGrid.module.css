@@ -152,7 +152,7 @@
 @media screen and (max-width: 393px) {
   .container {
     padding: 20px 12px;
-    margin-bottom: 0;
+    margin-top: -50px;
     width: 100%;
   }
 
@@ -175,7 +175,7 @@
 
   .top_text h2 {
     font-size: 0.9rem;
-    line-height: 1.2;
+    line-height: 0;
     letter-spacing: -0.02em;
     white-space: nowrap;
     font-weight: normal;
@@ -193,6 +193,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 8px;
     width: 100%;
+    margin-top: 30px;
   }
 
   .property_card {
@@ -214,7 +215,7 @@
   }
 
   .info_banner {
-    margin-top: 12px;
+    margin-top: 45px;
     padding: 20px;
     min-height: 140px;
     width: 100%;

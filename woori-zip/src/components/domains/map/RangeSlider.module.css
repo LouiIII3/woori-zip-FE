@@ -1,0 +1,31 @@
+.rangeSliderContainer {
+    margin: 1rem 0;
+}
+
+.rangeLabel {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.rangeTrack {
+    background-color: #ddd;
+    height: 6px;
+    border-radius: 3px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.rangeThumb {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.rangeValues {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}

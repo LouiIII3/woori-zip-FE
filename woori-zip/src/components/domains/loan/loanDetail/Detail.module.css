@@ -3,9 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 230vh;
+    min-height: 160vh;
     margin: 0;
     flex-direction: column;
+    background-color: #F4FCFF;
 }
 .topBox {
     width: 90vh;
@@ -13,7 +14,7 @@
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top : 10vh;
+    margin-top : 30px;
     margin-bottom: 20px;
 }
 
@@ -25,18 +26,20 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow-y: auto; /* 내용이 넘치면 세로 스크롤 */
     padding: 10px;
-}
-
-.otherLoanText{
-    margin-top: 150px;
-    font-size: 30px;
-    margin-bottom: 50px;
-}
-
+     /* 스크롤바 숨기기 */
+     -ms-overflow-style: none;  /* IE와 Edge */
+     scrollbar-width: none;     /* Firefox */
+ }
+ 
+ /* Chrome, Safari, Opera를 위한 설정 */
+ .bottomBox::-webkit-scrollbar {
+     display: none;
+ }
+ 
 .goToChecklistButton{
     padding: 10px 20px;           
     font-size: 16px;               
-    background-color: #232A60;   
+    background-color: #0065C4;   
     color: white;               
     border: none;                 
     border-radius: 5px;          
@@ -47,5 +50,5 @@
 
 
 .goToChecklistButton:hover {
-    background-color: #0e76dd;
+    background-color: #015f99;
   }

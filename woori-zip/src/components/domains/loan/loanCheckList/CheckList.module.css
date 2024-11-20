@@ -6,6 +6,7 @@
     min-height: 130vh;
     margin: 0;
     flex-direction: column;
+    background-color: #F4FCFF;
 }
 
 .checklist {
@@ -17,13 +18,19 @@
     overflow-y: auto; /* 내용이 넘치면 세로 스크롤 */
     padding: 10px;
     margin-bottom: 20px;
+    /* 스크롤바 숨기기 */
+    -ms-overflow-style: none;  /* IE와 Edge */
+    scrollbar-width: none;     /* Firefox */
 }
 
-
+/* Chrome, Safari, Opera를 위한 설정 */
+.checklist::-webkit-scrollbar {
+    display: none;
+}
 #loanResultButton{
     padding: 10px 20px;           
     font-size: 16px;               
-    background-color: #232A60;   
+    background-color: #0065C4;   
     color: white;               
     border: none;                 
     border-radius: 5px;          
@@ -35,25 +42,25 @@
 
 
 #loanResultButton:hover {
-    background-color: #0e76dd;
+    background-color: #015f99;
   }
 
 #checklistText {
     margin-left: 20px;
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .checklistAdvice {
-    margin-top: 20px;
+    margin-top: 35px;
     margin-left: 20px;
     border-radius: 10px;    
     background-color: white;
-    border: 2px solid rgba(0, 0, 0, 0.2); /* 검은색 테두리 */
+    border: 2px solid #D9D9D9; /* 검은색 테두리 */
     box-sizing: border-box;
     display: flex; 
     align-items: center;
-    width: 90vh;
+    width: 85vh;
     height: 20vh;
 }
 #checklistAdviceImg {
@@ -71,18 +78,19 @@
 }
 .checklistAdviceText1 {
     flex-direction: column; 
-    font-size: 20px;
+    font-size: 1rem;
     text-align: left; 
     display: flex;
     justify-content: center; 
 }
 .checklistAdviceText2 {
-    font-size: 20px;
+    font-size: 1rem;
     flex-direction: column; 
     text-align: left; 
     display: flex;
     justify-content: center; 
 }
 .checklistContent {
-   padding: 20px;
+   margin-top: 5vh;
+   padding: 30px;
 }

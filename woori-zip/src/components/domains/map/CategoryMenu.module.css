@@ -1,155 +1,134 @@
-/* components/map/CategoryMenu.module.css */
+.webMenu {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
-.menu {
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    padding: 16px;
-    width: 250px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
-    font-family: Arial, sans-serif;
-    color: #333;
-    top: 10px; /* 살짝 아래로 위치 조정 */
-  }
-  
-  .header {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 12px;
-  }
-  
-  .menuTitle {
-    font-size: 13px;
-    font-weight: bold;
-    color: #333;
-    white-space: nowrap;
-  }
-  
-  .menuDescription {
-    font-size: 10px;
-    color: #888;
-    white-space: nowrap;
-  }
-  
-  .options {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 15px;
-  }
-  
-  .optionButton {
-    padding: 4px 10px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    font-size: 12px;
-    background-color: #fff;
-    color: #333;
-    cursor: pointer;
-    transition: border-color 0.2s;
-  }
-  
-  .optionButton:focus,
-  .optionButton.active {
-    border-color: #000;
-    font-weight: bold;
-  }
-  
-  .optionButton:hover {
-    border-color: #333;
-  }
-  
-  .inputGroup {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 12px;
-  }
-  
-  .inputLabel {
-    font-size: 12px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 4px;
-  }
-  
-  .inputFieldWrapper {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .inputField {
-    width: 80px; /* 입력창의 가로 길이 조정 */
-    padding: 5px;
-    font-size: 12px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    text-align: left; /* 왼쪽 정렬 */
-    background-color: #fff; /* 흰색 배경 */
-    transition: border-color 0.2s;
-  }
-  
-  .inputField:focus {
-    border-color: #000;
-    outline: none;
-  }
-  
-  .unitLabel {
-    font-size: 12px;
-    color: #888;
-  }
-  
-  .applyButton {
-    width: 100%;
-    padding: 10px;
-    background-color: #0070f3;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 12px;
-    transition: background-color 0.3s;
-  }
-  
-  .applyButton:hover {
-    background-color: #005bb5;
-  }
-  
+.mobileMenu {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  width: 80%;
+  max-width: 320px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow-y: auto;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
 
-  @media (max-width: 393px) {
-    .menu {
-      width: 90%;
-      left: 5%;
-      top: 10%;
-    }
-  
-    .menuTitle,
-    .menuDescription,
-    .inputLabel,
-    .unitLabel {
-      font-size: 11px;
-    }
-  
-    .options {
-      gap: 4px;
-    }
-  
-    .optionButton {
-      padding: 4px 8px;
-      font-size: 10px;
-    }
-  
-    .inputField {
-      width: 60px;
-      padding: 4px;
-    }
-  
-    .applyButton {
-      padding: 8px;
-      font-size: 13px;
-    }
-  }
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.menuTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.menuDescription {
+  font-size: 10px;
+  color: #888;
+}
+
+.toggleButtons, .options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.toggleButton, .optionButton {
+  padding: 4px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 10px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.selected {
+  border: 1px solid #000; /* 선택된 버튼에 검정 테두리 */
+}
+
+.rangeGroup {
+  margin-bottom: 15px;
+}
+
+.rangeLabel, .categoryLabel, .inputLabel {
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+}
+
+.rangeSlider {
+  width: 100%;
+  margin: 8px 0;
+}
+
+.rangeValues {
+  font-size: 10px;
+  color: #888;
+}
+
+.inputFieldWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.inputField {
+  width: 50px;
+  padding: 4px;
+  font-size: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.unitLabel {
+  font-size: 10px;
+  color: #888;
+}
+
+.actionButtons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.applyButton, .cancelButton {
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.applyButton {
+  color: white;
+  background-color: #0070f3;
+}
+
+.cancelButton {
+  color: #333;
+  background-color: #e0e0e0;
+}

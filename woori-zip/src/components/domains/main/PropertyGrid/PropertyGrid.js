@@ -29,27 +29,27 @@ export default function PropertyGrid() {
      <div className={styles.property_grid}>
        <div className={styles.property_section}>
          <div className={styles.property_card}>
-           <Link href="/">
+           <Link href="/map">
              <h2>원/투룸</h2>
-             <img src="/images/Oneroom.png" alt="원룸 이미지" />
+             <img src="https://fisa-woorizip.s3.ap-northeast-2.amazonaws.com/images/mainpage/home-svgrepo-com+2+(1).png" alt="원룸 이미지" />
            </Link>
          </div>
          <div className={styles.property_card}>
-           <Link href="/">
+           <Link href="/map">
              <h2>오피스텔</h2>
-             <img src="/images/Officetel.png" alt="오피스텔 이미지" />
+             <img src="https://fisa-woorizip.s3.ap-northeast-2.amazonaws.com/images/mainpage/buildings-3-svgrepo-com+2+(1).png" alt="오피스텔 이미지" />
            </Link>
          </div>
          <div className={styles.property_card}>
-           <Link href="/">
+           <Link href="/map">
              <h2>주택/빌라</h2>
-             <img src="/images/House.png" alt="주택 이미지" />
+             <img src="https://fisa-woorizip.s3.ap-northeast-2.amazonaws.com/images/mainpage/Frame+224+(1).png" alt="주택 이미지" />
            </Link>
          </div>
          <div className={styles.property_card}>
-           <Link href="/">
+           <Link href="/map">
              <h2>아파트</h2>
-             <img src="/images/Apartment.png" alt="아파트 이미지" />
+             <img src="https://fisa-woorizip.s3.ap-northeast-2.amazonaws.com/images/mainpage/buildings-svgrepo-com+(2)+1+(1).png" alt="아파트 이미지" />
            </Link>
          </div>
        </div>
@@ -67,7 +67,7 @@ export default function PropertyGrid() {
            </div>
            <div className={styles.Image_big}>
              <Image 
-               src="/images/Graph.png" 
+               src="https://fisa-woorizip.s3.ap-northeast-2.amazonaws.com/images/mainpage/bar-chart+1.png" 
                width={isMobile ? 80 : 150} 
                height={isMobile ? 80 : 150} 
                alt="Graph" 

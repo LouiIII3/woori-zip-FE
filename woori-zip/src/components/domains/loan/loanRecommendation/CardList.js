@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./CardList.module.css";  
 
 const dummyData = [
-  { id: 1, image: "/api/placeholder/300/200?text=Item+1" },
+  { id: 1, image: "https://fisa-woorizip.s3.ap-northeast-2.amazonaws.com/images/loanPage/images__20__360.jpg" },
   { id: 2, image: "/api/placeholder/300/200?text=Item+2" },
   { id: 3, image: "/api/placeholder/300/200?text=Item+3" },
   { id: 4, image: "/api/placeholder/300/200?text=Item+4" },

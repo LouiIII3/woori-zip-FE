@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // 프로젝트 루트로 설정
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"] // src 디렉토리 기준
     }
   }
 }

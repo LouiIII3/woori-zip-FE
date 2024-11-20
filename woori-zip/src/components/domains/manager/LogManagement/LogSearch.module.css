@@ -1,0 +1,124 @@
+.container {
+  padding: 1.5rem 2rem;
+  background-color: #f4fcff;
+  border-radius: 20px;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+}
+
+.searchInput {
+  flex-grow: 1;
+  border: none;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.searchButton {
+  background-color: #0065c4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dateRange {
+  display: flex;
+  align-items: center;
+}
+
+.dateInput {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin: 0 0.5rem;
+}
+
+.dateSeparator {
+  margin: 0 0.5rem;
+}
+
+.logTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.logTable th,
+.logTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+.logTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.statusLabel {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.successLabel {
+  
+  color: #065f46;
+  margin-right: 0.5rem;
+}
+
+.failureLabel {
+  
+  color: #b91c1c;
+  margin-right: 0.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.paginationButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: #374151;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.paginationButton:hover {
+  background-color: #f3f4f6;
+}
+
+.paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paginationButton:not(:last-child) {
+  margin-right: 0.5rem;
+}

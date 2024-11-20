@@ -45,7 +45,7 @@ const CheckList = () => {
             </div>
             <div className={styles.checklistContent}>
                 <div className={styles.montlyList}>
-                    <p>1. 보증신청일 기준으로 만 34세 이하입니까?</p>
+                    <p className={styles.checkText}>1. 보증신청일 기준으로 만 34세 이하입니까?</p>
                     <TrueFalseButton
                         options={options}
                         name="group1"
