@@ -1,0 +1,76 @@
+.container {
+  padding: 2rem;
+  }
+  .table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9rem;
+  }
+  .tableRow {
+  border-bottom: 1px solid #e5e7eb;
+  }
+  .tableRow:first-child {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  }
+  .tableRow:last-child {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  }
+  .table th,
+  .table td {
+  padding: 1rem;
+  text-align: left;
+  }
+  .table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  }
+  .cellNumber,
+  .cellId,
+  .cellName {
+  cursor: pointer;
+  }
+  .cellStatus {
+  text-align: center;
+  }
+  .statusButton {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: none; /* 테두리 제거 */
+  }
+  .approved {
+  background-color: #d1fae5;
+  color: #065f46;
+  }
+  .rejected {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  }
+  .pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  }
+  .paginationButton {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-size: 0.875rem;
+  cursor: pointer;
+  }
+  .paginationButton:hover {
+  background-color: #f3f4f6;
+  }
+  .paginationButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  }
+  .paginationButton:not(:last-child) {
+  margin-right: 0.5rem;
+  }

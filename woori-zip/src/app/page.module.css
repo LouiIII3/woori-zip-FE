@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #232A60;
+  background-color: #F4FCFF;
   font-family: var(--font-geist-sans);
 }
 
@@ -126,8 +126,8 @@ a.secondary {
 
 @media (max-width: 600px) {
   .page {
-    padding: 32px;
-    padding-bottom: 80px;
+    
+    
   }
 
   .main {

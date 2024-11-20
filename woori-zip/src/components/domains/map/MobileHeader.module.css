@@ -1,0 +1,101 @@
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* 버튼을 오른쪽 정렬 */
+  padding: 10px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1100;
+  border-radius: 10px;
+  border: none;
+  background-color: none;
+  width: auto;
+}
+
+.filterButton {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px; /* 햄버거 버튼과 간격 */
+}
+
+.filterButton:hover {
+  background-color: #005bb5;
+  color: white;
+}
+
+.hamburgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+  position: relative; /* 드롭다운 메뉴의 기준 */
+}
+
+.hamburgerButton.active {
+  transform: rotate(90deg);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 50px; /* 햄버거 버튼 아래 위치 */
+  right: 0; /* 햄버거 버튼 기준으로 정렬 */
+  background: white;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.dropdownMenu.menuOpen {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdownMenu li img {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+
+.dropdownMenu li:hover {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.dropdownMenu::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  border: 10px solid transparent;
+  border-bottom-color: white;
+}

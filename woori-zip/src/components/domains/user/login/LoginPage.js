@@ -6,7 +6,7 @@ import styles from './LoginPage.module.css';
 import SubmitButton from './SubmitButton';
 import { validateUsername, validatePassword } from './validation';
 
-function Login() {
+function Login({onLogin}) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({ username: '', password: '' });
@@ -42,21 +42,16 @@ function Login() {
 
     if (!usernameError && !passwordError) {
       try {
-        const response = await fetch('/api/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({ username, password }),
-        });
-
-        if (!response.ok) {
-          const data = await response.json();
-          throw new Error(data.error);
+        const result = await onLogin(
+          username,
+          password,
+        );
+        if (result?.error) {
+          setError("로그인에 실패했습니다.");
+        } else {
+          // 로그인 성공 시 리디렉션
+          router.push('/');
         }
-
-        alert('로그인 성공!');
-        router.push('/user/home');
       } catch (error) {
         setLoginError(error.message);
       }

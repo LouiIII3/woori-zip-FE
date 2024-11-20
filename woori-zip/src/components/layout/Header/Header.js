@@ -1,22 +1,30 @@
+'use client';
+
+import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import styles from './Header.module.css';
 
 export default function Header() {
+  const router = useRouter();
+
+  const handleLogin = () => {
+    router.push('/user/login'); // user/login 경로로 이동
+  };
+
   return (
     <header className={styles.header}>
-      {/* 왼쪽 끝에 로고 배치 */}
       <div className={styles.header_left}>
         <Link href="/" className={styles.header_title}>
           WOORI ZIP
         </Link>
       </div>
-      
-      {/* 오른쪽 끝에 회원가입 링크와 로그인 버튼 배치 */}
       <div>
-        <Link href="/signup" className={styles.signup_link}>
+        <Link href="/user/register" className={styles.signup_link}>
           회원가입
         </Link>
-        <button className={styles.login_button}>로그인</button>
+        <button className={styles.login_button} onClick={handleLogin}>
+          로그인
+        </button>
       </div>
     </header>
   );

@@ -1,0 +1,70 @@
+@media screen and (max-width: 393px) {
+.full {
+  background-color: #F4FCFF;
+  min-width: 800px;
+}
+
+.categoryLoan {
+  font-size: 22px;
+  padding : 1rem;
+  background-color: #F4FCFF;
+}
+.line {
+  width: 200px;           
+  height: 1.5px;           
+  background-color: #000000;
+  margin-left: 1rem ;
+}
+.loanContainer {
+    min-width: 900px;
+    margin-top: 20px;
+    padding: 1rem;
+    background-color: #F4FCFF;
+  }
+  
+  .loanList {
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .loanItem {
+    height: 130px;
+    width: 360px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+  }
+  
+  .loanContent {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .loanImage {
+    width: 6rem;
+    height: 6rem;
+    object-fit: cover;
+    border-radius:50%;
+  }
+  
+  .loanText {
+    /* flex: 1; */
+  }
+  
+  .loanTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top : 0px;
+ 
+    /* height : 20px; */
+  }
+  
+  .loanDescription {
+    color: #666;
+    margin-bottom: 3rem;
+  }
+}

@@ -36,6 +36,12 @@
   font-size: 0.875rem;
   margin-top: 4px;
   text-align: center;  /* 추가 */
+  font-weight: bold;
+}
+
+.text {
+  font-weight: bold;
+
 }
 
 @media screen and (max-width: 393px) {
