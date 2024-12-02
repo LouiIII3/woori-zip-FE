@@ -1,13 +1,12 @@
-'use client'
+'use client';
 
 import React, { Suspense } from 'react';
-import Agreement from '@/components/domains/user/agreement/AgreementPage';
-import RegeterIntro from '@/components/domains/user/registerIntro/RegeterIntro';
+import RegisterContent from '@/components/domains/user/register/RegisterContent';
 
 function RegisterPage() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <Agreement />
+      <RegisterContent />
     </Suspense>
   );
 }
