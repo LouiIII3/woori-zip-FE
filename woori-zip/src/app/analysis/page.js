@@ -5,12 +5,15 @@ import { getConsumptionData } from '../api/analysis/analysisAPI';
 
 export default async function AnalysisPage() {
     try {
+        // API 호출로 데이터 가져오기
         const response = await getConsumptionData();
-        
+
+        // Chart 데이터를 처리하는 함수
         const processChartData = (data, type) => {
             if (!data || !type) return null;
 
-            const consumptionData = type === 'similar' ? data.otherConsumption : data.memberConsumption;
+            const consumptionData =
+                type === 'similar' ? data.otherConsumption : data.memberConsumption;
 
             const items = [
                 { key: 'BOOK', label: '서적/문구', value: Number(consumptionData.book), color: '#5778A3' },
@@ -18,23 +21,26 @@ export default async function AnalysisPage() {
                 { key: 'CLOTH', label: '의류', value: Number(consumptionData.cloth), color: '#E49343' },
                 { key: 'CULTURE', label: '문화/취미', value: Number(consumptionData.culture), color: '#F5C086' },
                 { key: 'FOOD', label: '식당/카페', value: Number(consumptionData.food), color: '#6B9F59' },
-                { key: 'GROCERY', label: '음식료품', value: Number(consumptionData.grocery), color: '#9CCF85' }
+                { key: 'GROCERY', label: '음식료품', value: Number(consumptionData.grocery), color: '#9CCF85' },
             ];
 
+            // 값 기준으로 정렬
             const sortedItems = items.sort((a, b) => b.value - a.value);
 
             return {
                 labels: sortedItems.map(item => item.label),
                 data: sortedItems.map(item => item.value),
                 colors: sortedItems.map(item => item.color),
-                items: sortedItems
+                items: sortedItems,
             };
         };
 
+        // 데이터 처리
         const similarChartData = processChartData(response, 'similar');
         const memberChartData = processChartData(response, 'member');
-        const bestCategory = response.bestCategory.category;
+        const bestCategory = response.bestCategory?.category;
 
+        // 컴포넌트 렌더링
         return (
             <Analysis
                 similarChartData={similarChartData}

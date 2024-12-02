@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, useEffect } from "react";
 import Sidebar from "../../components/domains/map/Sidebar";
 import PropertyList from "../../components/domains/map/PropertyList";
@@ -12,20 +13,15 @@ import { fetchHouseList, fetchHouseDetails } from "@/app/api/map/houseApi";
 import { useSearchParams } from "next/navigation";
 
 export default function MapPage() {
-  //파라미터에서 값 가지고 오기
+  // 파라미터에서 초기값 가져오기
   const searchParams = useSearchParams();
-  const analysisData = searchParams.get("category");
-  const southWestLatitudeData = searchParams.get("southWestLatitude");
-  const southWestLongitudeData = searchParams.get("southWestLongitude");
-  const northEastLatitudeData = searchParams.get("northEastLatitude");
-  const northEastLongitudeData = searchParams.get("northEastLongitude");
-
-  const defaultFilters = {
+  const initialFilters = {
     level: 7,
-    southWestLatitude: southWestLatitudeData || 37.5189,
-    southWestLongitude: southWestLongitudeData || 126.8952,
-    northEastLatitude: northEastLatitudeData || 37.6157,
-    northEastLongitude: northEastLongitudeData || 127.0601,
+    southWestLatitude: parseFloat(searchParams.get("southWestLatitude")) || 37.5189,
+    southWestLongitude: parseFloat(searchParams.get("southWestLongitude")) || 126.8952,
+    northEastLatitude: parseFloat(searchParams.get("northEastLatitude")) || 37.6157,
+    northEastLongitude: parseFloat(searchParams.get("northEastLongitude")) || 127.0601,
+    category: searchParams.get("category") || null,
     minDeposit: 0,
     housetype: "아파트",
     maxDeposit: 1000000000,
@@ -35,55 +31,16 @@ export default function MapPage() {
     maxMaintenanceFee: 5000000,
   };
 
-  const [selectedCategory, setSelectedCategory] = useState("");
-  const [isCategoryMenuVisible, setCategoryMenuVisible] = useState(false);
-  const [isSidebarVisible, setSidebarVisible] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [mapState, setMapState] = useState({ ...defaultFilters });
-  const [houseType, setHouseType] = useState(defaultFilters.houseType);
+  const [mapState, setMapState] = useState(initialFilters);
+  const [houseType, setHouseType] = useState(initialFilters.housetype);
   const [houseInfo, setHouseInfo] = useState({ houseContents: [], counts: [] });
-  const [selectedProperty, setSelectedProperty] = useState(null);
   const [houseData, setHouseData] = useState([]);
   const [mapLocations, setMapLocations] = useState([]);
-
-  // 처음 처리 여부 관리
-  const [isCategoryProcessed, setIsCategoryProcessed] = useState(false);
-
-  const [selectedLocation, setSelectedLocation] = useState({
-    lat: 37.5189,
-    lng: 126.8952,
-  });
-  
-  useEffect(() => {
-    if (
-      southWestLatitudeData &&
-      southWestLongitudeData &&
-      northEastLatitudeData &&
-      northEastLongitudeData
-    ) {
-      setMapState((prevState) => ({
-        ...prevState,
-        southWestLatitude: parseFloat(southWestLatitudeData),
-        southWestLongitude: parseFloat(southWestLongitudeData),
-        northEastLatitude: parseFloat(northEastLatitudeData),
-        northEastLongitude: parseFloat(northEastLongitudeData),
-      }));
-    }
-  }, [
-    southWestLatitudeData,
-    southWestLongitudeData,
-    northEastLatitudeData,
-    northEastLongitudeData,
-  ]);
-
-  useEffect(() => {
-    const savedHouseType = sessionStorage.getItem("selectedHouseType");
-    console.log(savedHouseType);
-    if (savedHouseType) {
-      setHouseType(savedHouseType); // 초기값 설정
-    }
-  }, []);
+  const [selectedProperty, setSelectedProperty] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isSidebarVisible, setSidebarVisible] = useState(false);
+  const [isCategoryMenuVisible, setCategoryMenuVisible] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
     const handleResize = () => setIsMobile(window.innerWidth <= 393);
@@ -92,33 +49,19 @@ export default function MapPage() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  // 처음에만 category 처리
+  // 데이터 로드
   useEffect(() => {
     const loadInitialData = async () => {
       try {
-        let filters = { ...defaultFilters };
-  
-        if (analysisData && !isCategoryProcessed) {
-          filters = {
-            ...filters,
-            category: analysisData,
-            walking: 10, // 기본값
-            facilityCount: 3, // 기본값
-          };
-          setIsCategoryProcessed(true);
-        }
-  
-        const data = await fetchHouseList(filters);
-        console.log("리스트 데이터:   ", data);
+        const data = await fetchHouseList(mapState);
+        console.log("House List Loaded: ", data);
         updateHouseData(data);
       } catch (error) {
-        console.error("데이터가 없음:", error);
+        console.error("Failed to load house list: ", error);
       }
     };
-  
     loadInitialData();
-  }, [analysisData, isCategoryProcessed]);
-  
+  }, [mapState]);
 
   const updateHouseData = (data) => {
     if (data?.houseContents) {
@@ -138,7 +81,6 @@ export default function MapPage() {
   const toggleCategoryMenu = () => setCategoryMenuVisible(!isCategoryMenuVisible);
   const togglePropertyList = () => setIsExpanded(!isExpanded);
 
-  const handleCategorySelect = (category) => setHouseType(category);
   const handlePropertyClick = async (propertyId) => {
     try {
       const data = await fetchHouseDetails(propertyId);
@@ -150,12 +92,11 @@ export default function MapPage() {
 
   return (
     <div className={styles.container}>
-      <Sidebar houseType={houseType} onSelectCategory={handleCategorySelect} />
+      <Sidebar houseType={houseType} onSelectCategory={setHouseType} />
       <div className={styles.mainContent}>
         <NavBar
           houseType={houseType}
           mapState={mapState}
-          analysisData={isCategoryProcessed ? null : analysisData}
           onHouseInfoUpdate={updateHouseData}
         />
         <div className={styles.contentArea}>
@@ -176,7 +117,7 @@ export default function MapPage() {
           <MapView
             property={selectedProperty}
             locations={mapLocations}
-            selectedLocation={selectedLocation}
+            selectedLocation={{ lat: mapState.southWestLatitude, lng: mapState.southWestLongitude }}
             onMapChange={setMapState}
             mapViewData={houseInfo}
           />
@@ -192,13 +133,10 @@ export default function MapPage() {
         <CategoryMenu
           isVisible={isCategoryMenuVisible}
           onClose={toggleCategoryMenu}
-          selectedCategory={selectedCategory}
-          onCategorySelect={setSelectedCategory}
-          houseType={houseType}
-          mapState={mapState}
-          analysysData={analysisData}
+          selectedCategory={mapState.category}
           onApply={(filterData) => {
-            console.log("Applied Filter Data:", filterData);
+            console.log("Applied Filter Data: ", filterData);
+            setMapState((prev) => ({ ...prev, ...filterData }));
           }}
         />
       )}
