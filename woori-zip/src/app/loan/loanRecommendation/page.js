@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import WideCard from '@/components/domains/loan/loanRecommendation/WideCard';
 import BottomCard from '@/components/domains/loan/loanRecommendation/BottomCard';
-import { loanRecommendationApi } from '@/components/domains/loan/api/loanAPI';
+import { loanRecommendationApi } from '@/app/api/loan/loanAPI';
 import WebViewLoanRecommendation from '@/components/domains/loan/loanRecommendation/WebViewLoanRecommendation';
 
 export default function LoanRecommendation() {
