@@ -1,11 +1,12 @@
 'use client';
 
-import { handleCredentialsSignin } from '@/app/actions/authActions';
+import React, { useEffect, useState, Suspense } from 'react';
 import LoginIntro from './LoginIntro';
-import React, { Suspense, useEffect, useState } from 'react';
+import { useSearchParams } from 'next/navigation';
 
 function LoginContent() {
-  const [redirectUrl, setRedirectUrl] = useState("");
+  const [redirectUrl, setRedirectUrl] = useState('');
+  const searchParams = useSearchParams();
 
   const handleWooriBankLogin = async (e) => {
     e.preventDefault();
@@ -23,21 +24,22 @@ function LoginContent() {
   };
 
   const handleWoorizipLogin = async (username, password) => {
-    return await handleCredentialsSignin({ username, password });
+    // 가상의 로그인 API 호출 (리플레이스 필요)
+    return { username, password };
   };
 
   useEffect(() => {
     if (redirectUrl) {
-      console.log('Redirecting to:', redirectUrl);
       window.location.href = redirectUrl; // 리다이렉트
     }
   }, [redirectUrl]);
 
   return (
-    <Suspense fallback={<div>로딩 중...</div>}>
+    <Suspense fallback={<div>Loading...</div>}>
       <LoginIntro
         handleWooriBankLogin={handleWooriBankLogin}
         handleWoorizipLogin={handleWoorizipLogin}
+        role={searchParams.get('role') || null} // role을 props로 전달
       />
     </Suspense>
   );

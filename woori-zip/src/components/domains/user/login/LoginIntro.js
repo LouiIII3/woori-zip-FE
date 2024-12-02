@@ -1,27 +1,17 @@
-"use client";
+'use client';
 
-import React, { useEffect, useState } from "react";
-import styles from "./LoginIntro.module.css";
-import LoginAdminPage from "./LoginAdminPage";
+import React from 'react';
+import styles from './LoginIntro.module.css';
+import LoginAdminPage from './LoginAdminPage';
 
-export default function LoginIntro({ handleWooriBankLogin, handleWoorizipLogin }) {
-  const [role, setRole] = useState(null);
-
-  useEffect(() => {
-    // 브라우저 환경에서만 실행
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      setRole(params.get("role")); // URL에서 role 파라미터 가져오기
-    }
-  }, []);
-
+export default function LoginIntro({ handleWooriBankLogin, handleWoorizipLogin, role }) {
   const renderContent = () => {
     if (!role) {
       return <div>로딩 중...</div>; // role이 아직 설정되지 않은 경우 로딩 화면 표시
     }
 
     switch (role) {
-      case "0": // 회원
+      case '0': // 회원
         return (
           <div className={styles.loginContent}>
             <img
@@ -41,13 +31,8 @@ export default function LoginIntro({ handleWooriBankLogin, handleWoorizipLogin }
             </button>
           </div>
         );
-      case "1": // 중개자
-        return (
-          <div className={styles.loginContent}>
-            <LoginAdminPage onLogin={handleWoorizipLogin} />
-          </div>
-        );
-      case "2": // 관리자
+      case '1': // 중개자
+      case '2': // 관리자
         return (
           <div className={styles.loginContent}>
             <LoginAdminPage onLogin={handleWoorizipLogin} />
