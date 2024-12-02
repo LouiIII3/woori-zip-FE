@@ -1,28 +1,27 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import Tab from "./Tab";
 import styles from "./LoginIntro.module.css";
 import LoginAdminPage from "./LoginAdminPage";
-import LoginAgentPage from "./LoginAgentPage";
-import { useSearchParams } from "next/navigation";
 
-export default function LoginIntro({handleWooriBankLogin, handleWoorizipLogin}) {
-  // const [activeTab, setActiveTab] = useState(0); // 활성 탭 상태 관리
+export default function LoginIntro({ handleWooriBankLogin, handleWoorizipLogin }) {
+  const [role, setRole] = useState(null);
 
-  // 탭 데이터
-  // const tabs = [
-  //   { label: "회원", id: 0 },
-  //   { label: "중개자", id: 1 },
-  //   { label: "관리자", id: 2 },
-  // ];
-
-  const searchParams = useSearchParams();
-  // console.log(typeof searchParams.get('role'));
+  useEffect(() => {
+    // 브라우저 환경에서만 실행
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      setRole(params.get("role")); // URL에서 role 파라미터 가져오기
+    }
+  }, []);
 
   const renderContent = () => {
-    switch (searchParams.get('role')) {
-      case '0': // 회원
+    if (!role) {
+      return <div>로딩 중...</div>; // role이 아직 설정되지 않은 경우 로딩 화면 표시
+    }
+
+    switch (role) {
+      case "0": // 회원
         return (
           <div className={styles.loginContent}>
             <img
@@ -37,41 +36,34 @@ export default function LoginIntro({handleWooriBankLogin, handleWoorizipLogin}) 
               <br />
               우리은행 데이터와 간편 연결하기
             </p>
-            <button className={styles.loginButton} onClick={handleWooriBankLogin}>우리은행으로 로그인</button>
+            <button className={styles.loginButton} onClick={handleWooriBankLogin}>
+              우리은행으로 로그인
+            </button>
           </div>
         );
-      case '1': // 중개자
+      case "1": // 중개자
         return (
           <div className={styles.loginContent}>
-            <LoginAdminPage onLogin={handleWoorizipLogin}/>
+            <LoginAdminPage onLogin={handleWoorizipLogin} />
           </div>
         );
-      case '2': // 관리자
+      case "2": // 관리자
         return (
           <div className={styles.loginContent}>
             <LoginAdminPage onLogin={handleWoorizipLogin} />
           </div>
         );
       default:
-        return null;
+        return <div>유효하지 않은 역할입니다.</div>; // 유효하지 않은 role 값 처리
     }
   };
 
   return (
     <div className={styles.container}>
-      {/* <div className={styles.tabBox}>
-        <Tab
-          tabs={tabs}
-          activeTab={activeTab}
-          onTabClick={(id) => setActiveTab(id)}
-        />
-      </div> */}
       <div className={styles.componentBox}>
-        {/* 선택된 탭에 따른 콘텐츠 */}
         <div className={styles.disignSpace}></div>
         {renderContent()}
       </div>
     </div>
   );
 }
-
