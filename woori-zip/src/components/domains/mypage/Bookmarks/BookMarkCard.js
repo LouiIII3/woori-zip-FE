@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './BookMarkCard.module.css';
+import styles from './BookmarkCard.module.css';
 
 const BookMarkCard = ({ property, onRemove }) => {
   const handleStarClick = async (e) => {
