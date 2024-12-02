@@ -1,24 +1,14 @@
-'use client'
+'use client';
 
-import React, { useEffect, useState } from 'react';
-import LoginIntro from '@/components/domains/user/login/LoginIntro';
+import React, { Suspense } from 'react';
 import LoginContent from '@/components/domains/user/login/LoginContent';
 
-function LoginPage() {
-  const [redirectUrl, setRedirectUrl] = useState("");
-
-  useEffect(() => {
-    if (redirectUrl) {
-      console.log('Redirecting to:', redirectUrl);
-      window.location.href = redirectUrl;
-    }
-  }, [redirectUrl]);
-
+function Page() {
   return (
-    <LoginIntro>
-      <LoginContent setRedirectUrl={setRedirectUrl} />
-    </LoginIntro>
+    <Suspense fallback={<div>Loading...</div>}>
+      <LoginContent />
+    </Suspense>
   );
 }
 
-export default LoginPage;
+export default Page;

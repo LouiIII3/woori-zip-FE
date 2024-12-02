@@ -1,13 +1,13 @@
-'use client'
+'use client';
 
-import React, { useState } from 'react';
 import { handleCredentialsSignin } from '@/app/actions/authActions';
+import LoginIntro from './LoginIntro';
+import React, { useEffect, useState } from 'react';
 
-function LoginContent({ setRedirectUrl }) {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+function LoginContent() {
+  const [redirectUrl, setRedirectUrl] = useState("");
 
-  const handleWooriBankLogin = (e) => {
+  const handleWooriBankLogin = async (e) => {
     e.preventDefault();
     const responseType = process.env.NEXT_PUBLIC_RESPONSE_TYPE;
     const clientId = process.env.NEXT_PUBLIC_CLIENT_ID;
@@ -22,37 +22,22 @@ function LoginContent({ setRedirectUrl }) {
     setRedirectUrl(`http://localhost:8082/woori-bank/auth?${params.toString()}`);
   };
 
-  const handleWoorizipLogin = async () => {
-    try {
-      await handleCredentialsSignin({ username, password });
-    } catch (error) {
-      console.error('Login failed:', error);
-    }
+  const handleWoorizipLogin = async (username, password) => {
+    return await handleCredentialsSignin({ username, password });
   };
 
+  useEffect(() => {
+    if (redirectUrl) {
+      console.log('Redirecting to:', redirectUrl);
+      window.location.href = redirectUrl; // 리다이렉트
+    }
+  }, [redirectUrl]);
+
   return (
-    <div>
-      <div>
-        <h3>WooriBank Login</h3>
-        <button onClick={handleWooriBankLogin}>Login with WooriBank</button>
-      </div>
-      <div>
-        <h3>Woorizip Login</h3>
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-        />
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <button onClick={handleWoorizipLogin}>Login with Woorizip</button>
-      </div>
-    </div>
+    <LoginIntro
+      handleWooriBankLogin={handleWooriBankLogin}
+      handleWoorizipLogin={handleWoorizipLogin}
+    />
   );
 }
 
