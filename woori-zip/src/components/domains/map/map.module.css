@@ -5,12 +5,12 @@
 
 .sidebar {
     width: 220px;
-    background-color: #f8f9fb;
+    background-color: white;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid var(--color-border-light);
 }
 
 .mainContent {
@@ -24,8 +24,8 @@
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #ffffff;
-    border-bottom: 1px solid #ddd;
+    background-color: white;
+    border-bottom: 1px solid var(--color-border-light);
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -39,8 +39,8 @@
     width: 380px;
     padding: 20px;
     overflow-y: auto;
-    background-color: #f9f9f9;
-    border-right: 1px solid #ddd;
+    background-color: white;
+    border-right: 1px solid var(--color-border-light);
     order: -1; /* 웹에서 항상 왼쪽에 위치하게 설정 */
     flex-shrink: 0;
 }
@@ -79,7 +79,7 @@
         max-height: 50vh; /* 최대 높이 */
         background-color: rgba(255, 255, 255, 0.95);
         padding: 10px;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid var(--color-border-light);
         border-radius: 12px 12px 0 0;
         overflow-y: auto;
         z-index: 10;
@@ -99,14 +99,14 @@
     .mobilePropertyList .handle::before {
         content: '↑'; /* 화살표 모양 */
         font-size: 16px;
-        color: #888;
+        color: var(--color-light-gray);
         margin-bottom: 4px;
     }
 
     /* 텍스트 스타일 */
     .mobilePropertyList .handleText {
         font-size: 14px;
-        color: #888;
+        color: var(--color-light-gray);
     }
 
     /* PropertyList 아이템 스타일 */
@@ -115,7 +115,7 @@
         align-items: flex-start;
         margin-bottom: 15px;
         padding: 10px;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid var(--color-light-gray);
     }
 
     .propertyImage {
@@ -136,18 +136,18 @@
     .propertyTitle {
         font-size: 16px;
         font-weight: bold;
-        color: #333;
+        color: var(--color-text-dark);
         margin-bottom: 5px;
     }
 
     .propertyLocation {
         font-size: 14px;
-        color: #666;
+        color: var(--color-light-gray);
         margin-bottom: 3px;
     }
 
     .propertyInfo {
         font-size: 12px;
-        color: #888;
+        color: var(--color-light-gray);
     }
 }

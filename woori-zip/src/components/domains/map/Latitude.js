@@ -12,12 +12,10 @@ export default function Latitude() {
   });
 
   const handleMapStateChange = (updatedState) => {
-    console.log('handleMapStateChange 호출됨:', updatedState); // 확인 로그
-    setMapState(updatedState); // 상태 업데이트
+    setMapState(updatedState);
   };
 
   useEffect(() => {
-    console.log('Latitude에서 mapState 변경됨:', mapState); // 상태 변경 확인 로그
   }, [mapState]);
 
   return (
@@ -25,7 +23,6 @@ export default function Latitude() {
     <NavBar mapState={mapState} />
     <MapView
         onMapChange={(state) => {
-            console.log('Latitude에서 전달된 onMapChange 호출됨:', state);
             handleMapStateChange(state);
         }}
     />

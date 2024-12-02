@@ -5,7 +5,7 @@
   min-height: 400px;
   background-color: white;
   text-align: center;
-  color: #666;
+  color: var(--color-border-light);
   font-size: 16px;
   margin-top: 40px; /* 탭과 콘텐츠 사이의 간격 추가 */
 }

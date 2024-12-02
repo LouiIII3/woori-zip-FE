@@ -1,0 +1,19 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+  }
+  
+  .scrollContainer {
+    width: 400px;
+    height: 450px;
+    background-color: white;
+  
+    border-radius: 8px;
+    overflow-y: hidden; /* 스크롤 가능 */
+
+    box-sizing: border-box;
+  }
+  

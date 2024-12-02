@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './PropertyDetails.module.css';
+import Link from "next/link";
 
 const PropertyDetails = ({ property, onClose }) => {
   if (!property) return null;
@@ -33,8 +34,10 @@ const PropertyDetails = ({ property, onClose }) => {
         주상복합: {property.totalArea}㎡ / {property.exclusiveArea}㎡
       </div>
       <div className={styles.messageBox}>
-        지금 보고 계신 집에 입주하고 싶으신가요? <br />
+      지금 보고 계신 집에 입주하고 싶으신가요? <br />
+      <Link href="/loan/loanRecommendation" className={styles.link}>
         마이데이터 기반으로 추천 대출 확인해보세요!
+      </Link>
       </div>
       <div className={styles.detailsBox}>
         <p>매물번호: {property.id}</p>

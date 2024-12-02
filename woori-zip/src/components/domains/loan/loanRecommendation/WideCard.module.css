@@ -1,24 +1,194 @@
-.wideCard {
-    position: relative;         
-    width: 700px;
-    height: 280px;
-    background-color: #ffffff;
-    margin-top: 30px; 
-    border-radius: 20px;
+.backCard {
+    width: 100%;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
-.loanName {
-    font-size :20px;
-    text-align: left;  
-    margin-left: 40px;
-    padding-top: 30px;
 
+.container {
+    width: 100%;
+    max-width: 1200px;
 }
-#topText {
-    position: absolute;             
-    top: 0;                        
-    left: 50%;   
-    font-size: 20px;  
-    color: #ffffff;                 
-    transform: translateX(-50%);  
-    margin-top: 90px; 
+
+.wideCard {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    width: 100%;
+}
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.formRow2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.subBox {
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+.subBox2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.subBox > label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input {
+    width: 80%;
+    height: 30px; 
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input[type="checkbox"] {
+    -webkit-appearance: none; 
+    -moz-appearance: none;    
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    margin: 5px 3px;
+}
+.input[type="checkbox"]:checked {
+    background-color: #0065C4;
+    border-color: #0065C4;  
+}
+.input[type="checkbox"]:hover {
+    border-color: #999; 
+}
+
+.input[type="checkbox"]:checked::after {
+    content: '✓';        
+    color: white;         
+    font-size: 14px;      
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.formRow.jobContent {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+}
+
+.jobWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.radioWrapper {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.radioButton {
+    margin-top: 5px;
+    width: 400px;
+    height : 45px;
+    border: 1px solid #EAE7E7;
+    border-radius: 10px;
+    }
+    .radioButton input[type=radio]{
+        display: none;
+    }
+    .radioButton label{
+        display: block;
+        border-radius: 10px;
+        margin: 0 auto;
+        text-align: center;
+        height: -webkit-fill-available;
+        line-height: 45px;
+    }
+    
+    .radioButton input[type=radio]:checked + label {
+        background: #0065C4;
+        color: #fff;
+    }
+
+    .radioButton:hover {
+        color: #305b9f; 
+    }
+
+	.form_radio_btn input[type=radio] + label {
+        background: #F9FAFC;
+        color: #666;
+    }
+
+
+
+.dropdown {
+    flex:1;
+}
+.jobTerm {
+    margin-right: 20px;
+}
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+}
+
+.dropdown-content label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.dropdown-content select {
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.comment {
+    font-size: 12px;
+    color: #0065C4;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+.forButton {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wideCardButton {
+    width: 100%;
+    max-width: 500px;
+    margin: 0;
 }

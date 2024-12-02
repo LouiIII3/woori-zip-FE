@@ -2,7 +2,7 @@
 .detailsContainer {
     position: fixed;
     top: 60px;
-    left: calc(37.8%);
+    left: calc(36.9%);
     width: 30%;
     height: calc(100% - 60px);
     background-color: white;
@@ -20,7 +20,7 @@
     background: none;
     border: none;
     font-size: 24px;
-    color: #333;
+    color: var(--color-text-dark);
     cursor: pointer;
 }
 
@@ -43,40 +43,44 @@
 }
 
 .noImage {
-    background: #f0f0f0;
+    background: white;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #aaa;
+    color: var(--color-light-gray);
 }
 
 .rentInfo {
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0;
+    font-family: var(--font-pretendard-regular);
 }
 
 .address {
     font-size: 14px;
     margin: 5px 0;
+    font-family: var(--font-pretendard-regular);
 }
 
 .messageBox {
-    background: #f9f9f9;
+    background: var(--color-border-light);
     padding: 10px;
     margin: 15px 0;
     border-radius: 8px;
     text-align: center;
-    color: #555;
+    color: var(--color-light-gray);
+    font-family: var(--font-pretendard-regular);
 }
 
 .detailsBox {
     font-size: 14px;
     line-height: 1.6;
     border-radius: 5%;
-    border: 2px solid #555; /* 테두리 추가: 두께 2px, 검정색 */
+    border: 2px solid var(--color-border-light); /* 테두리 추가: 두께 2px, 검정색 */
     padding: 10px; /* 내부 여백 추가로 내용과 테두리 간 간격 확보 */
+    font-family: var(--font-pretendard-regular);
 }
 
 .detailsBox p {

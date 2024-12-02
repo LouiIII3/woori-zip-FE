@@ -7,7 +7,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .mobileMenu {
@@ -24,7 +24,7 @@
   overflow-y: auto;
   z-index: 1000;
   font-family: Arial, sans-serif;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .header {
@@ -37,12 +37,12 @@
 .menuTitle {
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .menuDescription {
   font-size: 10px;
-  color: #888;
+  color: var(--color-border-light);
 }
 
 .toggleButtons, .options {
@@ -54,16 +54,26 @@
 
 .toggleButton, .optionButton {
   padding: 4px 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border-light);
   border-radius: 4px;
   font-size: 10px;
-  background-color: #fff;
+  background-color: white;
   cursor: pointer;
-  transition: border-color 0.2s;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.toggleButton:hover, .optionButton:hover {
+  border-color: var(--color-blue); /* Hover 시 파란색 테두리 */
+}
+
+.toggleButton:active, .optionButton:active {
+  background-color: var(--color-bg); /* 클릭 시 연한 파란색 배경 */
 }
 
 .selected {
-  border: 1px solid #000; /* 선택된 버튼에 검정 테두리 */
+  border: 1px solid var(--color-blue); /* 선택된 버튼에 파란색 테두리 */
+  background-color: var(--color-bg); /* 선택된 버튼에 연한 파란색 배경 */
+  color: var(--color-blue); /* 선택된 버튼에 파란색 텍스트 */
 }
 
 .rangeGroup {
@@ -73,7 +83,7 @@
 .rangeLabel, .categoryLabel, .inputLabel {
   font-size: 12px;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .rangeSlider {
@@ -83,7 +93,7 @@
 
 .rangeValues {
   font-size: 10px;
-  color: #888;
+  color: var(--color-light-gray);
 }
 
 .inputFieldWrapper {
@@ -96,14 +106,14 @@
   width: 50px;
   padding: 4px;
   font-size: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border-light);
   border-radius: 4px;
-  background-color: #fff;
+  background-color: white;
 }
 
 .unitLabel {
   font-size: 10px;
-  color: #888;
+  color: var(--color-border-light);
 }
 
 .actionButtons {
@@ -125,10 +135,10 @@
 
 .applyButton {
   color: white;
-  background-color: #0070f3;
+  background-color: var(--color-blue);
 }
 
-.cancelButton {
-  color: #333;
-  background-color: #e0e0e0;
+.applyButton:hover {
+  background-color: var(--color-blue);
 }
+

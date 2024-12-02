@@ -7,8 +7,9 @@
 
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  background-color: #F4FCFF;
+  /* TODO: YOO */
+  /* min-height: 100vh; */
+  background-color: var(--color-bg);
   font-family: var(--font-geist-sans);
 }
 
@@ -18,25 +19,26 @@
     --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
     --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
 
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
+    --button-primary-hover: var(--color-light-gray);
+    --button-secondary-hover: var(--color-text-dark);
   }
 }
 
+/* TODO: YOO */
 .main {
-  flex: 1;
+  /* flex: 1; */
   display: flex;
-  justify-content: center; /* 메인 컨텐츠 가운데 정렬 */
-  align-items: center; /* 메인 컨텐츠 가운데 정렬 */
-  padding: 40px 20px;
-  width: 100%;
+  justify-content: center;
+  /* align-items: center; */
+  /* padding: 40px 20px; */
+  /* width: 100%; */
 }
 
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;
   margin: 0;
-  font-size: 14px;
+  font-size: 8px;
   line-height: 24px;
   letter-spacing: -0.01em;
   list-style-position: inside;
@@ -74,7 +76,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 8px;
   line-height: 20px;
   font-weight: 500;
 }
@@ -125,11 +127,6 @@ a.secondary {
 }
 
 @media (max-width: 600px) {
-  .page {
-    
-    
-  }
-
   .main {
     align-items: center;
   }
@@ -143,7 +140,7 @@ a.secondary {
   }
 
   .ctas a {
-    font-size: 14px;
+    font-size: 8px;
     height: 40px;
     padding: 0 16px;
   }

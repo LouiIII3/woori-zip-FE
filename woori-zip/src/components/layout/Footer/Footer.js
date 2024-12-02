@@ -17,7 +17,7 @@ export default function Footer() {
          <div className={styles.footerBottom}>
            <span>상호 : (주)우리집</span>
            <span className={styles.divider}>|</span>
-           <span>대표 : 피사범대</span>
+           <span>대표 : 피사방범대</span>
            <span className={styles.divider}>|</span>
            <span>이메일 문의: woorizip2024@gmail.com</span>
          </div>

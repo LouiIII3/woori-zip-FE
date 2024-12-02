@@ -1,117 +1,172 @@
 .container {
-  padding: 1.5rem 2rem;
-  background-color: #f4fcff;
-  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var(--font-pretendard);
+  background-color: var(--color-bg);
+  color: var(--color-text-dark);
 }
 
 .searchContainer {
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: var(--background);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .searchWrapper {
-  display: flex;
-  align-items: center;
-  width: 500px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  padding: 0.5rem 1rem;
+  flex: 1;
+  margin-right: 2rem;
 }
 
 .searchInput {
-  flex-grow: 1;
-  border: none;
-  font-size: 1rem;
-  margin-right: 1rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-family: var(--font-pretendard);
+  transition: all 0.3s ease;
 }
 
-.searchButton {
-  background-color: #0065c4;
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
+.searchInput:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.1);
 }
 
 .dateRange {
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 
 .dateInput {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  font-size: 1rem;
-  margin: 0 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border-light);
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-family: var(--font-pretendard);
+  transition: all 0.3s ease;
+}
+
+.dateInput:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.1);
 }
 
 .dateSeparator {
-  margin: 0 0.5rem;
+  color: var(--color-light-gray);
+  font-weight: 500;
+}
+
+.searchButton {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-blue);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-pretendard);
+}
+
+.searchButton:hover {
+  background-color: var(--color-blue-dark);
+}
+
+.tableContainer {
+  width: 100%;
+  background-color: var(--background);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  min-height: 440px;
+  position: relative;
 }
 
 .logTable {
   width: 100%;
-  border-collapse: collapse;
-  font-size: 1rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9rem;
 }
 
 .logTable th,
 .logTable td {
-  padding: 0.75rem;
-  text-align: left;
-  border-bottom: 1px solid #ccc;
-  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .logTable th {
-  background-color: #f4f4f4;
-  font-weight: bold;
+  background-color: var(--background);
+  font-weight: 600;
+  color: var(--color-light-gray);
+  border-bottom: 2px solid var(--color-border-light);
 }
 
-.statusLabel {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+.logTable tr {
+  border-bottom: 1px solid var(--color-border-light);
+  transition: all 0.3s ease;
+}
+
+.logTable tr:hover {
+  background-color: rgba(0, 112, 243, 0.05);
+}
+
+.successLabel, .failureLabel {
+  color: #047857;
+  background-color: rgba(167, 243, 208, 0.4);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
   font-size: 0.875rem;
-  font-weight: bold;
-}
-
-.successLabel {
-  
-  color: #065f46;
-  margin-right: 0.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
 }
 
 .failureLabel {
-  
-  color: #b91c1c;
-  margin-right: 0.5rem;
+  color: #dc2626;
+  background-color: rgba(254, 202, 202, 0.4);
 }
 
 .pagination {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  align-items: center;
+  margin-top: 1rem; /* 테이블 아래로 자연스럽게 배치 */
+  gap: 0.5rem;
 }
 
 .paginationButton {
   padding: 0.5rem 1rem;
-  border: 1px solid #e5e7eb;
+  border: 1px solid var(--color-border-light);
   border-radius: 0.25rem;
-  background-color: #fff;
-  color: #374151;
+  background-color: var(--background);
+  color: var(--foreground);
   font-size: 0.875rem;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 .paginationButton:hover {
-  background-color: #f3f4f6;
+  background-color: var(--color-border-light);
 }
 
 .paginationButton:disabled {
@@ -119,6 +174,35 @@
   cursor: not-allowed;
 }
 
-.paginationButton:not(:last-child) {
-  margin-right: 0.5rem;
+.paginationButton.active {
+  background-color: var(--color-blue);
+  color: white;
+}
+
+
+.active {
+  background-color: var(--color-blue);
+  color: white;
+  border-color: var(--color-blue);
+}
+
+.active:hover {
+  background-color: var(--color-blue-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  .searchContainer,
+  .tableContainer {
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+  }
+
+  .successLabel {
+    background-color: rgba(167, 243, 208, 0.1);
+    color: #34d399;
+  }
+
+  .failureLabel {
+    background-color: rgba(254, 202, 202, 0.1);
+    color: #f87171;
+  }
 }

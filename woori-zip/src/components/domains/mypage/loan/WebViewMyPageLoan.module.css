@@ -1,25 +1,25 @@
 @media screen and (max-width: 393px) {
 .full {
-  background-color: #F4FCFF;
+  background-color: white;
   min-width: 800px;
 }
 
 .categoryLoan {
   font-size: 22px;
   padding : 1rem;
-  background-color: #F4FCFF;
+  background-color: white;
 }
 .line {
   width: 200px;           
   height: 1.5px;           
-  background-color: #000000;
+  background-color: var(--color-text-dark);
   margin-left: 1rem ;
 }
 .loanContainer {
     min-width: 900px;
     margin-top: 20px;
     padding: 1rem;
-    background-color: #F4FCFF;
+    background-color: white;
   }
   
   .loanList {
@@ -50,11 +50,7 @@
     object-fit: cover;
     border-radius:50%;
   }
-  
-  .loanText {
-    /* flex: 1; */
-  }
-  
+
   .loanTitle {
     font-size: 18px;
     font-weight: bold;
@@ -64,7 +60,7 @@
   }
   
   .loanDescription {
-    color: #666;
+    color: var(--color-border-light);
     margin-bottom: 3rem;
   }
 }

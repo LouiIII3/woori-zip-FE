@@ -1,102 +1,118 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import styles from './LoanView.module.css';
 
 const LoanView = () => {
   const [recentLoans, setRecentLoans] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 10;
 
   useEffect(() => {
-    // 로컬 스토리지에서 데이터 로드
     const loadedLoans = JSON.parse(localStorage.getItem('recentLoans')) || [];
     if (loadedLoans.length > 0) {
       setRecentLoans(loadedLoans);
     } else {
-      // 로컬 스토리지에 데이터가 없으면 더미 데이터 생성
-      const dummyData = Array(6).fill().map((_, index) => ({
-        id: index + 1,
-        title: 'iTouch 전세론 (주택금융보증)',
-        description: '주택금융공사 주택신용보증서 담보(90% 보증)로 영업점 방문 없이 인터넷 상담 및 대출 실행이 가능한 전세 대출',
-        link: `https://example.com/loan/${index + 1}`,
+      const dummyData = Array.from({ length: 19 }, (_, i) => ({
+        id: i + 1,
+        title: `대출 상품 ${i + 1}`,
+        description: `이것은 대출 상품 ${i + 1}의 설명입니다.`,
+        link: `https://example.com/loan/${i + 1}`,
       }));
       setRecentLoans(dummyData);
-      // 더미 데이터를 로컬 스토리지에 저장
       localStorage.setItem('recentLoans', JSON.stringify(dummyData));
     }
-    setIsLoading(false);
   }, []);
 
-  const saveLoan = (newLoan) => {
-    const updatedLoans = [...recentLoans, newLoan];
-    setRecentLoans(updatedLoans);
-    localStorage.setItem('recentLoans', JSON.stringify(updatedLoans));
+  const totalPages = Math.ceil(recentLoans.length / itemsPerPage);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
   };
 
-  const deleteLoan = (id) => {
-    const updatedLoans = recentLoans.filter(loan => loan.id !== id);
-    setRecentLoans(updatedLoans);
-    localStorage.setItem('recentLoans', JSON.stringify(updatedLoans));
+  const handleLoanClick = (link) => {
+    window.location.href = link; // 대출 상세 페이지로 이동
   };
 
-  const handleCardClick = (link) => {
-    window.location.href = link;
-  };
-
-  const handleButtonClick = (e, action, id) => {
-    e.stopPropagation();
-    if (action === 'delete') {
-      deleteLoan(id);
-    } else if (action === 'modify') {
-      // 수정 로직 구현
-      console.log(`Modify loan with id: ${id}`);
-    }
-  };
-
-  if (isLoading) return null;
-
-  if (!recentLoans || recentLoans.length === 0) {
-    return (
-      <div className={styles.container}>
-        <div className={styles.emptyState}>
-          최근 본 대출 상품이 없습니다.
-        </div>
-      </div>
-    );
-  }
+  const displayedLoans = recentLoans.slice(
+    currentPage * itemsPerPage,
+    (currentPage + 1) * itemsPerPage
+  );
 
   return (
     <div className={styles.container}>
-      <div className={styles.gridContainer}>
-        {recentLoans.map((loan) => (
-          <div 
-            key={loan.id} 
-            className={styles.loanCard}
-            onClick={() => handleCardClick(loan.link)}
+      <div className={styles.contentWrapper}>
+        <div className={styles.gridContainer}>
+          {displayedLoans.map((loan) => (
+            <div
+              key={loan.id}
+              className={styles.loanCard}
+              onClick={() => handleLoanClick(loan.link)}
+            >
+              <div className={styles.contentContainer}>
+                <img
+                  className={styles.loanImage}
+                  src="https://via.placeholder.com/100"
+                  alt="Loan Thumbnail"
+                />
+                <div className={styles.loanInfo}>
+                  <h3 className={styles.title}>{loan.title}</h3>
+                  <p className={styles.description}>{loan.description}</p>
+                </div>
+              </div>
+              <div className={styles.buttonContainer}>
+                <button
+                  className={`${styles.button} ${styles.modifyButton}`}
+                  onClick={(e) => {
+                    e.stopPropagation(); // 부모 이벤트 전파 방지
+                    console.log(`수정: ${loan.id}`);
+                  }}
+                >
+                  수정
+                </button>
+                <button
+                  className={`${styles.button} ${styles.deleteButton}`}
+                  onClick={(e) => {
+                    e.stopPropagation(); // 부모 이벤트 전파 방지
+                    setRecentLoans((prevLoans) =>
+                      prevLoans.filter((item) => item.id !== loan.id)
+                    );
+                  }}
+                >
+                  삭제
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className={styles.paginationBox}>
+        <button
+          className={styles.paginationButton}
+          disabled={currentPage === 0}
+          onClick={() => handlePageChange(currentPage - 1)}
+        >
+          이전
+        </button>
+        {Array.from({ length: totalPages }, (_, index) => (
+          <button
+            key={index}
+            onClick={() => handlePageChange(index)}
+            className={`${styles.paginationButton} ${
+              currentPage === index ? styles.active : ''
+            }`}
           >
-            <div className={styles.buttonContainer}>
-              <button 
-                className={`${styles.button} ${styles.modifyButton}`}
-                onClick={(e) => handleButtonClick(e, 'modify', loan.id)}
-              >
-                수정
-              </button>
-              <button 
-                className={`${styles.button} ${styles.deleteButton}`}
-                onClick={(e) => handleButtonClick(e, 'delete', loan.id)}
-              >
-                삭제
-              </button>
-            </div>
-            <div className={styles.contentContainer}>
-              <div className={styles.imageContainer}>
-                <div className={styles.loanImage} />
-              </div>
-              <div className={styles.loanInfo}>
-                <h3 className={styles.title}>{loan.title}</h3>
-                <p className={styles.description}>{loan.description}</p>
-              </div>
-            </div>
-          </div>
+            {index + 1}
+          </button>
         ))}
+        <button
+          className={styles.paginationButton}
+          disabled={currentPage >= totalPages - 1}
+          onClick={() => handlePageChange(currentPage + 1)}
+        >
+          다음
+        </button>
       </div>
     </div>
   );

@@ -1,0 +1,52 @@
+.tabBox {
+  width: 100%;
+  text-align: center; /* 탭을 가운데 정렬 */
+}
+
+.componentBox {
+  width: 100%; /* 부모 요소 크기를 기준으로 조정 */
+  height: 300px;
+  background-color: var(--backgroud);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContent {
+  display: flex; /* flexbox 적용 */
+  flex-direction: column; /* 자식 요소를 세로로 배치 */
+  justify-content: center; /* 세로 방향 가운데 정렬 */
+  align-items: center; /* 가로 방향 가운데 정렬 */
+  width: 100%; /* 부모 요소 너비에 맞춤 */
+}
+
+.text {
+  margin: 20px 0;
+  font-size: 14px;
+  color: #888888;
+}
+
+.loginButton {
+  background-color: var(--color-blue);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.loginButton:hover {
+  background-color: var(--color-blue-dark);
+}
+
+.image {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}

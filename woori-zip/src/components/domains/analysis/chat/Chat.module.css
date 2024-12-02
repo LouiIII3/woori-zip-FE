@@ -1,0 +1,85 @@
+.chartWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.chartContainer {
+    width: 280px;
+    height: 280px;
+    position: relative;
+}
+
+.customLegendWrapper {
+    display: flex; /* 두 묶음 사이의 정렬 */
+    flex-direction: column; /* 세로로 두 묶음 배치 */
+    align-items: center; /* 가운데 정렬 */
+    row-gap: 0px; /* 두 묶음 간 간격 조절 */
+    margin-top: 27px;
+}
+
+.customLegend {
+    display: grid; /* Grid 활성화 */
+    grid-template-columns: repeat(3, 1fr); /* 3개씩 1행에 배치 */
+    grid-template-rows: repeat(2, auto); /* 2행으로 나눔 */
+    row-gap: 0px; /* 행 간격을 늘림 */
+    column-gap: 0px; /* 열 간격을 늘림 */
+    width: 94%;
+    max-width: 600px; /* 최대 너비 제한 */
+    padding: 0 16px;
+    justify-content: center; /* 가로 정렬 */
+}
+
+.legendItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.legendItem:hover {
+    background-color: rgba(0, 0, 0, 0.05); /* 기본 호버 효과 */
+}
+
+.legendItem.selected {
+    background-color: rgba(0, 0, 255, 0.1); /* 선택된 항목 배경색 */
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* 선택된 항목 외곽선 효과 */
+    font-weight: bold; /* 선택된 항목 텍스트 강조 */
+    border-radius: 4px;
+}
+
+.legendBox {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+.legendText {
+    font-size: 13px;
+    color: var(--color-text-dark);
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .chartContainer {
+        width: 220px;
+        height: 220px;
+    }
+
+    .customLegend {
+        grid-template-columns: repeat(2, 1fr); /* 모바일에서는 2열로 변경 */
+        grid-template-rows: repeat(3, auto);
+        gap: 8px;
+    }
+
+    .legendText {
+        font-size: 12px;
+    }
+}

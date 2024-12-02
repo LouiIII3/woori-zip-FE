@@ -1,28 +1,42 @@
 .container {
-    background-color:#F3F5F7;
+    background-color:var(--color-bg);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 160vh;
     margin: 0;
     flex-direction: column;
-    background-color: #F4FCFF;
+    background-color: var(--color-bg);
 }
-.topBox {
+.cardItem {
     width: 90vh;
     height: 40vh;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top : 30px;
-    margin-bottom: 20px;
+    margin-top : 20px;
+    margin-bottom: 30px;
 }
 
+.cardItem {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loanDescription {
+    margin:20px;
+}
 .bottomBox {
-    width: 90vh;
+    width: 1000px;
     height: 80vh;
     background-color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow-y: auto; /* 내용이 넘치면 세로 스크롤 */
     padding: 10px;
@@ -35,11 +49,13 @@
  .bottomBox::-webkit-scrollbar {
      display: none;
  }
- 
+ .loanContent {
+    margin: 20px;
+ }
 .goToChecklistButton{
     padding: 10px 20px;           
     font-size: 16px;               
-    background-color: #0065C4;   
+    background-color: var(--color-blue);
     color: white;               
     border: none;                 
     border-radius: 5px;          
@@ -50,5 +66,124 @@
 
 
 .goToChecklistButton:hover {
-    background-color: #015f99;
+    background-color: var(--color-blue-dark);
   }
+
+
+
+
+
+  
+.loanType {
+    text-align: left;
+    margin: 20px;
+    color: #0065C4;
+}
+.loanName {
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+}
+.loanSummary {
+    text-align: left; 
+    margin: 5px;
+    
+}
+.loanTarget {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    white-space: nowrap;  
+    color: #7C7C7C;
+    
+}
+.loanTargetText {
+    flex: 9;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    max-width: 500px;       
+    /* overflow: hidden;              
+    text-overflow: ellipsis;     
+    white-space: nowrap;  
+    cursor: pointer;            
+    position: relative; */
+}
+.loanDate {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    white-space: nowrap;  
+    color: #7C7C7C;
+}
+.loanDateText {
+    flex: 9;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    max-width: 500px;       
+    /* overflow: hidden;              
+    text-overflow: ellipsis;     
+    white-space: nowrap;  
+    cursor: pointer;            
+    position: relative; */
+} 
+
+.loanLimit {
+    margin: 5px;
+    white-space: nowrap;  
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    color: #7C7C7C;
+}
+.loanLimitText { 
+    flex: 9;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    max-width: 500px;                      
+    /* overflow: hidden;              
+    text-overflow: ellipsis;     
+    white-space: nowrap;  
+    cursor: pointer;            
+    position: relative; */
+}
+
+.loanTextBox1 {
+    display: flex;  
+    position: relative;
+}
+
+.loanTextBox2 {
+    display: flex;  
+}
+.loanTextBox3 {
+    display: flex;  
+}
+
+
+
+.imageContainer {
+    margin-left: auto; 
+    display: flex;  
+    align-items: center;    
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background-color: #ffffff;
+}
+
+.cardImage {
+    width: 20vh;
+    height: 20vh;
+    align-items: center;    
+    justify-content: center;
+    margin-right: 20px;
+    margin-bottom: 550px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #a73636;
+   
+}

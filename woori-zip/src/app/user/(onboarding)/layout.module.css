@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1024px;
+    height: calc(100vh - 196px);
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.leftBox {
+    width: 55%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.rightBox {
+    width: 45%;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    box-sizing: border-box;
+}

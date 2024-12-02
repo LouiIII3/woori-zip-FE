@@ -1,72 +1,81 @@
 .footerWrapper {
   width: 100%;
-  background-color: #014C92;
+  background-color: var(--color-blue-dark);
   padding: 20px 0;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .footer {
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
-  text-align: center;  /* 추가 */
+  text-align: center;
+  padding: 0 20px;
 }
 
 .footerContent {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  align-items: center;  /* 추가 */
+  gap: 12px;
+  align-items: center;
 }
 
-.footerTop, 
+.footerTop,
 .footerBottom {
   display: flex;
   align-items: center;
-  justify-content: center;  /* 추가 */
-  gap: 8px;
-  color: #FFFFFF;
-  font-size: 0.875rem;
+  justify-content: center;
+  gap: 12px;
+  color: white;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
 }
 
 .divider {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+
+.footerTop span:hover,
+.footerBottom span:hover {
+  color: var(--color-blue-dark);
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .copyright {
-  color: #FFFFFF;
-  font-size: 0.875rem;
-  margin-top: 4px;
-  text-align: center;  /* 추가 */
-  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 500;
 }
 
 .text {
   font-weight: bold;
-
 }
 
+/* 모바일 웹뷰 (393px 이하) */
 @media screen and (max-width: 393px) {
   .footerWrapper {
     padding: 16px;
   }
 
   .footerContent {
-    font-size: 0.75rem;
+    gap: 10px;
   }
 
-  .footerTop, 
+  .footerTop,
   .footerBottom {
-    font-size: 0.5rem;
-  }
-
-  .footerTop {
-    margin-bottom: 4px;
+    font-size: 0.75rem;
+    gap: 8px;
   }
 
   .divider {
-    margin: 0 4px;
+    margin: 0 6px;
   }
 
   .copyright {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
+    margin-top: 6px;
   }
 }

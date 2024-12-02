@@ -25,8 +25,8 @@ const fetchInstance = async (url, options) => {
     headers['Content-Type'] = 'application/json';
   }
 
-  if (accessToken) {
-    headers.Authorization = `Bearer ${accessToken}`;
+  if(accessToken) {
+    headers.Authorization = `Bearer ${accessToken}`
   }
 
   try {
@@ -41,13 +41,14 @@ const fetchInstance = async (url, options) => {
         console.error('Token Expired');
       }
       console.error('Fetch Error:', errorResponse);
-      return response;
+      return errorResponse;
     }
 
-    if (response.headers.get('Content-Type')?.includes('application/json')) {
+    if (response.headers.get('content-type')?.includes('application/json')) {
       return await response.json();
     } else {
-      return await response.text();
+      console.log('response', response)
+      // return await response;
     }
   } catch (error) {
     console.error('Fetch Error:', error);

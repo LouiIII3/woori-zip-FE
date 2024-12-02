@@ -1,64 +1,85 @@
-import NextAuth, { User } from 'next-auth';
-import Credentials from 'next-auth/providers/credentials';
-import { reissueToken, signIn as signInFromBackend } from '@/app/api/authApi';
+import NextAuth from 'next-auth';
+import CredentialsProvider from 'next-auth/providers/credentials';
+import { signIn as signInFromBackend, wooriSignIn } from '@/app/api/authApi';
 
-const refreshAccessToken = async (token) => {
-  const { accessToken, refreshToken } = await reissueToken(token.refreshToken);
+// const refreshAccessToken = async (token) => {
+//   const { accessToken, refreshToken } = await reissueToken(token.refreshToken);
 
-  if (accessToken && refreshToken) {
-    return {
-      ...token,
-      accessToken,
-      refreshToken,
-      expires_at: Date.now() + (2505600 * 1000),
-    };
-  }
+//   if (accessToken && refreshToken) {
+//     return {
+//       ...token,
+//       accessToken,
+//       refreshToken,
+//       expires_at: Date.now() + (2505600 * 1000),
+//     };
+//   }
 
-  return {
-    ...token,
-    error: 'RefreshAccessTokenError',
-  };
-};
+//   return {
+//     ...token,
+//     error: 'RefreshAccessTokenError',
+//   };
+// };
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   trustHost: true,
   providers: [
-    Credentials({
-      credentials: {
-        username: { label: '아이디', type: 'username', placeholder: '아이디를 입력해주세요.' },
-        password: { label: '비밀번호', type: 'password', placeholder: '비밀번호를 입력해주세요.' },
+    CredentialsProvider({
+      id: "woorizip",
+      async authorize({ username, password }) {
+        const response = await signInFromBackend({
+          username: username,
+          password: password,
+        });
+
+        if(!response.success) {
+          throw Error(response.data.message);
+        }
+
+        return response.data;
       },
-      async authorize(credentials) {
-        if (!credentials?.username || !credentials?.password) return null;
-
+      profile(accessToken, name) {
+        return {
+          id: name,
+          username: name,
+          accessToken,
+        };
+      },
+    }),
+    CredentialsProvider({
+      id: "oauth-woori",
+      async authorize({ code }) {
         try {
-          const response = await signInFromBackend({
-            username: credentials.username,
-            password: credentials.password,
-          });
-
-          const { accessToken, refreshToken } = response;
-
-          return {
-            id: credentials.username,
-            username: credentials.username,
-            accessToken,
-            refreshToken,
-          };
+          console.log('code in auth.js', code);
+          const response = await wooriSignIn(code);
+          console.log('response in auth.js');
+          console.log('response', response);
+          console.log('###########');
+          return response.data;
         } catch (error) {
-          console.error('Auth error:', error);
+          console.error(`Auth error with code ${code}:`, error);
           return null;
         }
+      },
+      profile(accessToken, name) {
+        return {
+          id: name,
+          username: name,
+          accessToken,
+        };
       },
     }),
   ],
   callbacks: {
     async jwt({ token, user, account }) {
-      if (account && user) {
+      console.log('console in auth.js');
+      console.log('token', token);
+      console.log('user', user);
+      console.log('account', account);
+      console.log('##########');
+      if (user && account) {
         return {
           ...token,
           accessToken: user.accessToken,
-          refreshToken: user.refreshToken,
           expires_at: Date.now() + (2505600 * 1000),
           user,
         };
@@ -68,19 +89,31 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         return token;
       }
 
-      return await refreshAccessToken(token);
+      return {
+        ...token,
+        error: 'RefreshAccessTokenError',
+      };
+      // return await refreshAccessToken(token);
     },
     async session({ session, token }) {
+      console.log('console in auth.js - session');
+      console.log('session', session);
+      console.log('token', token);
+      console.log('#############');
       if (token) {
-        session.user.accessToken = token.accessToken;
-        session.user.refreshToken = token.refreshToken;
+        session.user.accessToken = token.user.accessToken;
+        session.user.name = token.user.name;
         session.user.expires_at = token.expires_at;
         session.error = token.error;
       }
       return session;
     },
+    async redirect(){
+      return '/';
+    }
   },
   pages: {
-    signIn: '/login',
+    signIn: '/user/login',
   },
+  
 });

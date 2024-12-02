@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     gap: 0; /* 리스트 간 간격 제거 */
-    min-width: 200px;
+    width: 32%;
   }
   
   .propertyItem {
@@ -15,10 +15,10 @@
     display: flex;
     align-items: flex-start;
     padding: 16px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color-border-light);
     cursor: pointer;
-    background-color: #fff;
-}
+    background-color: white;
+  }
   
   .imageWrapper {
     position: relative;
@@ -41,7 +41,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1; /* 다른 요소 위에 표시 */
-}
+  }
   
 .propertyDetails {
     flex: 1;
@@ -51,44 +51,56 @@
     overflow: hidden; /* 컨테이너를 넘어가는 내용을 숨김 */
     text-overflow: ellipsis; /* 넘치는 텍스트를 "..."으로 표시 */
     white-space: nowrap; /* 한 줄로 제한 */
-}
+  }
   
 .title {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
   margin: 0 0 8px;
   overflow: hidden; /* 넘치는 내용을 숨김 */
   text-overflow: ellipsis; /* 넘치는 텍스트를 "..."으로 표시 */
   white-space: nowrap; /* 한 줄로 제한 */
+  margin-bottom: 10px;
 }
   
-  .location {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 4px;
-    font-weight: 500; /* 약간 두꺼운 텍스트 */
-  }
-  .maintenance {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 8px;
-  }
+.location {
+  font-size: 0.9rem;
+  color: var(--color-light-gray);
+  margin-bottom: 4px;
+  font-family: var(--font-pretendard-regular);
+}
 
-  .propertyDetails {
-    flex: 1;
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* 컨테이너를 넘어가는 내용을 숨김 */
-    text-overflow: ellipsis; /* 넘치는 텍스트는 "..."으로 표시 */
-    white-space: nowrap; /* 한 줄로 제한 */
-  }
+.maintenance {
+  font-size: 0.9rem;
+  color: var(--color-light-gray);
+  margin-bottom: 8px;
+  font-family: var(--font-pretendard-regular);
+}
+
+.propertyDetails {
+  flex: 1;
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* 컨테이너를 넘어가는 내용을 숨김 */
+  text-overflow: ellipsis; /* 넘치는 텍스트는 "..."으로 표시 */
+  white-space: nowrap; /* 한 줄로 제한 */
+}
+
+.description {
+  margin-top: 19px;
+  font-family: var(--font-pretendard-regular);
+  color: var(--color-light-gray)
+}
   
   
 
 /* 모바일 환경에서의 스타일 */
 @media (max-width: 393px) {
+    .listContainer {
+      width: 100%;
+    }
     .listSideBar {
         width: 100%;
         padding: 5px;

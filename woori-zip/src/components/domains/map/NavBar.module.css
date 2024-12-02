@@ -3,8 +3,9 @@
   align-items: center;
   gap: 12px;
   padding: 10px 20px;
-  background-color: #ffffff;
-  border-bottom: 1px solid #ddd;
+  background-color: white;
+  border-bottom: 1px solid var(--color-border-light);
+  border-top: 1px solid var(--color-border-light);
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -13,7 +14,7 @@
 .applyButton,
 .filterButton {
   padding: 8px 16px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border-light);
   border-radius: 6px;
   font-size: 14px;
   background-color: white;
@@ -26,18 +27,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #333;
+  color: var(--color-text-dark);
 }
 
 .applyButton {
-  background-color: #0070f3;
+  background-color: var(--color-blue);
   color: white;
   border: none;
-  font-weight: bold;
+  font-family: var(--font-pretendard-regular);
 }
 
 .applyButton:hover {
-  background-color: #005bb5;
+  background-color: var(--color-blue-dark);
 }
 
 .filterSelect:focus,
@@ -45,7 +46,7 @@
 .applyButton:focus,
 .filterButton:focus {
   outline: none;
-  box-shadow: 0px 0px 4px rgba(0, 112, 243, 0.6);
+  box-shadow: 0px 0px 4px var(--color-blue);
 }
 
 .webNav {
@@ -61,13 +62,13 @@
   padding: 15px;
   width: 250px;
   z-index: 1000;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border-light);
 }
 
 .menuTitle {
   font-size: 14px;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
   margin-bottom: 10px;
 }
 
@@ -79,10 +80,10 @@
 
 .toggleButton {
   padding: 4px 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--color-border-light);
   border-radius: 4px;
   font-size: 12px;
-  background-color: #fff;
+  background-color: white;
   cursor: pointer;
 }
 
@@ -94,7 +95,7 @@
 .rangeLabel {
   font-size: 12px;
   font-weight: bold;
-  color: #333;
+  color: var(--color-text-dark);
   margin-bottom: 8px;
   display: block;
 }
@@ -106,9 +107,33 @@
 
 .rangeValues {
   font-size: 12px;
-  color: #888;
+  color: var(--color-light-gray);
   text-align: right;
 }
+
+.authButtons {
+  margin-left: auto;
+  display: flex;
+  gap: 12px;
+}
+
+.authButton {
+  padding: 8px 16px;
+  border: 1px solid var(--color-border-light);
+  color:white;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: var(--color-blue);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: var(--font-pretendard-regular);
+}
+
+.authButton:hover {
+  background-color: var(--color-blue-dark);
+  color: white;
+}
+
 
 /* 모바일에서 NavBar 숨김 */
 @media (max-width: 393px) {

@@ -1,0 +1,213 @@
+@media screen and (max-width: 393px) {
+.productContainer {
+    padding: 20px;
+    background-color: white;
+    background-color: var(--color-bg);
+}
+
+.productInfoSection {
+    background-color: var(--color-bg);
+    width:100%;
+    /* 접혔을 때 처리 */
+    /* height를 auto로 변경하고 transition 추가 */
+    height: auto;
+    transition: all 0.3s ease;
+    margin-top: 30vw;
+    border-radius: 8px;
+    border: 1px solid var(--color-border-light);
+    margin-bottom: 24px;
+}
+
+
+.line {
+    border: none;  
+}  
+.infoHeader {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    background-color:#ffffff;
+    
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.expanded {
+    transform: rotate(180deg);
+}
+
+.infoContent {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.infoContent.show {
+    height: auto;
+    border-top: 1px solid var(--color-border-light);
+}
+
+.contentInner {
+    padding: 16px;
+    background-color:#ffffff;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    width: 100vw; 
+    padding: 16px;
+    gap: 5px;
+    /* 버튼 그룹을 하단에 고정 */
+    position: fixed;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    /* 다른 요소들보다 위에 보이도록 z-index 설정 */
+    z-index: 10;
+}
+
+.callBtn {
+    width:160px;
+    padding: 16px;
+    border-radius: 30px;
+    border: 1px solid var(--color-border-light);
+    color: var(--color-blue);
+    background-color: var(--color-border-light);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.goToChecklistButton {
+    width:160px;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-border-light);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.gotoOtherLoanBtn:hover {
+    background-color: var(--color-button-dark);
+}
+
+.callBtn:hover {
+    background-color: var(--color-border-light);
+}
+
+
+
+.cardItem {
+    width: 90vh;
+    height: 50vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top : 20px;
+    margin-bottom: 30px;
+}
+
+.cardItem {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 450px;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.loanDescription {
+    margin:20px;
+}
+ 
+.loanType {
+    text-align: left;
+    margin: 20px;
+    color: #0065C4;
+}
+.loanName {
+    text-align: left;
+    margin: 20px;
+    margin-bottom:30px;
+    font-size: 20px;
+}
+.loanSummary {
+    text-align: left; 
+    margin: 5px;
+}
+.loanTarget {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    white-space: nowrap;  
+    color: #7C7C7C;
+    
+}
+.loanTargetText {
+    flex: 9;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    max-width: 500px;       
+}
+.loanDate {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    white-space: nowrap;  
+    color: #7C7C7C;
+}
+.loanDateText {
+    flex: 9;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    max-width: 500px;       
+} 
+
+.loanLimit {
+    margin: 5px;
+    white-space: nowrap;  
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    color: #7C7C7C;
+}
+.loanLimitText { 
+    flex: 9;
+    margin: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px ;
+    max-width: 500px;                      
+}
+
+.loanTextBox1 {
+    display: flex;  
+    position: relative;
+}
+
+.loanTextBox2 {
+    display: flex;  
+}
+.loanTextBox3 {
+    display: flex;  
+}
+
+
+
+
+
+}

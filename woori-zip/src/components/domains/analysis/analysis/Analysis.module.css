@@ -1,0 +1,381 @@
+.container {
+    padding: 20px 20px 100px;
+    max-width: auto;
+    margin: 0 auto;
+    min-height: 100vh;
+    font-family: var(--font-pretendard);
+    background-color: var(--color-bg);
+    
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: var(--color-text-dark);
+    font-weight: 600;
+    font-family: var(--font-pretendard);
+}
+
+.chartSection {
+    display: flex;
+    justify-content: center;
+    column-gap: 216px;
+    margin-top: 20px;  /* 41px에서 20px로 줄임 */
+    flex-wrap: wrap;
+    margin-bottom: 30px;  /* 50px에서 30px로 줄임 */
+}
+
+.chartBox {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;  /* 30px에서 20px로 줄임 */
+}
+
+.chartTitle {
+    font-size: 16px;
+    color: var(--color-text-dark);
+    margin-top: 16px;  /* 20px에서 16px로 줄임 */
+    width: 300px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: var(--font-pretendard);
+}
+
+
+.analysisResult {
+    background-color: var(--color-bg);
+    border-radius: 12px;
+    padding: 16px;  /* 24px에서 16px로 줄임 */
+    margin-top: -80px;  /* -110px에서 -80px로 조정 */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.resultTitle {
+    font-size: 34px;  /* 30px에서 22px로 줄임 */
+    color: var(--color-text-dark);
+    margin-top: 45px;
+    line-height: 1.4;  /* 1.5에서 1.4로 줄임 */
+    font-family: var(--font-pretendard);
+    padding: 0 16px;  /* 좌우 패딩만 추가 */
+}
+
+.highlightCategory {
+    color: var(--color-blue);
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.categorySection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    padding: 24px;
+    background: #f5f5f5;
+    border-radius: 12px;
+}
+
+.categoryTitle {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 16px;
+    flex: 2;
+}
+
+.categoryButton {
+    padding: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categoryButton:hover {
+    border-color: #5778A3;
+}
+
+.categoryButton.selected {
+    border-color: #5778A3;
+    background: #5778A3;
+    color: white;
+}
+
+.infoSection {
+    flex: 1;
+    margin-top: 0;
+}
+
+.infoRow {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.infoItem {
+    width: 100%;
+}
+
+.distanceInput {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.distanceInput label {
+    flex-shrink: 0;
+}
+
+.numberInput {
+    width: 80px;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.unit {
+    min-width: 24px;
+}
+
+.locationSection {
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 32px;
+}
+
+.locationHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.locationTitle {
+    font-size: 16px;
+    color: var(--color-text-dark);
+    font-weight: 500;
+    margin: 0;
+}
+
+.districtWrapper {
+    position: relative;
+}
+
+.districtSelect {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px 32px 8px 12px;
+    background: var(--background);
+    border: 1px solid var(--color-border-light);
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    min-width: 120px;
+}
+
+.districtWrapper::after {
+    content: '';
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid var(--color-light-gray);
+    pointer-events: none;
+}
+
+.dongGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.dongGrid::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dongGrid::-webkit-scrollbar-track {
+    background: var(--color-bg);
+    border-radius: 3px;
+}
+
+.dongGrid::-webkit-scrollbar-thumb {
+    background: var(--color-light-gray);
+    border-radius: 3px;
+}
+
+.dongGrid::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-dark);
+}
+
+.dongButton {
+    padding: 12px;
+    background: var(--background);
+    border: 1px solid var(--color-border-light);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--color-text-dark);
+    text-align: center;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dongButton:hover {
+    border-color: var(--color-blue);
+    background-color: var(--color-bg);
+}
+
+.dongButton.selected {
+    background-color: var(--color-blue);
+    color: var(--background);
+    border-color: var(--color-blue);
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 40px;
+}
+
+.primaryButton, .secondaryButton {
+    padding: 14px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    font-family: var(--font-pretendard);
+}
+
+.primaryButton {
+    background-color: var(--color-blue);
+    color: var(--background);
+}
+
+.primaryButton:hover {
+    background-color: var(--color-blue-dark);
+}
+
+.secondaryButton {
+    background-color: var(--color-border-light);
+    color: var(--color-text-dark);
+}
+
+.secondaryButton:hover {
+    background-color: var(--color-light-gray);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px 20px 60px;
+    }
+    
+    .chartSection {
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .chartBox {
+        width: 100%;
+        max-width: 260px;
+    }
+    
+    .title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .chartTitle {
+        width: 260px;
+        font-size: 14px;
+    }
+
+    .categoryContainer {
+        flex-direction: column;
+    }
+
+    .categoryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .infoSection {
+        width: 100%;
+    }
+
+    .distanceInput {
+        justify-content: flex-start;
+    }
+
+    .categoryButton {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .dongGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .buttonGroup {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .primaryButton, .secondaryButton {
+        width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .container {
+        background-color: var(--background);
+    }
+
+    .dongButton,
+    .districtSelect {
+        background-color: var(--background);
+        color: var(--foreground);
+    }
+}

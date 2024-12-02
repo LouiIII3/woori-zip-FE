@@ -2,9 +2,7 @@
 
 import { useState } from 'react';
 import styles from './page.module.css';
-import Footer from '@/components/layout/Footer/Footer';
-import Header from '@/components/layout/Header/Header';
-import MembersList from '@/components/domains/manager/userManagement/ManagerList/ManagerList';
+import MembersList from '@/components/domains/manager/userManagement/MembersList/MembersList';
 import AgentList from '@/components/domains/manager/userManagement/AgentList/AgentList';
 import ManagerList from '@/components/domains/manager/userManagement/ManagerList/ManagerList';
 import LogSearch from '@/components/domains/manager/LogManagement/LogSearch';
@@ -42,9 +40,9 @@ const Manager = () => {
         }
         break;
       case '로그 조회':
-        return <LogSearch />; // 로그 관리 컴포넌트 연결
+        return <LogSearch />;
       case '대출 상품 관리':
-        return <LoanView />; // 대출 상품 관리 컴포넌트 연결
+        return <LoanView />;
       default:
         return null;
     }
@@ -53,13 +51,6 @@ const Manager = () => {
 
   return (
     <div className={styles.pageWrapper}>
-      <Header 
-        mainTab={mainTab}
-        subTab={subTab}
-        onMainTabChange={handleMainTabChange}
-        onSubTabChange={handleSubTabChange}
-        showSubTabs={showSubTabs}
-      />
       <NavSection
         mainTab={mainTab}
         subTab={subTab}
@@ -72,7 +63,6 @@ const Manager = () => {
           {renderContent()}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

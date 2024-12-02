@@ -6,46 +6,48 @@ export default function RangeSlider({ values, min, max, step, onChange, label, u
     return (
         <div className={styles.rangeSliderContainer}>
             <label className={styles.rangeLabel}>{label}</label>
-            <Range
-                values={values}
-                step={step}
-                min={min}
-                max={max}
-                onChange={onChange}
-                renderTrack={({ props, children }) => (
-                    <div
-                        {...props}
-                        className={styles.rangeTrack}
-                        style={{
-                            ...props.style,
-                            height: '6px',
-                            background: 'linear-gradient(to right, #007bff, #007bff)',
-                        }}
-                    >
-                        {children}
-                    </div>
-                )}
-                renderThumb={({ props, index }) => {
-                    // key를 props에서 분리
-                    const { key, ...otherProps } = props;
-                    return (
+            <div className={styles.rangeWrapper}>
+                <div className={styles.rangeValues}>
+                    <span>{values[0] / unit} {unit === 10000 ? '만' : ''}</span>
+                    <span>{values[1] / unit} {unit === 10000 ? '만' : ''}</span>
+                </div>
+                <Range
+                    values={values}
+                    step={step}
+                    min={min}
+                    max={max}
+                    onChange={onChange}
+                    renderTrack={({ props, children }) => (
                         <div
-                            key={index} // key를 명시적으로 전달
-                            {...otherProps} // 나머지 props를 spread
-                            className={styles.rangeThumb}
+                            {...props}
+                            className={styles.rangeTrack}
                             style={{
                                 ...props.style,
-                                height: '20px',
-                                width: '20px',
-                                backgroundColor: '#007bff',
-                                borderRadius: '50%',
                             }}
-                        />
-                    );
-                }}
-            />
-            <div className={styles.rangeValues}>
-                {values[0] / unit} ~ {values[1] / unit} {unit === 10000 ? '만' : ''}
+                        >
+                            <div
+                                className={styles.rangeFilledTrack}
+                                style={{
+                                    left: `${((values[0] - min) / (max - min)) * 100}%`,
+                                    right: `${100 - ((values[1] - min) / (max - min)) * 100}%`,
+                                }}
+                            />
+                            {children}
+                        </div>
+                    )}
+                    renderThumb={({ props, index }) => {
+                        const { key, ...restProps } = props;
+                        return (
+                            <div
+                                key={key} 
+                                {...restProps} 
+                                className={styles.rangeThumb}
+                            >
+                            </div>
+                        );
+                    }}
+                    
+                />
             </div>
         </div>
     );

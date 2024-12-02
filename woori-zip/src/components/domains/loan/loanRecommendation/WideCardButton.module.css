@@ -1,16 +1,16 @@
-.buttonContainer {
-  position: absolute;           
-  bottom: 20px;                
-  right: 20px;                 
-  display: flex;               
-  flex-direction: row;    
-  gap: 10px;                             
+.buttonContainer {            
+  /* display: flex;               
+  justify-content: center;   
+  align-items: center; 
+  gap: 10px;  
+  width: 100%;                          */
 }
 
 .button {
   padding: 10px 20px;           
-  font-size: 16px;               
-  background-color: #0065C4;   
+  font-size: 16px;        
+  width: 100px;       
+  background-color: var(--color-blue);
   color: white;               
   border: none;                 
   border-radius: 5px;          
@@ -19,5 +19,5 @@
 }
 
 .button:hover {
-  background-color: #015f99;
+  background-color: #015cb2;
 }

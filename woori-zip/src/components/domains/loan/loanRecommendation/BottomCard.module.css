@@ -1,18 +1,22 @@
 .fullBottomCard {
     display: flex;
-    justify-content: center;  
-    align-items: flex-start;    
-    height: 50vh;   
-    background-color: #F4FCFF;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 50vh;
+    background-color: var(--color-bg);
+    padding: 20px;
+    width: 100%; 
 }
 
 .bottomCard {
     display: flex;
-    width: 50%;
-    flex-direction: column;    
-    justify-content: flex-start; 
-    align-items: center;       
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
+    padding: 0 20px;
 }
 
 #bottomText {
@@ -20,5 +24,203 @@
     font-size: 24px;
     color: black;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.cardContainer {
+    width: 100%;
+    max-width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardSlider {
+    display: flex;
+    gap: 16px;
+    transition: transform 0.3s ease;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.cardItem {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    height: 200px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imageContainer {
+    margin-left: auto; 
+    display: flex;  
+    align-items: center;    
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+}
+
+.cardImage {
+    width: 20vh;
+    height: 20vh;
+    align-items: center;    
+    justify-content: center;
+    margin-right: 20px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #a73636;
+   
+}
+.cardTopContent {
+    display: flex;
+    flex-direction: row;
+    height:300px;
+}
+.cardContent {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.navButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    z-index: 10;
+}
+
+.navButton:hover {
+    background-color: var(--color-border-light);
+}
+
+.navButton.prev {
+    left: 0;
+}
+
+.navButton.next {
+    right: 0;
+}
+
+.pagination {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dotButton {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.dotButton.active {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-blue-dark);
+}
+
+.loanType {
+    text-align: left;
+    margin: 5px;
+    color: #0065C4;
+}
+.loanName {
+    text-align: left;
+    margin: 5px;
+    font-size: 20px;
+}
+.loanSummary {
+    text-align: left; 
+    margin: 5px;
+    
+}
+.loanTarget {
+    margin: 5px;
+    white-space: nowrap;  
+    color: #7C7C7C;
+    
+}
+.loanTargetText {
+    flex: 9;
+    margin: 5px;
+    max-width: 500px;       
+    overflow: hidden;              
+    text-overflow: ellipsis;     
+    white-space: nowrap;  
+    cursor: pointer;            
+    position: relative;
+}
+.loanDate {
+    margin: 5px;
+    white-space: nowrap;  
+    color: #7C7C7C;
+}
+.loanDateText {
+    flex: 9;
+    margin: 5px;
+    max-width: 500px;       
+    overflow: hidden;              
+    text-overflow: ellipsis;     
+    white-space: nowrap;  
+    cursor: pointer;            
+    position: relative;
+} 
+
+.loanLimit {
+    margin: 5px;
+    white-space: nowrap;  
+    color: #7C7C7C;
+}
+.loanLimitText { 
+    flex: 9;
+    margin: 5px;
+    max-width: 500px;                      
+    overflow: hidden;              
+    text-overflow: ellipsis;     
+    white-space: nowrap;  
+    cursor: pointer;            
+    position: relative;
+}
+
+.loanTextBox1 {
+    display: flex;  
+    position: relative;
+}
+
+.loanTextBox2 {
+    display: flex;  
+}
+.loanTextBox3 {
+    display: flex;  
 }

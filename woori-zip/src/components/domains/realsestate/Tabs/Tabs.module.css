@@ -11,8 +11,8 @@
   padding: 12px 0;
   text-align: center;
   border-radius: 0;
-  background-color: #f1f5f9;
-  color: #0065C4;
+  background-color: white;
+  color: var(--color-blue);
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -20,7 +20,7 @@
 }
 
 .tab:hover {
-  background-color: #e0e7ff;
+  background-color: white;
 }
 
 .tab:last-child {
@@ -34,6 +34,6 @@
 }
 
 .activeTab {
-  background-color: #0065C4;
-  color: #ffffff;
+  background-color: var(--color-blue);
+  color: white;
 }

@@ -1,0 +1,182 @@
+.pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+  }
+  
+  .container {
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  .agreementBox {
+    width: 100%;
+    background: var(--background);
+    border-radius: 8px;
+    box-sizing: border-box; /* padding이 포함되도록 */
+    overflow-y: auto; /* 스크롤 활성화 */
+  }
+  
+  
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--color-text-dark);
+  }
+  
+  .agreementItem {
+    padding: 16px 0;
+  }
+  
+  .checkboxLabel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .checkbox {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    appearance: none;
+    border: 1px solid var(--color-blue);
+    border-radius: 3px;
+    background-color: var(--background);
+  }
+  
+  /* 체크되었을 때 스타일 추가 */
+  .checkbox:checked {
+    background-color: var(--color-blue);
+    border: 1px solid var(--color-blue-dark);
+    position: relative;
+  }
+  
+  .checkbox:checked::after {
+    content: "✔"; /* 체크 표시 */
+    color: var(--background);
+    font-size: 10px;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+  }
+  
+  .checkboxText {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-text-dark);
+  }
+  
+  .required {
+    color: var(--color-blue);
+    font-size: 10px;
+    margin-left: 4px;
+  }
+  
+  .optional {
+    color: var(--color-light-gray);
+    font-size: 10px;
+  }
+  
+  .agreementItemSub {
+    margin-left: 30px;
+  }
+  
+  .detailButton {
+    color: var(--color-blue);
+    background: none;
+    border: none;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 4px 0;
+  
+    display: flex;
+    justify-self: right;
+    margin-right: 25px;
+  }
+  
+  .submitButton {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .submitButton:hover {
+    background-color: var(--color-blue-dark);
+  }
+  
+  
+  /* 스크롤러 스타일 */
+  .scroll-container {
+    max-height: 200px; /* 스크롤러의 최대 높이 지정 */
+    overflow-y: auto;  /* 세로 스크롤을 활성화 */
+    padding: 10px;
+    border: 1px solid var(--color-border-light);
+    border-radius: 4px;
+    background-color: var(--background);
+  }
+  
+  .description {
+    font-size: 12px;
+  }
+  
+  
+  .lsc {
+    font-size: 10px;
+    color: var(--color-light-gray);
+    line-height: 1.5;
+    max-height: 40px; 
+    overflow-y: auto; 
+    scrollbar-width: 3px; 
+  }
+  
+  .lsc::-webkit-scrollbar {
+    width: 8px;
+  } 
+  
+  .lsc::-webkit-scrollbar-track {
+    background: var(--background);
+    border-radius: 4px;
+  }
+  
+  .lsc::-webkit-scrollbar-thumb {
+    background-color: var(--color-text-dark);
+    border-radius: 4px;
+    border: 2px solid var(--color-text-dark);
+  }
+  
+  .lsc::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color-light-gray);
+  }
+  
+  /* Custom scrollbar for Firefox */
+  .lsc {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-blue) var(--color-border-light);
+  }
+  
+  .descriptionSub {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+  
+  .hr {
+    margin: 10px;
+    color: var(--color-border-light);
+  
+  }

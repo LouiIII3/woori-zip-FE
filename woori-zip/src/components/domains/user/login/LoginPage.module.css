@@ -1,86 +1,92 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f1f6fb;
-  }
-  
-  .formContainer {
-    width: 350px;
-    height: 450px;
-    padding: 60px 40px;
-    background-color: #f4fcff;
-    border-radius: 8px;
-    border: 1px solid #d0e4f5; /* 테두리 선 추가 */
-    text-align: center;
-  }
-  
-  .loginBox p {
-    margin-bottom: 50px;
-    margin-top: 30px;
-    font-size: 16px;
-    color: #333;
-    line-height: 1.5;
-    font-weight: bold;
-  }
-  
-  .loginButton {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 14px;
-    color: white;
-    background-color: #0080CD;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .loginButton:hover {
-    background-color: #466ea3;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background);
+}
 
-  .inputField {
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #f4fcff;
-    margin-bottom: 5px;
-    font-size: 12px;
-  }
+.formContainer {
+  width: 220px;
+  background-color: var(--background);
+  border-radius: 8px;
+  text-align: center;
+}
 
-  .errorMessage {
-    color: red;
-    font-size: 10px;
-    margin-bottom: 15px;
-  }
+.loginBox p {
+  margin-bottom: 50px;
+  margin-top: 30px;
+  font-size: 16px;
+  color: var(--color-blue);
+  line-height: 1.5;
+  font-weight: bold;
+}
 
-  .links.p {
-    font-size: 10px;
-  }
+.loginButton {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: white;
+  background-color: var(--color-blue);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
-  .link {
-    font-size: 10px;
-    color: #0080CD; 
-    font: bold;
+.loginButton:hover {
+  background-color: var(--color-blue-dark);
+}
 
-    display: inline;
-  }
+.inputField {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-blue);
+  margin-bottom: 10px;
+  background-color: var(--background);
+  font-size: 12px;
+}
 
-  .link:hover {
-    color: #466ea3;
-    font: bold;
-    text-decoration: underline;
-  }
+.errorMessage {
+  color: red;
+  font-size: 12px;
+}
 
-  .logo {
-    margin-bottom: 20px;
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  }
+.link {
+  font-size: 14px;
+  color: var(--color-blue);
+  font: bold;
+  display: inline;
+  margin-left: 20px;
+}
 
-  .semiTitle { 
-    fontSize: 8px; 
-    marginBottom: 5px;
+.link:hover {
+  color: var(--color-blue-dark);
+  font: bold;
+  text-decoration: underline;
+}
+
+.logo {
+  margin-bottom: 20px;
+
+}
+
+.sectionKeyword {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-align: left;
+  color: var(--color-blue);
+}
+
+.pText {
+  font-size: 12px;
+  font-weight: lighter;
+  color: var(--color-light-gray);
 }

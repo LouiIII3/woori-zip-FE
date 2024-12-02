@@ -5,11 +5,49 @@
   min-height: 400px;
   background-color: white;
   text-align: center;
-  color: #666;
-  font-size: 16px;
-  margin-top: 40px; /* 탭과 콘텐츠 사이의 간격 추가 */
+  font-size: 20px;
+  margin-top: 50px;
+  border-radius: 20px;
+  /* 탭과 콘텐츠 사이의 간격 추가 */
 }
 
-.message {
+.messageBox {
+  width: 60%;
   padding: 20px;
+}
+
+.textGroup {
+  display: flex;
+  color: var(--color-text-dark);
+  margin: 40px;
+}
+
+.titleText {
+  text-align: left;
+  width: 100px;
+}
+
+.contentText {
+  padding-left: 20px;
+  font-family: var(--font-pretendard-regular);
+}
+
+.imgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  background-color: var(--color-border-light);
+  border-radius: 50%;
+  margin: 50px;
+}
+
+.loading {
+  padding-left: 20px;
+  font-family: var(--font-pretendard-regular);
+  color: var(--color-border-light);
 }

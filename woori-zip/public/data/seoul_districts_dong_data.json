@@ -1,0 +1,3020 @@
+{
+    "종로구": [
+        {
+            "읍면동명": "청운효자동",
+            "southWestLatitude": 37.50371911546732,
+            "southWestLongitude": 126.86828028131498,
+            "northEastLatitude": 37.66559700453269,
+            "northEastLongitude": 127.07255471868501
+        },
+        {
+            "읍면동명": "사직동",
+            "southWestLatitude": 37.49316910546732,
+            "southWestLongitude": 126.86802095267643,
+            "northEastLatitude": 37.65504699453268,
+            "northEastLongitude": 127.07226644732359
+        },
+        {
+            "읍면동명": "삼청동",
+            "southWestLatitude": 37.507074495467315,
+            "southWestLongitude": 126.8789718771824,
+            "northEastLatitude": 37.66895238453268,
+            "northEastLongitude": 127.0832555228176
+        },
+        {
+            "읍면동명": "부암동",
+            "southWestLatitude": 37.51575971546731,
+            "southWestLongitude": 126.86040295607853,
+            "northEastLatitude": 37.677637604532684,
+            "northEastLongitude": 127.06471044392147
+        },
+        {
+            "읍면동명": "평창동",
+            "southWestLatitude": 37.53302606546732,
+            "southWestLongitude": 126.86709654150049,
+            "northEastLatitude": 37.694903954532684,
+            "northEastLongitude": 127.0714514584995
+        },
+        {
+            "읍면동명": "무악동",
+            "southWestLatitude": 37.496801805467314,
+            "southWestLongitude": 126.85686137058569,
+            "northEastLatitude": 37.65867969453268,
+            "northEastLongitude": 127.06111682941433
+        },
+        {
+            "읍면동명": "교남동",
+            "southWestLatitude": 37.490114035467315,
+            "southWestLongitude": 126.86204244187859,
+            "northEastLatitude": 37.65199192453268,
+            "northEastLongitude": 127.06627955812142
+        },
+        {
+            "읍면동명": "가회동",
+            "southWestLatitude": 37.50173749546732,
+            "southWestLongitude": 126.88448370006371,
+            "northEastLatitude": 37.66361538453268,
+            "northEastLongitude": 127.08875269993628
+        },
+        {
+            "읍면동명": "종로1.2.3.4가동",
+            "southWestLatitude": 37.494137605467316,
+            "southWestLongitude": 126.88760922450827,
+            "northEastLatitude": 37.65601549453268,
+            "northEastLongitude": 127.09185737549173
+        },
+        {
+            "읍면동명": "종로5.6가동",
+            "southWestLatitude": 37.49207705546732,
+            "southWestLongitude": 126.90211975020044,
+            "northEastLatitude": 37.653954944532686,
+            "northEastLongitude": 127.10636224979955
+        },
+        {
+            "읍면동명": "이화동",
+            "southWestLatitude": 37.49875106546732,
+            "southWestLongitude": 126.90093889689035,
+            "northEastLatitude": 37.66062895453268,
+            "northEastLongitude": 127.10519970310966
+        },
+        {
+            "읍면동명": "혜화동",
+            "southWestLatitude": 37.506532535467315,
+            "southWestLongitude": 126.8955480208924,
+            "northEastLatitude": 37.66841042453268,
+            "northEastLongitude": 127.09983017910761
+        },
+        {
+            "읍면동명": "창신제1동",
+            "southWestLatitude": 37.49132370546731,
+            "southWestLongitude": 126.91189888321921,
+            "northEastLatitude": 37.65320159453268,
+            "northEastLongitude": 127.11613931678079
+        },
+        {
+            "읍면동명": "창신제2동",
+            "southWestLatitude": 37.49481586546732,
+            "southWestLongitude": 126.90812669432749,
+            "northEastLatitude": 37.65669375453268,
+            "northEastLongitude": 127.1123767056725
+        },
+        {
+            "읍면동명": "창신제3동",
+            "southWestLatitude": 37.49788022546732,
+            "southWestLongitude": 126.91107959140675,
+            "northEastLatitude": 37.659758114532686,
+            "northEastLongitude": 127.11533800859327
+        },
+        {
+            "읍면동명": "숭인제1동",
+            "southWestLatitude": 37.496286235467316,
+            "southWestLongitude": 126.91473417772221,
+            "northEastLatitude": 37.65816412453268,
+            "northEastLongitude": 127.11898822227776
+        },
+        {
+            "읍면동명": "숭인제2동",
+            "southWestLatitude": 37.493367805467315,
+            "southWestLongitude": 126.91851458019116,
+            "northEastLatitude": 37.65524569453268,
+            "northEastLongitude": 127.12276061980884
+        }
+    ],
+    "중구": [
+        {
+            "읍면동명": "소공동",
+            "southWestLatitude": 37.48335784546732,
+            "southWestLongitude": 126.87224930391457,
+            "northEastLatitude": 37.64523573453268,
+            "northEastLongitude": 127.07646789608543
+        },
+        {
+            "읍면동명": "회현동",
+            "southWestLatitude": 37.476029215467314,
+            "southWestLongitude": 126.87460934720193,
+            "northEastLatitude": 37.63790710453268,
+            "northEastLongitude": 127.07880785279805
+        },
+        {
+            "읍면동명": "명동",
+            "southWestLatitude": 37.482789145467315,
+            "southWestLongitude": 126.88224688340186,
+            "northEastLatitude": 37.64466703453268,
+            "northEastLongitude": 127.08646391659815
+        },
+        {
+            "읍면동명": "필동",
+            "southWestLatitude": 37.475863845467316,
+            "southWestLongitude": 126.89174927378593,
+            "northEastLatitude": 37.63774173453268,
+            "northEastLongitude": 127.09594732621409
+        },
+        {
+            "읍면동명": "장충동",
+            "southWestLatitude": 37.47467103546731,
+            "southWestLongitude": 126.90018240807598,
+            "northEastLatitude": 37.63654892453268,
+            "northEastLongitude": 127.10437719192402
+        },
+        {
+            "읍면동명": "광희동",
+            "southWestLatitude": 37.48426539546732,
+            "southWestLongitude": 126.90151485993786,
+            "northEastLatitude": 37.646143284532684,
+            "northEastLongitude": 127.10573594006216
+        },
+        {
+            "읍면동명": "을지로동",
+            "southWestLatitude": 37.48570148546732,
+            "southWestLongitude": 126.8943788913783,
+            "northEastLatitude": 37.64757937453268,
+            "northEastLongitude": 127.09860390862171
+        },
+        {
+            "읍면동명": "신당동",
+            "southWestLatitude": 37.48480857546732,
+            "southWestLongitude": 126.91166351537554,
+            "northEastLatitude": 37.646686464532685,
+            "northEastLongitude": 127.11588608462448
+        },
+        {
+            "읍면동명": "다산동",
+            "southWestLatitude": 37.473763715467314,
+            "southWestLongitude": 126.90616695114646,
+            "northEastLatitude": 37.63564160453268,
+            "northEastLongitude": 127.11035924885353
+        },
+        {
+            "읍면동명": "약수동",
+            "southWestLatitude": 37.468898335467316,
+            "southWestLongitude": 126.90815031598977,
+            "northEastLatitude": 37.63077622453269,
+            "northEastLongitude": 127.11232928401023
+        },
+        {
+            "읍면동명": "청구동",
+            "southWestLatitude": 37.47591651546732,
+            "southWestLongitude": 126.9128905016196,
+            "northEastLatitude": 37.637794404532684,
+            "northEastLongitude": 127.11708869838041
+        },
+        {
+            "읍면동명": "신당제5동",
+            "southWestLatitude": 37.482642215467315,
+            "southWestLongitude": 126.91990788478755,
+            "northEastLatitude": 37.64452010453269,
+            "northEastLongitude": 127.12412451521243
+        },
+        {
+            "읍면동명": "동화동",
+            "southWestLatitude": 37.479655185467315,
+            "southWestLongitude": 126.91656677856267,
+            "northEastLatitude": 37.64153307453268,
+            "northEastLongitude": 127.12077522143733
+        },
+        {
+            "읍면동명": "황학동",
+            "southWestLatitude": 37.48748016546731,
+            "southWestLongitude": 126.91868305300997,
+            "northEastLatitude": 37.649358054532684,
+            "northEastLongitude": 127.12291294699006
+        },
+        {
+            "읍면동명": "중림동",
+            "southWestLatitude": 37.476379015467316,
+            "southWestLongitude": 126.86386166791253,
+            "northEastLatitude": 37.63825690453268,
+            "northEastLongitude": 127.06806113208745
+        }
+    ],
+    "용산구": [
+        {
+            "읍면동명": "후암동",
+            "southWestLatitude": 37.46899877546732,
+            "southWestLongitude": 126.87849907841824,
+            "northEastLatitude": 37.630876664532686,
+            "northEastLongitude": 127.08267832158178
+        },
+        {
+            "읍면동명": "용산2가동",
+            "southWestLatitude": 37.459299785467316,
+            "southWestLongitude": 126.88145575985887,
+            "northEastLatitude": 37.62117767453268,
+            "northEastLongitude": 127.08560844014116
+        },
+        {
+            "읍면동명": "남영동",
+            "southWestLatitude": 37.464168175467314,
+            "southWestLongitude": 126.87142269406209,
+            "northEastLatitude": 37.62604606453268,
+            "northEastLongitude": 127.07558870593795
+        },
+        {
+            "읍면동명": "청파동",
+            "southWestLatitude": 37.466918275467314,
+            "southWestLongitude": 126.86507982791612,
+            "northEastLatitude": 37.62879616453268,
+            "northEastLongitude": 127.06925337208386
+        },
+        {
+            "읍면동명": "원효로제1동",
+            "southWestLatitude": 37.456531545467314,
+            "southWestLongitude": 126.86448764941464,
+            "northEastLatitude": 37.61840943453268,
+            "northEastLongitude": 127.06863275058535
+        },
+        {
+            "읍면동명": "원효로제2동",
+            "southWestLatitude": 37.452165435467315,
+            "southWestLongitude": 126.84932672530326,
+            "northEastLatitude": 37.61404332453268,
+            "northEastLongitude": 127.05345987469673
+        },
+        {
+            "읍면동명": "효창동",
+            "southWestLatitude": 37.46211227546732,
+            "southWestLongitude": 126.85922870919528,
+            "northEastLatitude": 37.623990164532685,
+            "northEastLongitude": 127.06338909080473
+        },
+        {
+            "읍면동명": "용문동",
+            "southWestLatitude": 37.45720795546732,
+            "southWestLongitude": 126.8565108234976,
+            "northEastLatitude": 37.619085844532684,
+            "northEastLongitude": 127.06065777650241
+        },
+        {
+            "읍면동명": "한강로동",
+            "southWestLatitude": 37.44824559546732,
+            "southWestLongitude": 126.86579398928187,
+            "northEastLatitude": 37.610123484532686,
+            "northEastLongitude": 127.06991641071814
+        },
+        {
+            "읍면동명": "이촌제1동",
+            "southWestLatitude": 37.43633815546732,
+            "southWestLongitude": 126.86891447724814,
+            "northEastLatitude": 37.598216044532684,
+            "northEastLongitude": 127.07300432275188
+        },
+        {
+            "읍면동명": "이촌제2동",
+            "southWestLatitude": 37.442392205467314,
+            "southWestLongitude": 126.85188619722597,
+            "northEastLatitude": 37.60427009453269,
+            "northEastLongitude": 127.055992602774
+        },
+        {
+            "읍면동명": "이태원제1동",
+            "southWestLatitude": 37.452455615467315,
+            "southWestLongitude": 126.89118232817442,
+            "northEastLatitude": 37.61433350453268,
+            "northEastLongitude": 127.09531627182558
+        },
+        {
+            "읍면동명": "이태원제2동",
+            "southWestLatitude": 37.460721375467315,
+            "southWestLongitude": 126.89005591358483,
+            "northEastLatitude": 37.62259926453268,
+            "northEastLongitude": 127.09421248641517
+        },
+        {
+            "읍면동명": "한남동",
+            "southWestLatitude": 37.456162715467315,
+            "southWestLongitude": 126.90372895428172,
+            "northEastLatitude": 37.61804060453268,
+            "northEastLongitude": 127.10787304571828
+        },
+        {
+            "읍면동명": "서빙고동",
+            "southWestLatitude": 37.44153067546732,
+            "southWestLongitude": 126.88632447567757,
+            "northEastLatitude": 37.603408564532685,
+            "northEastLongitude": 127.09042852432242
+        },
+        {
+            "읍면동명": "보광동",
+            "southWestLatitude": 37.444932015467316,
+            "southWestLongitude": 126.89920592283126,
+            "northEastLatitude": 37.60680990453268,
+            "northEastLongitude": 127.10331927716875
+        }
+    ],
+    "성동구": [
+        {
+            "읍면동명": "왕십리제2동",
+            "southWestLatitude": 37.48055881546732,
+            "southWestLongitude": 126.9255849401864,
+            "northEastLatitude": 37.64243670453269,
+            "northEastLongitude": 127.12979585981361
+        },
+        {
+            "읍면동명": "왕십리도선동",
+            "southWestLatitude": 37.48585222546732,
+            "southWestLongitude": 126.9274567847392,
+            "northEastLatitude": 37.64773011453269,
+            "northEastLongitude": 127.1316822152608
+        },
+        {
+            "읍면동명": "마장동",
+            "southWestLatitude": 37.486697785467314,
+            "southWestLongitude": 126.93837622559059,
+            "northEastLatitude": 37.64857567453268,
+            "northEastLongitude": 127.14260397440943
+        },
+        {
+            "읍면동명": "사근동",
+            "southWestLatitude": 37.477076055467315,
+            "southWestLongitude": 126.94333401281666,
+            "northEastLatitude": 37.63895394453268,
+            "northEastLongitude": 127.14753538718335
+        },
+        {
+            "읍면동명": "행당제1동",
+            "southWestLatitude": 37.47808083546732,
+            "southWestLongitude": 126.9339545359922,
+            "northEastLatitude": 37.63995872453268,
+            "northEastLongitude": 127.1381586640078
+        },
+        {
+            "읍면동명": "행당제2동",
+            "southWestLatitude": 37.475736815467314,
+            "southWestLongitude": 126.92740454783656,
+            "northEastLatitude": 37.63761470453268,
+            "northEastLongitude": 127.13160225216343
+        },
+        {
+            "읍면동명": "응봉동",
+            "southWestLatitude": 37.470049855467316,
+            "southWestLongitude": 126.93189113872461,
+            "northEastLatitude": 37.63192774453269,
+            "northEastLongitude": 127.13607326127538
+        },
+        {
+            "읍면동명": "금호1가동",
+            "southWestLatitude": 37.47272983546732,
+            "southWestLongitude": 126.92296096754193,
+            "northEastLatitude": 37.63460772453269,
+            "northEastLongitude": 127.12715043245804
+        },
+        {
+            "읍면동명": "금호2.3가동",
+            "southWestLatitude": 37.47048941546732,
+            "southWestLongitude": 126.91780053662478,
+            "northEastLatitude": 37.632367304532686,
+            "northEastLongitude": 127.12198386337525
+        },
+        {
+            "읍면동명": "금호4가동",
+            "southWestLatitude": 37.46365590546732,
+            "southWestLongitude": 126.92251769553754,
+            "northEastLatitude": 37.625533794532686,
+            "northEastLongitude": 127.12668230446248
+        },
+        {
+            "읍면동명": "옥수동",
+            "southWestLatitude": 37.461028115467315,
+            "southWestLongitude": 126.91409699361448,
+            "northEastLatitude": 37.62290600453268,
+            "northEastLongitude": 127.11825440638555
+        },
+        {
+            "읍면동명": "성수1가제1동",
+            "southWestLatitude": 37.45948137546732,
+            "southWestLongitude": 126.9389677112548,
+            "northEastLatitude": 37.621359264532686,
+            "northEastLongitude": 127.14312088874522
+        },
+        {
+            "읍면동명": "성수1가제2동",
+            "southWestLatitude": 37.468134795467314,
+            "southWestLongitude": 126.94186366177962,
+            "northEastLatitude": 37.63001268453268,
+            "northEastLongitude": 127.1460405382204
+        },
+        {
+            "읍면동명": "성수2가제1동",
+            "southWestLatitude": 37.455716255467316,
+            "southWestLongitude": 126.95320996539904,
+            "northEastLatitude": 37.61759414453268,
+            "northEastLongitude": 127.15735283460094
+        },
+        {
+            "읍면동명": "성수2가제3동",
+            "southWestLatitude": 37.46460333546732,
+            "southWestLongitude": 126.95605929816296,
+            "northEastLatitude": 37.62648122453269,
+            "northEastLongitude": 127.16022650183703
+        },
+        {
+            "읍면동명": "송정동",
+            "southWestLatitude": 37.47139420546732,
+            "southWestLongitude": 126.96360509722162,
+            "northEastLatitude": 37.633272094532686,
+            "northEastLongitude": 127.16779090277838
+        },
+        {
+            "읍면동명": "용답동",
+            "southWestLatitude": 37.47760123546732,
+            "southWestLongitude": 126.95574739318441,
+            "northEastLatitude": 37.639479124532684,
+            "northEastLongitude": 127.15995020681561
+        }
+    ],
+    "광진구": [
+        {
+            "읍면동명": "화양동",
+            "southWestLatitude": 37.462326045467314,
+            "southWestLongitude": 126.97137941649447,
+            "northEastLatitude": 37.62420393453268,
+            "northEastLongitude": 127.17554038350553
+        },
+        {
+            "읍면동명": "군자동",
+            "southWestLatitude": 37.472126745467314,
+            "southWestLongitude": 126.97158699372999,
+            "northEastLatitude": 37.63400463453268,
+            "northEastLongitude": 127.17577480627004
+        },
+        {
+            "읍면동명": "중곡제1동",
+            "southWestLatitude": 37.48109835546732,
+            "southWestLongitude": 126.97561600074943,
+            "northEastLatitude": 37.64297624453268,
+            "northEastLongitude": 127.17982839925058
+        },
+        {
+            "읍면동명": "중곡제2동",
+            "southWestLatitude": 37.477969765467314,
+            "southWestLongitude": 126.98248508819196,
+            "northEastLatitude": 37.63984765453268,
+            "northEastLongitude": 127.18668891180805
+        },
+        {
+            "읍면동명": "중곡제3동",
+            "southWestLatitude": 37.48691218546732,
+            "southWestLongitude": 126.97985553166941,
+            "northEastLatitude": 37.648790074532684,
+            "northEastLongitude": 127.18408386833057
+        },
+        {
+            "읍면동명": "중곡제4동",
+            "southWestLatitude": 37.48297287546732,
+            "southWestLongitude": 126.99233933157517,
+            "northEastLatitude": 37.644850764532684,
+            "northEastLongitude": 127.1965568684248
+        },
+        {
+            "읍면동명": "능동",
+            "southWestLatitude": 37.46971823546732,
+            "southWestLongitude": 126.97955469296188,
+            "northEastLatitude": 37.631596124532685,
+            "northEastLongitude": 127.18373590703816
+        },
+        {
+            "읍면동명": "광장동",
+            "southWestLatitude": 37.467344145467315,
+            "southWestLongitude": 127.00278524465924,
+            "northEastLatitude": 37.62922203453268,
+            "northEastLongitude": 127.20695995534075
+        },
+        {
+            "읍면동명": "자양제1동",
+            "southWestLatitude": 37.45460453546732,
+            "southWestLongitude": 126.97834548706987,
+            "northEastLatitude": 37.616482424532684,
+            "northEastLongitude": 127.18248531293015
+        },
+        {
+            "읍면동명": "자양제2동",
+            "southWestLatitude": 37.448395745467316,
+            "southWestLongitude": 126.98119248383313,
+            "northEastLatitude": 37.61027363453268,
+            "northEastLongitude": 127.18531531616688
+        },
+        {
+            "읍면동명": "자양제3동",
+            "southWestLatitude": 37.45075145546732,
+            "southWestLongitude": 126.9691336603387,
+            "northEastLatitude": 37.612629344532685,
+            "northEastLongitude": 127.17326293966131
+        },
+        {
+            "읍면동명": "자양제4동",
+            "southWestLatitude": 37.45295286546732,
+            "southWestLongitude": 126.96169824764449,
+            "northEastLatitude": 37.61483075453268,
+            "northEastLongitude": 127.16583355235555
+        },
+        {
+            "읍면동명": "구의제1동",
+            "southWestLatitude": 37.46055145546731,
+            "southWestLongitude": 126.98395434622651,
+            "northEastLatitude": 37.622429344532684,
+            "northEastLongitude": 127.18811045377346
+        },
+        {
+            "읍면동명": "구의제2동",
+            "southWestLatitude": 37.47006329546732,
+            "southWestLongitude": 126.992359220315,
+            "northEastLatitude": 37.631941184532685,
+            "northEastLongitude": 127.19654137968504
+        },
+        {
+            "읍면동명": "구의제3동",
+            "southWestLatitude": 37.454153115467314,
+            "southWestLongitude": 126.99316660492872,
+            "northEastLatitude": 37.61603100453268,
+            "northEastLongitude": 127.1973051950713
+        }
+    ],
+    "동대문구": [
+        {
+            "읍면동명": "용신동",
+            "southWestLatitude": 37.49467726546732,
+            "southWestLongitude": 126.93016148440913,
+            "northEastLatitude": 37.65655515453268,
+            "northEastLongitude": 127.13441111559084
+        },
+        {
+            "읍면동명": "제기동",
+            "southWestLatitude": 37.50273781546732,
+            "southWestLongitude": 126.93510652767515,
+            "northEastLatitude": 37.664615704532686,
+            "northEastLongitude": 127.13937827232483
+        },
+        {
+            "읍면동명": "전농제1동",
+            "southWestLatitude": 37.49807264546732,
+            "southWestLongitude": 126.94891852747196,
+            "northEastLatitude": 37.65995053453269,
+            "northEastLongitude": 127.15317747252806
+        },
+        {
+            "읍면동명": "전농제2동",
+            "southWestLatitude": 37.499782245467316,
+            "southWestLongitude": 126.95901228237166,
+            "northEastLatitude": 37.66166013453268,
+            "northEastLongitude": 127.16327591762834
+        },
+        {
+            "읍면동명": "답십리제1동",
+            "southWestLatitude": 37.49000475546732,
+            "southWestLongitude": 126.94958079171482,
+            "northEastLatitude": 37.651882644532684,
+            "northEastLongitude": 127.15381760828518
+        },
+        {
+            "읍면동명": "답십리제2동",
+            "southWestLatitude": 37.48995304546732,
+            "southWestLongitude": 126.95899546261522,
+            "northEastLatitude": 37.65183093453268,
+            "northEastLongitude": 127.16323213738475
+        },
+        {
+            "읍면동명": "장안제1동",
+            "southWestLatitude": 37.485292505467314,
+            "southWestLongitude": 126.96647795201307,
+            "northEastLatitude": 37.64717039453268,
+            "northEastLongitude": 127.17070184798695
+        },
+        {
+            "읍면동명": "장안제2동",
+            "southWestLatitude": 37.49482127546732,
+            "southWestLongitude": 126.97041348690796,
+            "northEastLatitude": 37.65669916453268,
+            "northEastLongitude": 127.17466351309201
+        },
+        {
+            "읍면동명": "청량리동",
+            "southWestLatitude": 37.508001605467314,
+            "southWestLongitude": 126.94297570490022,
+            "northEastLatitude": 37.66987949453268,
+            "northEastLongitude": 127.14726189509977
+        },
+        {
+            "읍면동명": "회기동",
+            "southWestLatitude": 37.512761645467315,
+            "southWestLongitude": 126.94925737173008,
+            "northEastLatitude": 37.67463953453269,
+            "northEastLongitude": 127.15355662826992
+        },
+        {
+            "읍면동명": "휘경제1동",
+            "southWestLatitude": 37.510933705467316,
+            "southWestLongitude": 126.96032738076579,
+            "northEastLatitude": 37.67281159453268,
+            "northEastLongitude": 127.16462161923418
+        },
+        {
+            "읍면동명": "휘경제2동",
+            "southWestLatitude": 37.505567045467316,
+            "southWestLongitude": 126.96429604574612,
+            "northEastLatitude": 37.66744493453269,
+            "northEastLongitude": 127.16857555425386
+        },
+        {
+            "읍면동명": "이문제1동",
+            "southWestLatitude": 37.516282815467314,
+            "southWestLongitude": 126.95813823792147,
+            "northEastLatitude": 37.67816070453268,
+            "northEastLongitude": 127.16244716207854
+        },
+        {
+            "읍면동명": "이문제2동",
+            "southWestLatitude": 37.521894485467314,
+            "southWestLongitude": 126.96533003256316,
+            "northEastLatitude": 37.68377237453268,
+            "northEastLongitude": 127.16965436743688
+        }
+    ],
+    "중랑구": [
+        {
+            "읍면동명": "면목제2동",
+            "southWestLatitude": 37.508438885467314,
+            "southWestLongitude": 126.97600010479627,
+            "northEastLatitude": 37.67031677453269,
+            "northEastLongitude": 127.18028749520373
+        },
+        {
+            "읍면동명": "면목제4동",
+            "southWestLatitude": 37.49253853546732,
+            "southWestLongitude": 126.98435291738458,
+            "northEastLatitude": 37.654416424532684,
+            "northEastLongitude": 127.18859668261545
+        },
+        {
+            "읍면동명": "면목제5동",
+            "southWestLatitude": 37.502033495467316,
+            "southWestLongitude": 126.97753069397372,
+            "northEastLatitude": 37.66391138453269,
+            "northEastLongitude": 127.18180050602626
+        },
+        {
+            "읍면동명": "면목본동",
+            "southWestLatitude": 37.50740166546732,
+            "southWestLongitude": 126.98738822821046,
+            "northEastLatitude": 37.669279554532686,
+            "northEastLongitude": 127.19167277178953
+        },
+        {
+            "읍면동명": "면목제7동",
+            "southWestLatitude": 37.496355855467314,
+            "southWestLongitude": 126.99056408223508,
+            "northEastLatitude": 37.65823374453268,
+            "northEastLongitude": 127.19481831776494
+        },
+        {
+            "읍면동명": "면목제3.8동",
+            "southWestLatitude": 37.503657575467315,
+            "southWestLongitude": 126.99524416575083,
+            "northEastLatitude": 37.66553546453268,
+            "northEastLongitude": 127.19951843424917
+        },
+        {
+            "읍면동명": "상봉제1동",
+            "southWestLatitude": 37.521086415467316,
+            "southWestLongitude": 126.98730734225242,
+            "northEastLatitude": 37.68296430453268,
+            "northEastLongitude": 127.1916294577476
+        },
+        {
+            "읍면동명": "상봉제2동",
+            "southWestLatitude": 37.51330596546732,
+            "southWestLongitude": 126.98174732455098,
+            "northEastLatitude": 37.67518385453269,
+            "northEastLongitude": 127.18604807544904
+        },
+        {
+            "읍면동명": "중화제1동",
+            "southWestLatitude": 37.52134837546732,
+            "southWestLongitude": 126.98098778251838,
+            "northEastLatitude": 37.683226264532685,
+            "northEastLongitude": 127.18531061748159
+        },
+        {
+            "읍면동명": "중화제2동",
+            "southWestLatitude": 37.517784305467316,
+            "southWestLongitude": 126.97305167644237,
+            "northEastLatitude": 37.67966219453268,
+            "northEastLongitude": 127.17736472355766
+        },
+        {
+            "읍면동명": "묵제1동",
+            "southWestLatitude": 37.532797065467314,
+            "southWestLongitude": 126.98027335615477,
+            "northEastLatitude": 37.69467495453268,
+            "northEastLongitude": 127.1846276438452
+        },
+        {
+            "읍면동명": "묵제2동",
+            "southWestLatitude": 37.529433235467316,
+            "southWestLongitude": 126.97249317776733,
+            "northEastLatitude": 37.69131112453268,
+            "northEastLongitude": 127.17683822223265
+        },
+        {
+            "읍면동명": "망우본동",
+            "southWestLatitude": 37.52104795546732,
+            "southWestLongitude": 127.00537499506683,
+            "northEastLatitude": 37.68292584453268,
+            "northEastLongitude": 127.20969700493319
+        },
+        {
+            "읍면동명": "망우제3동",
+            "southWestLatitude": 37.510868755467314,
+            "southWestLongitude": 127.00079246991221,
+            "northEastLatitude": 37.67274664453268,
+            "northEastLongitude": 127.20508653008781
+        },
+        {
+            "읍면동명": "신내1동",
+            "southWestLatitude": 37.53186280546732,
+            "southWestLongitude": 127.00233083982477,
+            "northEastLatitude": 37.693740694532686,
+            "northEastLongitude": 127.20668256017522
+        },
+        {
+            "읍면동명": "신내2동",
+            "southWestLatitude": 37.530011595467315,
+            "southWestLongitude": 126.98944298320538,
+            "northEastLatitude": 37.69188948453268,
+            "northEastLongitude": 127.19378961679463
+        }
+    ],
+    "성북구": [
+        {
+            "읍면동명": "성북동",
+            "southWestLatitude": 37.514929335467315,
+            "southWestLongitude": 126.893997496058,
+            "northEastLatitude": 37.67680722453268,
+            "northEastLongitude": 127.098302703942
+        },
+        {
+            "읍면동명": "삼선동",
+            "southWestLatitude": 37.505679855467314,
+            "southWestLongitude": 126.90965569095054,
+            "northEastLatitude": 37.66755774453268,
+            "northEastLongitude": 127.11393550904945
+        },
+        {
+            "읍면동명": "동선동",
+            "southWestLatitude": 37.51279648546732,
+            "southWestLongitude": 126.9162764239064,
+            "northEastLatitude": 37.674674374532685,
+            "northEastLongitude": 127.1205757760936
+        },
+        {
+            "읍면동명": "돈암제1동",
+            "southWestLatitude": 37.518388095467316,
+            "southWestLongitude": 126.92188424742226,
+            "northEastLatitude": 37.68026598453268,
+            "northEastLongitude": 127.12619895257774
+        },
+        {
+            "읍면동명": "돈암제2동",
+            "southWestLatitude": 37.516336345467316,
+            "southWestLongitude": 126.90947466442981,
+            "northEastLatitude": 37.67821423453269,
+            "northEastLongitude": 127.11378373557022
+        },
+        {
+            "읍면동명": "안암동",
+            "southWestLatitude": 37.506312765467314,
+            "southWestLongitude": 126.92516822246827,
+            "northEastLatitude": 37.66819065453268,
+            "northEastLongitude": 127.12944977753175
+        },
+        {
+            "읍면동명": "보문동",
+            "southWestLatitude": 37.501664315467316,
+            "southWestLongitude": 126.91708450046032,
+            "northEastLatitude": 37.66354220453268,
+            "northEastLongitude": 127.12135329953969
+        },
+        {
+            "읍면동명": "정릉제1동",
+            "southWestLatitude": 37.52232272546732,
+            "southWestLongitude": 126.9144900444608,
+            "northEastLatitude": 37.684200614532685,
+            "northEastLongitude": 127.11881555553921
+        },
+        {
+            "읍면동명": "정릉제2동",
+            "southWestLatitude": 37.522854665467314,
+            "southWestLongitude": 126.90595471392975,
+            "northEastLatitude": 37.68473255453268,
+            "northEastLongitude": 127.11028168607025
+        },
+        {
+            "읍면동명": "정릉제3동",
+            "southWestLatitude": 37.53132408546732,
+            "southWestLongitude": 126.89158987999716,
+            "northEastLatitude": 37.693201974532684,
+            "northEastLongitude": 127.09594012000282
+        },
+        {
+            "읍면동명": "정릉제4동",
+            "southWestLatitude": 37.542571675467315,
+            "southWestLongitude": 126.89298952231093,
+            "northEastLatitude": 37.70444956453269,
+            "northEastLongitude": 127.0973706776891
+        },
+        {
+            "읍면동명": "길음제1동",
+            "southWestLatitude": 37.527173295467314,
+            "southWestLongitude": 126.91756578229761,
+            "northEastLatitude": 37.68905118453268,
+            "northEastLongitude": 127.1219046177024
+        },
+        {
+            "읍면동명": "길음제2동",
+            "southWestLatitude": 37.52703215546732,
+            "southWestLongitude": 126.92506177617325,
+            "northEastLatitude": 37.68891004453268,
+            "northEastLongitude": 127.12940022382675
+        },
+        {
+            "읍면동명": "종암동",
+            "southWestLatitude": 37.51631112546732,
+            "southWestLongitude": 126.93121989905453,
+            "northEastLatitude": 37.678189014532684,
+            "northEastLongitude": 127.1355289009455
+        },
+        {
+            "읍면동명": "월곡제1동",
+            "southWestLatitude": 37.52693918546732,
+            "southWestLongitude": 126.93427880387989,
+            "northEastLatitude": 37.688817074532686,
+            "northEastLongitude": 127.13861699612009
+        },
+        {
+            "읍면동명": "월곡제2동",
+            "southWestLatitude": 37.522360875467314,
+            "southWestLongitude": 126.94302989206875,
+            "northEastLatitude": 37.68423876453268,
+            "northEastLongitude": 127.14735550793122
+        },
+        {
+            "읍면동명": "장위제1동",
+            "southWestLatitude": 37.53400530546732,
+            "southWestLongitude": 126.9420860959491,
+            "northEastLatitude": 37.69588319453269,
+            "northEastLongitude": 127.14644370405092
+        },
+        {
+            "읍면동명": "장위제2동",
+            "southWestLatitude": 37.531284805467315,
+            "southWestLongitude": 126.949551633965,
+            "northEastLatitude": 37.69316269453268,
+            "northEastLongitude": 127.153901766035
+        },
+        {
+            "읍면동명": "장위제3동",
+            "southWestLatitude": 37.537238945467315,
+            "southWestLongitude": 126.95131115221416,
+            "northEastLatitude": 37.69911683453268,
+            "northEastLongitude": 127.15567764778585
+        },
+        {
+            "읍면동명": "석관동",
+            "southWestLatitude": 37.52732129546732,
+            "southWestLongitude": 126.95916627899732,
+            "northEastLatitude": 37.68919918453268,
+            "northEastLongitude": 127.16350552100269
+        }
+    ],
+    "강북구": [
+        {
+            "읍면동명": "삼양동",
+            "southWestLatitude": 37.54285367546732,
+            "southWestLongitude": 126.91249333464451,
+            "northEastLatitude": 37.704731564532686,
+            "northEastLongitude": 127.1168752653555
+        },
+        {
+            "읍면동명": "미아동",
+            "southWestLatitude": 37.54776106546732,
+            "southWestLongitude": 126.92409498757063,
+            "northEastLatitude": 37.709638954532686,
+            "northEastLongitude": 127.12849041242936
+        },
+        {
+            "읍면동명": "송중동",
+            "southWestLatitude": 37.53676595546732,
+            "southWestLongitude": 126.93073920225123,
+            "northEastLatitude": 37.69864384453268,
+            "northEastLongitude": 127.13510439774875
+        },
+        {
+            "읍면동명": "송천동",
+            "southWestLatitude": 37.53728260546732,
+            "southWestLongitude": 126.92268799221081,
+            "northEastLatitude": 37.699160494532684,
+            "northEastLongitude": 127.1270546077892
+        },
+        {
+            "읍면동명": "삼각산동",
+            "southWestLatitude": 37.53618826546732,
+            "southWestLongitude": 126.91464879615843,
+            "northEastLatitude": 37.69806615453268,
+            "northEastLongitude": 127.11901240384158
+        },
+        {
+            "읍면동명": "번제1동",
+            "southWestLatitude": 37.55668702546732,
+            "southWestLongitude": 126.92833501123731,
+            "northEastLatitude": 37.71856491453269,
+            "northEastLongitude": 127.1327549887627
+        },
+        {
+            "읍면동명": "번제2동",
+            "southWestLatitude": 37.54857635546732,
+            "southWestLongitude": 126.93259576648553,
+            "northEastLatitude": 37.710454244532684,
+            "northEastLongitude": 127.13699343351446
+        },
+        {
+            "읍면동명": "번제3동",
+            "southWestLatitude": 37.542843465467314,
+            "southWestLongitude": 126.9401449486803,
+            "northEastLatitude": 37.70472135453268,
+            "northEastLongitude": 127.14452685131967
+        },
+        {
+            "읍면동명": "수유제1동",
+            "southWestLatitude": 37.548987755467316,
+            "southWestLongitude": 126.9066395007624,
+            "northEastLatitude": 37.71086564453268,
+            "northEastLongitude": 127.11103829923762
+        },
+        {
+            "읍면동명": "수유제2동",
+            "southWestLatitude": 37.56446287546731,
+            "southWestLongitude": 126.91728301228333,
+            "northEastLatitude": 37.72634076453268,
+            "northEastLongitude": 127.12172438771664
+        },
+        {
+            "읍면동명": "수유제3동",
+            "southWestLatitude": 37.55951613546732,
+            "southWestLongitude": 126.921332419083,
+            "northEastLatitude": 37.721394024532685,
+            "northEastLongitude": 127.12576018091701
+        },
+        {
+            "읍면동명": "우이동",
+            "southWestLatitude": 37.57941378546732,
+            "southWestLongitude": 126.89808172942794,
+            "northEastLatitude": 37.74129167453268,
+            "northEastLongitude": 127.10256427057205
+        },
+        {
+            "읍면동명": "인수동",
+            "southWestLatitude": 37.55670170546732,
+            "southWestLongitude": 126.90175299104267,
+            "northEastLatitude": 37.71857959453269,
+            "northEastLongitude": 127.10617300895734
+        }
+    ],
+    "도봉구": [
+        {
+            "읍면동명": "창제1동",
+            "southWestLatitude": 37.56619623546732,
+            "southWestLongitude": 126.94134102675528,
+            "northEastLatitude": 37.72807412453268,
+            "northEastLongitude": 127.14578717324473
+        },
+        {
+            "읍면동명": "창제2동",
+            "southWestLatitude": 37.56168739546732,
+            "southWestLongitude": 126.93460803159721,
+            "northEastLatitude": 37.72356528453268,
+            "northEastLongitude": 127.1390417684028
+        },
+        {
+            "읍면동명": "창제3동",
+            "southWestLatitude": 37.556421435467314,
+            "southWestLongitude": 126.9394178765953,
+            "northEastLatitude": 37.71829932453268,
+            "northEastLongitude": 127.1438371234047
+        },
+        {
+            "읍면동명": "창제4동",
+            "southWestLatitude": 37.57163868546732,
+            "southWestLongitude": 126.94869583527874,
+            "northEastLatitude": 37.733516574532686,
+            "northEastLongitude": 127.15315696472126
+        },
+        {
+            "읍면동명": "창제5동",
+            "southWestLatitude": 37.574420825467314,
+            "southWestLongitude": 126.94053190491114,
+            "northEastLatitude": 37.73629871453268,
+            "northEastLongitude": 127.14500069508885
+        },
+        {
+            "읍면동명": "도봉제1동",
+            "southWestLatitude": 37.604145145467314,
+            "southWestLongitude": 126.9245188483735,
+            "northEastLatitude": 37.76602303453268,
+            "northEastLongitude": 127.12906955162651
+        },
+        {
+            "읍면동명": "도봉제2동",
+            "southWestLatitude": 37.60024907546732,
+            "southWestLongitude": 126.94552212012557,
+            "northEastLatitude": 37.76212696453268,
+            "northEastLongitude": 127.15006207987443
+        },
+        {
+            "읍면동명": "쌍문제1동",
+            "southWestLatitude": 37.57208643546732,
+            "southWestLongitude": 126.91728071886551,
+            "northEastLatitude": 37.733964324532685,
+            "northEastLongitude": 127.12174308113448
+        },
+        {
+            "읍면동명": "쌍문제2동",
+            "southWestLatitude": 37.57612309546732,
+            "southWestLongitude": 126.93476516101607,
+            "northEastLatitude": 37.73800098453268,
+            "northEastLongitude": 127.13923863898397
+        },
+        {
+            "읍면동명": "쌍문제3동",
+            "southWestLatitude": 37.566748235467315,
+            "southWestLongitude": 126.92836246702502,
+            "northEastLatitude": 37.72862612453268,
+            "northEastLongitude": 127.132810132975
+        },
+        {
+            "읍면동명": "쌍문제4동",
+            "southWestLatitude": 37.57461163546732,
+            "southWestLongitude": 126.92817304219028,
+            "northEastLatitude": 37.736489524532686,
+            "northEastLongitude": 127.13264235780973
+        },
+        {
+            "읍면동명": "방학제1동",
+            "southWestLatitude": 37.584094095467314,
+            "southWestLongitude": 126.94126938293,
+            "northEastLatitude": 37.74597198453268,
+            "northEastLongitude": 127.14576481706999
+        },
+        {
+            "읍면동명": "방학제2동",
+            "southWestLatitude": 37.58820613546732,
+            "southWestLongitude": 126.93000681791356,
+            "northEastLatitude": 37.75008402453269,
+            "northEastLongitude": 127.1345135820864
+        },
+        {
+            "읍면동명": "방학제3동",
+            "southWestLatitude": 37.581857295467316,
+            "southWestLongitude": 126.92122486400788,
+            "northEastLatitude": 37.74373518453268,
+            "northEastLongitude": 127.12571413599213
+        }
+    ],
+    "노원구": [
+        {
+            "읍면동명": "월계1동",
+            "southWestLatitude": 37.540866265467315,
+            "southWestLongitude": 126.95641526662867,
+            "northEastLatitude": 37.70274415453268,
+            "northEastLongitude": 127.16079173337134
+        },
+        {
+            "읍면동명": "월계2동",
+            "southWestLatitude": 37.553135915467315,
+            "southWestLongitude": 126.9490014959125,
+            "northEastLatitude": 37.71501380453268,
+            "northEastLongitude": 127.15341170408752
+        },
+        {
+            "읍면동명": "월계3동",
+            "southWestLatitude": 37.54371651546732,
+            "southWestLongitude": 126.96269964846164,
+            "northEastLatitude": 37.70559440453268,
+            "northEastLongitude": 127.16708395153834
+        },
+        {
+            "읍면동명": "공릉1동",
+            "southWestLatitude": 37.54318004546732,
+            "southWestLongitude": 126.97057868597574,
+            "northEastLatitude": 37.70505793453269,
+            "northEastLongitude": 127.17496151402425
+        },
+        {
+            "읍면동명": "공릉2동",
+            "southWestLatitude": 37.55067466546732,
+            "southWestLongitude": 126.99202618094311,
+            "northEastLatitude": 37.71255255453269,
+            "northEastLongitude": 127.1964296190569
+        },
+        {
+            "읍면동명": "하계1동",
+            "southWestLatitude": 37.55767890546732,
+            "southWestLongitude": 126.97259744671832,
+            "northEastLatitude": 37.719556794532686,
+            "northEastLongitude": 127.17702015328167
+        },
+        {
+            "읍면동명": "하계2동",
+            "southWestLatitude": 37.55389997546732,
+            "southWestLongitude": 126.96261674499397,
+            "northEastLatitude": 37.71577786453269,
+            "northEastLongitude": 127.16702905500603
+        },
+        {
+            "읍면동명": "중계본동",
+            "southWestLatitude": 37.567197525467314,
+            "southWestLongitude": 126.98353704864152,
+            "northEastLatitude": 37.72907541453269,
+            "northEastLongitude": 127.18798595135848
+        },
+        {
+            "읍면동명": "중계1동",
+            "southWestLatitude": 37.56907818546732,
+            "southWestLongitude": 126.97127386003238,
+            "northEastLatitude": 37.730956074532685,
+            "northEastLongitude": 127.17572793996764
+        },
+        {
+            "읍면동명": "중계4동",
+            "southWestLatitude": 37.577908025467316,
+            "southWestLongitude": 126.98000290309211,
+            "northEastLatitude": 37.73978591453268,
+            "northEastLongitude": 127.18448129690792
+        },
+        {
+            "읍면동명": "중계2.3동",
+            "southWestLatitude": 37.56240527546732,
+            "southWestLongitude": 126.96367004377916,
+            "northEastLatitude": 37.724283164532686,
+            "northEastLongitude": 127.16810575622085
+        },
+        {
+            "읍면동명": "상계1동",
+            "southWestLatitude": 37.60232928546732,
+            "southWestLongitude": 126.96306015214074,
+            "northEastLatitude": 37.764207174532686,
+            "northEastLongitude": 127.16760584785926
+        },
+        {
+            "읍면동명": "상계2동",
+            "southWestLatitude": 37.575549235467314,
+            "southWestLongitude": 126.9650295511993,
+            "northEastLatitude": 37.73742712453268,
+            "northEastLongitude": 127.1695014488007
+        },
+        {
+            "읍면동명": "상계3.4동",
+            "southWestLatitude": 37.594206615467314,
+            "southWestLongitude": 126.98100524918655,
+            "northEastLatitude": 37.75608450453269,
+            "northEastLongitude": 127.18552855081344
+        },
+        {
+            "읍면동명": "상계5동",
+            "southWestLatitude": 37.582281775467315,
+            "southWestLongitude": 126.96735357933461,
+            "northEastLatitude": 37.74415966453269,
+            "northEastLongitude": 127.1718440206654
+        },
+        {
+            "읍면동명": "상계6.7동",
+            "southWestLatitude": 37.56781092546732,
+            "southWestLongitude": 126.95786690436186,
+            "northEastLatitude": 37.729688814532686,
+            "northEastLongitude": 127.16231749563816
+        },
+        {
+            "읍면동명": "상계8동",
+            "southWestLatitude": 37.58535118546732,
+            "southWestLongitude": 126.95140155120275,
+            "northEastLatitude": 37.74722907453268,
+            "northEastLongitude": 127.15590044879723
+        },
+        {
+            "읍면동명": "상계9동",
+            "southWestLatitude": 37.587131185467314,
+            "southWestLongitude": 126.96024399894677,
+            "northEastLatitude": 37.74900907453268,
+            "northEastLongitude": 127.16474780105325
+        },
+        {
+            "읍면동명": "상계10동",
+            "southWestLatitude": 37.57870480546732,
+            "southWestLongitude": 126.9561582058222,
+            "northEastLatitude": 37.740582694532684,
+            "northEastLongitude": 127.1606387941778
+        }
+    ],
+    "은평구": [
+        {
+            "읍면동명": "녹번동",
+            "southWestLatitude": 37.52447604546732,
+            "southWestLongitude": 126.83288398711542,
+            "northEastLatitude": 37.68635393453268,
+            "northEastLongitude": 127.03721541288456
+        },
+        {
+            "읍면동명": "불광제1동",
+            "southWestLatitude": 37.53637359546732,
+            "southWestLongitude": 126.83708944146579,
+            "northEastLatitude": 37.69825148453268,
+            "northEastLongitude": 127.04145355853422
+        },
+        {
+            "읍면동명": "불광제2동",
+            "southWestLatitude": 37.54343389546732,
+            "southWestLongitude": 126.82645853699695,
+            "northEastLatitude": 37.70531178453268,
+            "northEastLongitude": 127.03084206300304
+        },
+        {
+            "읍면동명": "갈현제1동",
+            "southWestLatitude": 37.54441357546732,
+            "southWestLongitude": 126.81269399014658,
+            "northEastLatitude": 37.70629146453269,
+            "northEastLongitude": 127.01708020985342
+        },
+        {
+            "읍면동명": "갈현제2동",
+            "southWestLatitude": 37.537344655467315,
+            "southWestLongitude": 126.80994010693327,
+            "northEastLatitude": 37.69922254453268,
+            "northEastLongitude": 127.01430689306675
+        },
+        {
+            "읍면동명": "구산동",
+            "southWestLatitude": 37.530124715467316,
+            "southWestLongitude": 126.80547302779631,
+            "northEastLatitude": 37.69200260453268,
+            "northEastLongitude": 127.00981997220372
+        },
+        {
+            "읍면동명": "대조동",
+            "southWestLatitude": 37.531340895467316,
+            "southWestLongitude": 126.82091985690145,
+            "northEastLatitude": 37.69321878453268,
+            "northEastLongitude": 127.02527014309858
+        },
+        {
+            "읍면동명": "응암제1동",
+            "southWestLatitude": 37.51731638546732,
+            "southWestLongitude": 126.82474421889219,
+            "northEastLatitude": 37.67919427453268,
+            "northEastLongitude": 127.0290559811078
+        },
+        {
+            "읍면동명": "응암제2동",
+            "southWestLatitude": 37.51094625546732,
+            "southWestLongitude": 126.82087706354044,
+            "northEastLatitude": 37.67282414453269,
+            "northEastLongitude": 127.02517133645958
+        },
+        {
+            "읍면동명": "응암제3동",
+            "southWestLatitude": 37.507714725467316,
+            "southWestLongitude": 126.8156024985947,
+            "northEastLatitude": 37.66959261453269,
+            "northEastLongitude": 127.0198879014053
+        },
+        {
+            "읍면동명": "역촌동",
+            "southWestLatitude": 37.52362992546732,
+            "southWestLongitude": 126.81236494920472,
+            "northEastLatitude": 37.685507814532684,
+            "northEastLongitude": 127.01669405079528
+        },
+        {
+            "읍면동명": "신사제1동",
+            "southWestLatitude": 37.51805474546732,
+            "southWestLongitude": 126.80668590512396,
+            "northEastLatitude": 37.67993263453268,
+            "northEastLongitude": 127.01099969487605
+        },
+        {
+            "읍면동명": "신사제2동",
+            "southWestLatitude": 37.51195229546732,
+            "southWestLongitude": 126.80413698267427,
+            "northEastLatitude": 37.67383018453269,
+            "northEastLongitude": 127.00843401732573
+        },
+        {
+            "읍면동명": "증산동",
+            "southWestLatitude": 37.50284229546732,
+            "southWestLongitude": 126.80367508432994,
+            "northEastLatitude": 37.66472018453268,
+            "northEastLongitude": 127.00794711567005
+        },
+        {
+            "읍면동명": "수색동",
+            "southWestLatitude": 37.50483163546732,
+            "southWestLongitude": 126.79276205483961,
+            "northEastLatitude": 37.66670952453269,
+            "northEastLongitude": 126.99703954516042
+        },
+        {
+            "읍면동명": "진관동",
+            "southWestLatitude": 37.558339655467314,
+            "southWestLongitude": 126.83830553769423,
+            "northEastLatitude": 37.72021754453269,
+            "northEastLongitude": 127.04273006230578
+        }
+    ],
+    "서대문구": [
+        {
+            "읍면동명": "천연동",
+            "southWestLatitude": 37.49027552546732,
+            "southWestLongitude": 126.85502172045459,
+            "northEastLatitude": 37.652153414532684,
+            "northEastLongitude": 127.0592592795454
+        },
+        {
+            "읍면동명": "북아현동",
+            "southWestLatitude": 37.47830870546732,
+            "southWestLongitude": 126.85341432373822,
+            "northEastLatitude": 37.640186594532686,
+            "northEastLongitude": 127.0576190762618
+        },
+        {
+            "읍면동명": "충현동",
+            "southWestLatitude": 37.482969645467314,
+            "southWestLongitude": 126.85598933600237,
+            "northEastLatitude": 37.64484753453268,
+            "northEastLongitude": 127.06020686399764
+        },
+        {
+            "읍면동명": "신촌동",
+            "southWestLatitude": 37.48269671546732,
+            "southWestLongitude": 126.83895451008874,
+            "northEastLatitude": 37.644574604532686,
+            "northEastLongitude": 127.04317128991126
+        },
+        {
+            "읍면동명": "연희동",
+            "southWestLatitude": 37.49106678546732,
+            "southWestLongitude": 126.8306149355077,
+            "northEastLatitude": 37.652944674532684,
+            "northEastLongitude": 127.03485466449229
+        },
+        {
+            "읍면동명": "홍제제1동",
+            "southWestLatitude": 37.50060230546732,
+            "southWestLongitude": 126.84306775740471,
+            "northEastLatitude": 37.66248019453269,
+            "northEastLongitude": 127.04733364259529
+        },
+        {
+            "읍면동명": "홍제제3동",
+            "southWestLatitude": 37.511083885467315,
+            "southWestLongitude": 126.84901257463687,
+            "northEastLatitude": 37.67296177453269,
+            "northEastLongitude": 127.05330722536313
+        },
+        {
+            "읍면동명": "홍제제2동",
+            "southWestLatitude": 37.503607865467316,
+            "southWestLongitude": 126.85038873395516,
+            "northEastLatitude": 37.66548575453268,
+            "northEastLongitude": 127.05466286604486
+        },
+        {
+            "읍면동명": "홍은제1동",
+            "southWestLatitude": 37.519040745467315,
+            "southWestLongitude": 126.84486905128816,
+            "northEastLatitude": 37.68091863453268,
+            "northEastLongitude": 127.04918554871186
+        },
+        {
+            "읍면동명": "홍은제2동",
+            "southWestLatitude": 37.50605262546732,
+            "southWestLongitude": 126.83003337943697,
+            "northEastLatitude": 37.667930514532685,
+            "northEastLongitude": 127.03431422056302
+        },
+        {
+            "읍면동명": "남가좌제1동",
+            "southWestLatitude": 37.49075548546731,
+            "southWestLongitude": 126.81408196235601,
+            "northEastLatitude": 37.652633374532684,
+            "northEastLongitude": 127.018320837644
+        },
+        {
+            "읍면동명": "남가좌제2동",
+            "southWestLatitude": 37.49668540546732,
+            "southWestLongitude": 126.81920283023716,
+            "northEastLatitude": 37.658563294532684,
+            "northEastLongitude": 127.02345796976284
+        },
+        {
+            "읍면동명": "북가좌제1동",
+            "southWestLatitude": 37.494328745467314,
+            "southWestLongitude": 126.80587886237782,
+            "northEastLatitude": 37.65620663453269,
+            "northEastLongitude": 127.0101275376222
+        },
+        {
+            "읍면동명": "북가좌제2동",
+            "southWestLatitude": 37.50006456546732,
+            "southWestLongitude": 126.81136869508727,
+            "northEastLatitude": 37.661942454532685,
+            "northEastLongitude": 127.01563310491272
+        }
+    ],
+    "마포구": [
+        {
+            "읍면동명": "아현동",
+            "southWestLatitude": 37.47098711546732,
+            "southWestLongitude": 126.85074905487019,
+            "northEastLatitude": 37.63286500453268,
+            "northEastLongitude": 127.05493374512979
+        },
+        {
+            "읍면동명": "공덕동",
+            "southWestLatitude": 37.46818046546732,
+            "southWestLongitude": 126.85569709922838,
+            "northEastLatitude": 37.63005835453269,
+            "northEastLongitude": 127.05987410077162
+        },
+        {
+            "읍면동명": "도화동",
+            "southWestLatitude": 37.45610094546732,
+            "southWestLongitude": 126.84473523883369,
+            "northEastLatitude": 37.617978834532686,
+            "northEastLongitude": 127.04887916116633
+        },
+        {
+            "읍면동명": "용강동",
+            "southWestLatitude": 37.459649705467314,
+            "southWestLongitude": 126.8391932808022,
+            "northEastLatitude": 37.62152759453268,
+            "northEastLongitude": 127.04334691919779
+        },
+        {
+            "읍면동명": "대흥동",
+            "southWestLatitude": 37.471183075467316,
+            "southWestLongitude": 126.83930788643754,
+            "northEastLatitude": 37.63306096453268,
+            "northEastLongitude": 127.04349311356245
+        },
+        {
+            "읍면동명": "염리동",
+            "southWestLatitude": 37.468886055467316,
+            "southWestLongitude": 126.84545743280952,
+            "northEastLatitude": 37.63076394453268,
+            "northEastLongitude": 127.0496363671905
+        },
+        {
+            "읍면동명": "신수동",
+            "southWestLatitude": 37.46268677546732,
+            "southWestLongitude": 126.83156142256426,
+            "northEastLatitude": 37.624564664532684,
+            "northEastLongitude": 127.03572337743576
+        },
+        {
+            "읍면동명": "서강동",
+            "southWestLatitude": 37.46500730546732,
+            "southWestLongitude": 126.82307374496332,
+            "northEastLatitude": 37.62688519453268,
+            "northEastLongitude": 127.0272420550367
+        },
+        {
+            "읍면동명": "서교동",
+            "southWestLatitude": 37.47383323546732,
+            "southWestLongitude": 126.81885205590284,
+            "northEastLatitude": 37.63571112453268,
+            "northEastLongitude": 127.0230445440972
+        },
+        {
+            "읍면동명": "합정동",
+            "southWestLatitude": 37.465935605467315,
+            "southWestLongitude": 126.80675597370015,
+            "northEastLatitude": 37.62781349453268,
+            "northEastLongitude": 127.01092682629988
+        },
+        {
+            "읍면동명": "망원제1동",
+            "southWestLatitude": 37.47181362546732,
+            "southWestLongitude": 126.79811272267115,
+            "northEastLatitude": 37.63369151453269,
+            "northEastLongitude": 127.00229967732884
+        },
+        {
+            "읍면동명": "망원제2동",
+            "southWestLatitude": 37.476181235467315,
+            "southWestLongitude": 126.79358073890802,
+            "northEastLatitude": 37.63805912453268,
+            "northEastLongitude": 126.997779661092
+        },
+        {
+            "읍면동명": "연남동",
+            "southWestLatitude": 37.482090975467315,
+            "southWestLongitude": 126.81943734031687,
+            "northEastLatitude": 37.64396886453268,
+            "northEastLongitude": 127.02365245968312
+        },
+        {
+            "읍면동명": "성산제1동",
+            "southWestLatitude": 37.48104343546732,
+            "southWestLongitude": 126.80973917601794,
+            "northEastLatitude": 37.64292132453269,
+            "northEastLongitude": 127.01395142398208
+        },
+        {
+            "읍면동명": "성산제2동",
+            "southWestLatitude": 37.48716682546732,
+            "southWestLongitude": 126.79992838257915,
+            "northEastLatitude": 37.649044714532685,
+            "northEastLongitude": 127.00415741742087
+        },
+        {
+            "읍면동명": "상암동",
+            "southWestLatitude": 37.49085407546732,
+            "southWestLongitude": 126.7787410271721,
+            "northEastLatitude": 37.652731964532684,
+            "northEastLongitude": 126.9829801728279
+        }
+    ],
+    "양천구": [
+        {
+            "읍면동명": "목1동",
+            "southWestLatitude": 37.446505345467315,
+            "southWestLongitude": 126.77303997033704,
+            "northEastLatitude": 37.60838323453268,
+            "northEastLongitude": 126.97715762966298
+        },
+        {
+            "읍면동명": "목2동",
+            "southWestLatitude": 37.462654775467314,
+            "southWestLongitude": 126.77201756638067,
+            "northEastLatitude": 37.62453266453268,
+            "northEastLongitude": 126.97617943361934
+        },
+        {
+            "읍면동명": "목3동",
+            "southWestLatitude": 37.464261455467316,
+            "southWestLongitude": 126.76332916632745,
+            "northEastLatitude": 37.62613934453268,
+            "northEastLongitude": 126.96749543367258
+        },
+        {
+            "읍면동명": "목4동",
+            "southWestLatitude": 37.45449771546732,
+            "southWestLongitude": 126.76482613327573,
+            "northEastLatitude": 37.616375604532685,
+            "northEastLongitude": 126.9689656667243
+        },
+        {
+            "읍면동명": "목5동",
+            "southWestLatitude": 37.45537235546732,
+            "southWestLongitude": 126.77895643612239,
+            "northEastLatitude": 37.617250244532684,
+            "northEastLongitude": 126.98309836387762
+        },
+        {
+            "읍면동명": "신월1동",
+            "southWestLatitude": 37.450326655467315,
+            "southWestLongitude": 126.73246804165213,
+            "northEastLatitude": 37.61220454453268,
+            "northEastLongitude": 126.93659615834788
+        },
+        {
+            "읍면동명": "신월2동",
+            "southWestLatitude": 37.44245852546731,
+            "southWestLongitude": 126.74427700650749,
+            "northEastLatitude": 37.60433641453268,
+            "northEastLongitude": 126.94838359349254
+        },
+        {
+            "읍면동명": "신월3동",
+            "southWestLatitude": 37.451421745467314,
+            "southWestLongitude": 126.72540164306194,
+            "northEastLatitude": 37.61329963453268,
+            "northEastLongitude": 126.92953275693807
+        },
+        {
+            "읍면동명": "신월4동",
+            "southWestLatitude": 37.441310165467314,
+            "southWestLongitude": 126.7377689772961,
+            "northEastLatitude": 37.60318805453268,
+            "northEastLongitude": 126.94187242270392
+        },
+        {
+            "읍면동명": "신월5동",
+            "southWestLatitude": 37.45910590546732,
+            "southWestLongitude": 126.72782232528598,
+            "northEastLatitude": 37.620983794532684,
+            "northEastLongitude": 126.93197447471405
+        },
+        {
+            "읍면동명": "신월6동",
+            "southWestLatitude": 37.435034875467316,
+            "southWestLongitude": 126.74008685939744,
+            "northEastLatitude": 37.59691276453268,
+            "northEastLongitude": 126.94417314060256
+        },
+        {
+            "읍면동명": "신월7동",
+            "southWestLatitude": 37.439723945467314,
+            "southWestLongitude": 126.73028784686622,
+            "northEastLatitude": 37.60160183453268,
+            "northEastLongitude": 126.93438695313377
+        },
+        {
+            "읍면동명": "신정1동",
+            "southWestLatitude": 37.43793836546732,
+            "southWestLongitude": 126.75758738890927,
+            "northEastLatitude": 37.59981625453268,
+            "northEastLongitude": 126.96168161109071
+        },
+        {
+            "읍면동명": "신정2동",
+            "southWestLatitude": 37.43801394546732,
+            "southWestLongitude": 126.77312988554691,
+            "northEastLatitude": 37.599891834532684,
+            "northEastLongitude": 126.9772243144531
+        },
+        {
+            "읍면동명": "신정3동",
+            "southWestLatitude": 37.430843325467315,
+            "southWestLongitude": 126.73735959028527,
+            "northEastLatitude": 37.59272121453268,
+            "northEastLongitude": 126.94143440971474
+        },
+        {
+            "읍면동명": "신정4동",
+            "southWestLatitude": 37.44447030546732,
+            "southWestLongitude": 126.75551455447116,
+            "northEastLatitude": 37.606348194532686,
+            "northEastLongitude": 126.95962664552883
+        },
+        {
+            "읍면동명": "신정6동",
+            "southWestLatitude": 37.43497186546732,
+            "southWestLongitude": 126.76760064555653,
+            "northEastLatitude": 37.596849754532684,
+            "northEastLongitude": 126.97168675444347
+        },
+        {
+            "읍면동명": "신정7동",
+            "southWestLatitude": 37.429177315467314,
+            "southWestLongitude": 126.76264816780349,
+            "northEastLatitude": 37.59105520453268,
+            "northEastLongitude": 126.96671843219653
+        }
+    ],
+    "강서구": [
+        {
+            "읍면동명": "염창동",
+            "southWestLatitude": 37.47227272546732,
+            "southWestLongitude": 126.7733371937506,
+            "northEastLatitude": 37.63415061453269,
+            "northEastLongitude": 126.97752540624943
+        },
+        {
+            "읍면동명": "등촌제1동",
+            "southWestLatitude": 37.474917295467314,
+            "southWestLongitude": 126.75753557067871,
+            "northEastLatitude": 37.63679518453268,
+            "northEastLongitude": 126.96173102932127
+        },
+        {
+            "읍면동명": "등촌제2동",
+            "southWestLatitude": 37.46479660546732,
+            "southWestLongitude": 126.75794143349891,
+            "northEastLatitude": 37.626674494532686,
+            "northEastLongitude": 126.96210916650111
+        },
+        {
+            "읍면동명": "등촌제3동",
+            "southWestLatitude": 37.48011586546732,
+            "southWestLongitude": 126.74423384723246,
+            "northEastLatitude": 37.641993754532685,
+            "northEastLongitude": 126.94844355276754
+        },
+        {
+            "읍면동명": "화곡제1동",
+            "southWestLatitude": 37.45284132546732,
+            "southWestLongitude": 126.73886850029812,
+            "northEastLatitude": 37.614719214532684,
+            "northEastLongitude": 126.94300349970189
+        },
+        {
+            "읍면동명": "화곡제2동",
+            "southWestLatitude": 37.451339495467316,
+            "southWestLongitude": 126.7523027556208,
+            "northEastLatitude": 37.61321738453269,
+            "northEastLongitude": 126.95643364437916
+        },
+        {
+            "읍면동명": "화곡제3동",
+            "southWestLatitude": 37.463116815467316,
+            "southWestLongitude": 126.73219123371967,
+            "northEastLatitude": 37.62499470453268,
+            "northEastLongitude": 126.93635436628034
+        },
+        {
+            "읍면동명": "화곡제4동",
+            "southWestLatitude": 37.45515929546732,
+            "southWestLongitude": 126.75650492775057,
+            "northEastLatitude": 37.617037184532684,
+            "northEastLongitude": 126.96064627224942
+        },
+        {
+            "읍면동명": "화곡본동",
+            "southWestLatitude": 37.46163481546732,
+            "southWestLongitude": 126.74608246293774,
+            "northEastLatitude": 37.62351270453269,
+            "northEastLongitude": 126.95024153706228
+        },
+        {
+            "읍면동명": "화곡제6동",
+            "southWestLatitude": 37.470782955467314,
+            "southWestLongitude": 126.7490738345327,
+            "northEastLatitude": 37.63266084453268,
+            "northEastLongitude": 126.95325796546732
+        },
+        {
+            "읍면동명": "화곡제8동",
+            "southWestLatitude": 37.45328176546732,
+            "southWestLongitude": 126.74656529750696,
+            "northEastLatitude": 37.61515965453268,
+            "northEastLongitude": 126.95070150249305
+        },
+        {
+            "읍면동명": "가양제1동",
+            "southWestLatitude": 37.492161585467315,
+            "southWestLongitude": 126.73222573428767,
+            "northEastLatitude": 37.65403947453268,
+            "northEastLongitude": 126.93646846571235
+        },
+        {
+            "읍면동명": "가양제2동",
+            "southWestLatitude": 37.48771811546732,
+            "southWestLongitude": 126.75189192679127,
+            "northEastLatitude": 37.64959600453268,
+            "northEastLongitude": 126.95612247320875
+        },
+        {
+            "읍면동명": "가양제3동",
+            "southWestLatitude": 37.481743335467314,
+            "southWestLongitude": 126.7601896167815,
+            "northEastLatitude": 37.64362122453268,
+            "northEastLongitude": 126.9644037832185
+        },
+        {
+            "읍면동명": "발산제1동",
+            "southWestLatitude": 37.46950842546732,
+            "southWestLongitude": 126.72348638034576,
+            "northEastLatitude": 37.63138631453268,
+            "northEastLongitude": 126.92766701965422
+        },
+        {
+            "읍면동명": "우장산동",
+            "southWestLatitude": 37.46963316546731,
+            "southWestLongitude": 126.73892460948552,
+            "northEastLatitude": 37.63151105453268,
+            "northEastLongitude": 126.9431055905145
+        },
+        {
+            "읍면동명": "공항동",
+            "southWestLatitude": 37.47555203546732,
+            "southWestLongitude": 126.69285810101162,
+            "northEastLatitude": 37.63742992453268,
+            "northEastLongitude": 126.89705529898835
+        },
+        {
+            "읍면동명": "방화제1동",
+            "southWestLatitude": 37.487703845467315,
+            "southWestLongitude": 126.71543514635488,
+            "northEastLatitude": 37.64958173453268,
+            "northEastLongitude": 126.91966565364513
+        },
+        {
+            "읍면동명": "방화제2동",
+            "southWestLatitude": 37.50286551546732,
+            "southWestLongitude": 126.70237035247229,
+            "northEastLatitude": 37.664743404532686,
+            "northEastLongitude": 126.9066424475277
+        },
+        {
+            "읍면동명": "방화제3동",
+            "southWestLatitude": 37.500645645467316,
+            "southWestLongitude": 126.71340119794917,
+            "northEastLatitude": 37.66252353453268,
+            "northEastLongitude": 126.91766720205082
+        }
+    ],
+    "구로구": [
+        {
+            "읍면동명": "신도림동",
+            "southWestLatitude": 37.42879490546732,
+            "southWestLongitude": 126.78081199055038,
+            "northEastLatitude": 37.590672794532686,
+            "northEastLongitude": 126.9848812094496
+        },
+        {
+            "읍면동명": "구로제1동",
+            "southWestLatitude": 37.412093205467315,
+            "southWestLongitude": 126.77344871178649,
+            "northEastLatitude": 37.57397109453268,
+            "northEastLongitude": 126.97747228821352
+        },
+        {
+            "읍면동명": "구로제2동",
+            "southWestLatitude": 37.41651585546732,
+            "southWestLongitude": 126.77747627050627,
+            "northEastLatitude": 37.57839374453268,
+            "northEastLongitude": 126.98151192949373
+        },
+        {
+            "읍면동명": "구로제3동",
+            "southWestLatitude": 37.403939605467315,
+            "southWestLongitude": 126.79298324602584,
+            "northEastLatitude": 37.56581749453268,
+            "northEastLongitude": 126.99698455397417
+        },
+        {
+            "읍면동명": "구로제4동",
+            "southWestLatitude": 37.410596805467314,
+            "southWestLongitude": 126.78818745554908,
+            "northEastLatitude": 37.57247469453269,
+            "northEastLongitude": 126.99220694445094
+        },
+        {
+            "읍면동명": "구로제5동",
+            "southWestLatitude": 37.42109126546732,
+            "southWestLongitude": 126.7864567191651,
+            "northEastLatitude": 37.58296915453269,
+            "northEastLongitude": 126.99050488083489
+        },
+        {
+            "읍면동명": "가리봉동",
+            "southWestLatitude": 37.40161651546732,
+            "southWestLongitude": 126.7862592175243,
+            "northEastLatitude": 37.56349440453268,
+            "northEastLongitude": 126.9902541824757
+        },
+        {
+            "읍면동명": "고척제1동",
+            "southWestLatitude": 37.41971981546732,
+            "southWestLongitude": 126.76137689311346,
+            "northEastLatitude": 37.58159770453268,
+            "northEastLongitude": 126.96542130688653
+        },
+        {
+            "읍면동명": "고척제2동",
+            "southWestLatitude": 37.424915545467314,
+            "southWestLongitude": 126.75128209299899,
+            "northEastLatitude": 37.58679343453268,
+            "northEastLongitude": 126.95534070700101
+        },
+        {
+            "읍면동명": "개봉제1동",
+            "southWestLatitude": 37.418945875467315,
+            "southWestLongitude": 126.74785485056837,
+            "northEastLatitude": 37.58082376453268,
+            "northEastLongitude": 126.9518971494316
+        },
+        {
+            "읍면동명": "개봉제2동",
+            "southWestLatitude": 37.41179095546731,
+            "southWestLongitude": 126.75435262460759,
+            "northEastLatitude": 37.57366884453268,
+            "northEastLongitude": 126.9583753753924
+        },
+        {
+            "읍면동명": "개봉제3동",
+            "southWestLatitude": 37.405896815467315,
+            "southWestLongitude": 126.75040787374601,
+            "northEastLatitude": 37.56777470453268,
+            "northEastLongitude": 126.95441452625401
+        },
+        {
+            "읍면동명": "오류제1동",
+            "southWestLatitude": 37.416025035467314,
+            "southWestLongitude": 126.73961684102505,
+            "northEastLatitude": 37.57790292453268,
+            "northEastLongitude": 126.94365115897494
+        },
+        {
+            "읍면동명": "오류제2동",
+            "southWestLatitude": 37.40326010546732,
+            "southWestLongitude": 126.73260317372166,
+            "northEastLatitude": 37.565137994532684,
+            "northEastLongitude": 126.9366026262783
+        },
+        {
+            "읍면동명": "수궁동",
+            "southWestLatitude": 37.417338265467315,
+            "southWestLongitude": 126.72405064695937,
+            "northEastLatitude": 37.57921615453268,
+            "northEastLongitude": 126.92808855304061
+        }
+    ],
+    "금천구": [
+        {
+            "읍면동명": "가산동",
+            "southWestLatitude": 37.39589631546732,
+            "southWestLongitude": 126.78235102522547,
+            "northEastLatitude": 37.557774204532684,
+            "northEastLongitude": 126.98633037477451
+        },
+        {
+            "읍면동명": "독산제1동",
+            "southWestLatitude": 37.383260445467315,
+            "southWestLongitude": 126.79074786452888,
+            "northEastLatitude": 37.54513833453268,
+            "northEastLongitude": 126.99469273547112
+        },
+        {
+            "읍면동명": "독산제2동",
+            "southWestLatitude": 37.38288652546732,
+            "southWestLongitude": 126.80058207450908,
+            "northEastLatitude": 37.54476441453269,
+            "northEastLongitude": 127.0045259254909
+        },
+        {
+            "읍면동명": "독산제3동",
+            "southWestLatitude": 37.39499409546732,
+            "southWestLongitude": 126.80260535649519,
+            "northEastLatitude": 37.556871984532684,
+            "northEastLongitude": 127.00658224350481
+        },
+        {
+            "읍면동명": "독산제4동",
+            "southWestLatitude": 37.38827980546732,
+            "southWestLongitude": 126.80207241783371,
+            "northEastLatitude": 37.55015769453269,
+            "northEastLongitude": 127.00603098216627
+        },
+        {
+            "읍면동명": "시흥제1동",
+            "southWestLatitude": 37.371947535467314,
+            "southWestLongitude": 126.79818908974802,
+            "northEastLatitude": 37.53382542453268,
+            "northEastLongitude": 127.00210311025201
+        },
+        {
+            "읍면동명": "시흥제2동",
+            "southWestLatitude": 37.36965102546732,
+            "southWestLongitude": 126.81811921999777,
+            "northEastLatitude": 37.53152891453269,
+            "northEastLongitude": 127.02202698000224
+        },
+        {
+            "읍면동명": "시흥제3동",
+            "southWestLatitude": 37.35933735546732,
+            "southWestLongitude": 126.80398577362011,
+            "northEastLatitude": 37.521215244532684,
+            "northEastLongitude": 127.0078654263799
+        },
+        {
+            "읍면동명": "시흥제4동",
+            "southWestLatitude": 37.37913910546732,
+            "southWestLongitude": 126.80713868500088,
+            "northEastLatitude": 37.54101699453268,
+            "northEastLongitude": 127.01107231499914
+        },
+        {
+            "읍면동명": "시흥제5동",
+            "southWestLatitude": 37.36781100546732,
+            "southWestLongitude": 126.8104797277736,
+            "northEastLatitude": 37.52968889453268,
+            "northEastLongitude": 127.01438247222643
+        }
+    ],
+    "영등포구": [
+        {
+            "읍면동명": "영등포본동",
+            "southWestLatitude": 37.432783515467314,
+            "southWestLongitude": 126.80765573771252,
+            "northEastLatitude": 37.59466140453268,
+            "northEastLongitude": 127.01173586228747
+        },
+        {
+            "읍면동명": "영등포동",
+            "southWestLatitude": 37.44058338546732,
+            "southWestLongitude": 126.80579137137873,
+            "northEastLatitude": 37.602461274532686,
+            "northEastLongitude": 127.00989282862128
+        },
+        {
+            "읍면동명": "여의동",
+            "southWestLatitude": 37.446550085467315,
+            "southWestLongitude": 126.82551200912518,
+            "northEastLatitude": 37.60842797453268,
+            "northEastLongitude": 127.02962979087484
+        },
+        {
+            "읍면동명": "당산제1동",
+            "southWestLatitude": 37.44299178546731,
+            "southWestLongitude": 126.79479717705539,
+            "northEastLatitude": 37.60486967453268,
+            "northEastLongitude": 126.99890522294463
+        },
+        {
+            "읍면동명": "당산제2동",
+            "southWestLatitude": 37.45204395546732,
+            "southWestLongitude": 126.8018453915543,
+            "northEastLatitude": 37.61392184453269,
+            "northEastLongitude": 127.00597820844571
+        },
+        {
+            "읍면동명": "도림동",
+            "southWestLatitude": 37.428338305467314,
+            "southWestLongitude": 126.79920181470058,
+            "northEastLatitude": 37.59021619453269,
+            "northEastLongitude": 127.00326978529942
+        },
+        {
+            "읍면동명": "문래동",
+            "southWestLatitude": 37.43544151546732,
+            "southWestLongitude": 126.78942800335646,
+            "northEastLatitude": 37.59731940453269,
+            "northEastLongitude": 126.99351539664353
+        },
+        {
+            "읍면동명": "양평제1동",
+            "southWestLatitude": 37.44413520546732,
+            "southWestLongitude": 126.7850178128939,
+            "northEastLatitude": 37.606013094532685,
+            "northEastLongitude": 126.98912898710614
+        },
+        {
+            "읍면동명": "양평제2동",
+            "southWestLatitude": 37.45966146546732,
+            "southWestLongitude": 126.7921010647021,
+            "northEastLatitude": 37.621539354532686,
+            "northEastLongitude": 126.99625473529792
+        },
+        {
+            "읍면동명": "신길제1동",
+            "southWestLatitude": 37.43139896546732,
+            "southWestLongitude": 126.81747233065606,
+            "northEastLatitude": 37.59327685453268,
+            "northEastLongitude": 127.02154866934394
+        },
+        {
+            "읍면동명": "신길제3동",
+            "southWestLatitude": 37.42550815546732,
+            "southWestLongitude": 126.80385648306428,
+            "northEastLatitude": 37.587386044532686,
+            "northEastLongitude": 127.00791671693571
+        },
+        {
+            "읍면동명": "신길제4동",
+            "southWestLatitude": 37.426345635467314,
+            "southWestLongitude": 126.81088663841918,
+            "northEastLatitude": 37.58822352453268,
+            "northEastLongitude": 127.01494916158084
+        },
+        {
+            "읍면동명": "신길제5동",
+            "southWestLatitude": 37.42017814546732,
+            "southWestLongitude": 126.80353186686582,
+            "northEastLatitude": 37.582056034532684,
+            "northEastLongitude": 127.0075775331342
+        },
+        {
+            "읍면동명": "신길제6동",
+            "southWestLatitude": 37.41821731546732,
+            "southWestLongitude": 126.81152094598237,
+            "northEastLatitude": 37.58009520453268,
+            "northEastLongitude": 127.01556125401764
+        },
+        {
+            "읍면동명": "신길제7동",
+            "southWestLatitude": 37.424858865467314,
+            "southWestLongitude": 126.8177738704637,
+            "northEastLatitude": 37.58673675453269,
+            "northEastLongitude": 127.02183232953631
+        },
+        {
+            "읍면동명": "대림제1동",
+            "southWestLatitude": 37.41282964546732,
+            "southWestLongitude": 126.80324880591121,
+            "northEastLatitude": 37.574707534532685,
+            "northEastLongitude": 127.00727439408878
+        },
+        {
+            "읍면동명": "대림제2동",
+            "southWestLatitude": 37.408695695467316,
+            "southWestLongitude": 126.79863625184059,
+            "northEastLatitude": 37.57057358453268,
+            "northEastLongitude": 127.00265054815942
+        },
+        {
+            "읍면동명": "대림제3동",
+            "southWestLatitude": 37.41892932546732,
+            "southWestLongitude": 126.79525107318067,
+            "northEastLatitude": 37.58080721453268,
+            "northEastLongitude": 126.99929332681937
+        }
+    ],
+    "동작구": [
+        {
+            "읍면동명": "노량진제1동",
+            "southWestLatitude": 37.43208643546732,
+            "southWestLongitude": 126.84711559076987,
+            "northEastLatitude": 37.59396432453269,
+            "northEastLongitude": 127.0511938092301
+        },
+        {
+            "읍면동명": "노량진제2동",
+            "southWestLatitude": 37.42999103546732,
+            "southWestLongitude": 126.83596635543144,
+            "northEastLatitude": 37.59186892453268,
+            "northEastLongitude": 127.0400388445686
+        },
+        {
+            "읍면동명": "상도제1동",
+            "southWestLatitude": 37.417389605467314,
+            "southWestLongitude": 126.85145137681903,
+            "northEastLatitude": 37.57926749453268,
+            "northEastLongitude": 127.055489423181
+        },
+        {
+            "읍면동명": "상도제2동",
+            "southWestLatitude": 37.42273483546732,
+            "southWestLongitude": 126.84003377322445,
+            "northEastLatitude": 37.58461272453269,
+            "northEastLongitude": 127.04408642677559
+        },
+        {
+            "읍면동명": "상도제3동",
+            "southWestLatitude": 37.41628874546732,
+            "southWestLongitude": 126.8313368807677,
+            "northEastLatitude": 37.578166634532685,
+            "northEastLongitude": 127.03537191923229
+        },
+        {
+            "읍면동명": "상도제4동",
+            "southWestLatitude": 37.416489905467316,
+            "southWestLongitude": 126.83874570595746,
+            "northEastLatitude": 37.57836779453268,
+            "northEastLongitude": 127.04278129404253
+        },
+        {
+            "읍면동명": "흑석동",
+            "southWestLatitude": 37.42535727546732,
+            "southWestLongitude": 126.86173298927797,
+            "northEastLatitude": 37.587235164532686,
+            "northEastLongitude": 127.06579281072204
+        },
+        {
+            "읍면동명": "사당제1동",
+            "southWestLatitude": 37.39877798546732,
+            "southWestLongitude": 126.87541559220972,
+            "northEastLatitude": 37.560655874532685,
+            "northEastLongitude": 127.07940280779026
+        },
+        {
+            "읍면동명": "사당제2동",
+            "southWestLatitude": 37.41729380546732,
+            "southWestLongitude": 126.87317290770022,
+            "northEastLatitude": 37.57917169453268,
+            "northEastLongitude": 127.0772106922998
+        },
+        {
+            "읍면동명": "사당제3동",
+            "southWestLatitude": 37.407873095467316,
+            "southWestLongitude": 126.86885597516608,
+            "northEastLatitude": 37.56975098453268,
+            "northEastLongitude": 127.0728680248339
+        },
+        {
+            "읍면동명": "사당제4동",
+            "southWestLatitude": 37.399651885467314,
+            "southWestLongitude": 126.86877519936596,
+            "northEastLatitude": 37.56152977453269,
+            "northEastLongitude": 127.07276480063406
+        },
+        {
+            "읍면동명": "사당제5동",
+            "southWestLatitude": 37.40486494546732,
+            "southWestLongitude": 126.86303828264369,
+            "northEastLatitude": 37.56674283453269,
+            "northEastLongitude": 127.06704211735635
+        },
+        {
+            "읍면동명": "대방동",
+            "southWestLatitude": 37.42617520546732,
+            "southWestLongitude": 126.82599517136217,
+            "northEastLatitude": 37.58805309453268,
+            "northEastLongitude": 127.03005722863787
+        },
+        {
+            "읍면동명": "신대방제1동",
+            "southWestLatitude": 37.40900927546732,
+            "southWestLongitude": 126.8086979236102,
+            "northEastLatitude": 37.57088716453269,
+            "northEastLongitude": 127.0127130763898
+        },
+        {
+            "읍면동명": "신대방제2동",
+            "southWestLatitude": 37.41337075546732,
+            "southWestLongitude": 126.81951836680635,
+            "northEastLatitude": 37.575248644532685,
+            "northEastLongitude": 127.02354543319365
+        }
+    ],
+    "관악구": [
+        {
+            "읍면동명": "보라매동",
+            "southWestLatitude": 37.409418845467314,
+            "southWestLongitude": 126.83058636428412,
+            "northEastLatitude": 37.57129673453268,
+            "northEastLongitude": 127.03460263571586
+        },
+        {
+            "읍면동명": "청림동",
+            "southWestLatitude": 37.408475745467314,
+            "southWestLongitude": 126.85756165220424,
+            "northEastLatitude": 37.57035363453268,
+            "northEastLongitude": 127.06157534779577
+        },
+        {
+            "읍면동명": "성현동",
+            "southWestLatitude": 37.408575625467314,
+            "southWestLongitude": 126.84915941580854,
+            "northEastLatitude": 37.57045351453268,
+            "northEastLongitude": 127.05317338419148
+        },
+        {
+            "읍면동명": "행운동",
+            "southWestLatitude": 37.39996467546732,
+            "southWestLongitude": 126.8586269724057,
+            "northEastLatitude": 37.56184256453268,
+            "northEastLongitude": 127.0626174275943
+        },
+        {
+            "읍면동명": "낙성대동",
+            "southWestLatitude": 37.386291695467314,
+            "southWestLongitude": 126.85806922993343,
+            "northEastLatitude": 37.54816958453268,
+            "northEastLongitude": 127.06202237006656
+        },
+        {
+            "읍면동명": "청룡동",
+            "southWestLatitude": 37.39711032546732,
+            "southWestLongitude": 126.84389276836565,
+            "northEastLatitude": 37.55898821453268,
+            "northEastLongitude": 127.04787543163435
+        },
+        {
+            "읍면동명": "은천동",
+            "southWestLatitude": 37.405882385467315,
+            "southWestLongitude": 126.84020579344897,
+            "northEastLatitude": 37.56776027453268,
+            "northEastLongitude": 127.04421240655101
+        },
+        {
+            "읍면동명": "중앙동",
+            "southWestLatitude": 37.403183475467316,
+            "southWestLongitude": 126.84861837833981,
+            "northEastLatitude": 37.56506136453268,
+            "northEastLongitude": 127.05261762166023
+        },
+        {
+            "읍면동명": "인헌동",
+            "southWestLatitude": 37.39113887546732,
+            "southWestLongitude": 126.86463581713723,
+            "northEastLatitude": 37.553016764532686,
+            "northEastLongitude": 127.06860218286279
+        },
+        {
+            "읍면동명": "남현동",
+            "southWestLatitude": 37.38153267546732,
+            "southWestLongitude": 126.8746701209126,
+            "northEastLatitude": 37.54341056453269,
+            "northEastLongitude": 127.07861027908743
+        },
+        {
+            "읍면동명": "서원동",
+            "southWestLatitude": 37.39966276546732,
+            "southWestLongitude": 126.83144988451481,
+            "northEastLatitude": 37.56154065453269,
+            "northEastLongitude": 127.03543951548521
+        },
+        {
+            "읍면동명": "신원동",
+            "southWestLatitude": 37.39836146546732,
+            "southWestLongitude": 126.82470576072721,
+            "northEastLatitude": 37.56023935453268,
+            "northEastLongitude": 127.02869183927278
+        },
+        {
+            "읍면동명": "서림동",
+            "southWestLatitude": 37.39260951546732,
+            "southWestLongitude": 126.8372249104933,
+            "northEastLatitude": 37.554487404532686,
+            "northEastLongitude": 127.04119528950669
+        },
+        {
+            "읍면동명": "신사동",
+            "southWestLatitude": 37.404686555467315,
+            "southWestLongitude": 126.816751226207,
+            "northEastLatitude": 37.56656444453268,
+            "northEastLongitude": 127.020754573793
+        },
+        {
+            "읍면동명": "신림동",
+            "southWestLatitude": 37.405961395467315,
+            "southWestLongitude": 126.82560948556718,
+            "northEastLatitude": 37.56783928453269,
+            "northEastLongitude": 127.02961631443281
+        },
+        {
+            "읍면동명": "난향동",
+            "southWestLatitude": 37.380649825467316,
+            "southWestLongitude": 126.81629742489163,
+            "northEastLatitude": 37.54252771453268,
+            "northEastLongitude": 127.02023517510837
+        },
+        {
+            "읍면동명": "조원동",
+            "southWestLatitude": 37.40199943546732,
+            "southWestLongitude": 126.80552719478442,
+            "northEastLatitude": 37.56387732453268,
+            "northEastLongitude": 127.00952320521559
+        },
+        {
+            "읍면동명": "대학동",
+            "southWestLatitude": 37.37253645546732,
+            "southWestLongitude": 126.84652398696534,
+            "northEastLatitude": 37.534414344532685,
+            "northEastLongitude": 127.05043961303465
+        },
+        {
+            "읍면동명": "삼성동",
+            "southWestLatitude": 37.37972996546732,
+            "southWestLongitude": 126.82816977928677,
+            "northEastLatitude": 37.541607854532685,
+            "northEastLongitude": 127.03210502071326
+        },
+        {
+            "읍면동명": "미성동",
+            "southWestLatitude": 37.394999555467315,
+            "southWestLongitude": 126.81343784904404,
+            "northEastLatitude": 37.55687744453268,
+            "northEastLongitude": 127.01741475095595
+        },
+        {
+            "읍면동명": "난곡동",
+            "southWestLatitude": 37.38955639546732,
+            "southWestLongitude": 126.81906757622018,
+            "northEastLatitude": 37.55143428453268,
+            "northEastLongitude": 127.02302962377983
+        }
+    ],
+    "서초구": [
+        {
+            "읍면동명": "서초1동",
+            "southWestLatitude": 37.406016535467316,
+            "southWestLongitude": 126.91813511027769,
+            "northEastLatitude": 37.56789442453268,
+            "northEastLongitude": 127.12214208972227
+        },
+        {
+            "읍면동명": "서초2동",
+            "southWestLatitude": 37.407878055467314,
+            "southWestLongitude": 126.92590416839295,
+            "northEastLatitude": 37.56975594453269,
+            "northEastLongitude": 127.12991623160703
+        },
+        {
+            "읍면동명": "서초3동",
+            "southWestLatitude": 37.40449232546732,
+            "southWestLongitude": 126.90759069139494,
+            "northEastLatitude": 37.56637021453268,
+            "northEastLongitude": 127.11159350860507
+        },
+        {
+            "읍면동명": "서초4동",
+            "southWestLatitude": 37.41804627546732,
+            "southWestLongitude": 126.91794417966499,
+            "northEastLatitude": 37.579924164532684,
+            "northEastLongitude": 127.121984020335
+        },
+        {
+            "읍면동명": "잠원동",
+            "southWestLatitude": 37.436699485467315,
+            "southWestLongitude": 126.91099338313285,
+            "northEastLatitude": 37.59857737453268,
+            "northEastLongitude": 127.11508421686715
+        },
+        {
+            "읍면동명": "반포본동",
+            "southWestLatitude": 37.42535049546732,
+            "southWestLongitude": 126.88444599854442,
+            "northEastLatitude": 37.587228384532686,
+            "northEastLongitude": 127.08850580145558
+        },
+        {
+            "읍면동명": "반포1동",
+            "southWestLatitude": 37.424566965467314,
+            "southWestLongitude": 126.91460216940077,
+            "northEastLatitude": 37.58644485453268,
+            "northEastLongitude": 127.11865983059923
+        },
+        {
+            "읍면동명": "반포2동",
+            "southWestLatitude": 37.42544047546732,
+            "southWestLongitude": 126.89366507556541,
+            "northEastLatitude": 37.587318364532685,
+            "northEastLongitude": 127.09772512443462
+        },
+        {
+            "읍면동명": "반포3동",
+            "southWestLatitude": 37.431469355467314,
+            "southWestLongitude": 126.9015539344227,
+            "northEastLatitude": 37.59334724453269,
+            "northEastLongitude": 127.10563046557733
+        },
+        {
+            "읍면동명": "반포4동",
+            "southWestLatitude": 37.41864191546732,
+            "southWestLongitude": 126.90126826586597,
+            "northEastLatitude": 37.580519804532685,
+            "northEastLongitude": 127.10530973413401
+        },
+        {
+            "읍면동명": "방배본동",
+            "southWestLatitude": 37.41400991546732,
+            "southWestLongitude": 126.88575119374897,
+            "northEastLatitude": 37.575887804532684,
+            "northEastLongitude": 127.08978000625102
+        },
+        {
+            "읍면동명": "방배1동",
+            "southWestLatitude": 37.40397356546732,
+            "southWestLongitude": 126.8943020996607,
+            "northEastLatitude": 37.565851454532684,
+            "northEastLongitude": 127.09830350033931
+        },
+        {
+            "읍면동명": "방배2동",
+            "southWestLatitude": 37.39207647546732,
+            "southWestLongitude": 126.88650083782719,
+            "northEastLatitude": 37.553954364532686,
+            "northEastLongitude": 127.09046976217282
+        },
+        {
+            "읍면동명": "방배3동",
+            "southWestLatitude": 37.393380945467314,
+            "southWestLongitude": 126.8959136578419,
+            "northEastLatitude": 37.55525883453269,
+            "northEastLongitude": 127.09988614215811
+        },
+        {
+            "읍면동명": "방배4동",
+            "southWestLatitude": 37.40887984546732,
+            "southWestLongitude": 126.88897960036287,
+            "northEastLatitude": 37.570757734532684,
+            "northEastLongitude": 127.09299439963712
+        },
+        {
+            "읍면동명": "양재1동",
+            "southWestLatitude": 37.388618785467315,
+            "southWestLongitude": 126.92055105538418,
+            "northEastLatitude": 37.55049667453268,
+            "northEastLongitude": 127.12451054461582
+        },
+        {
+            "읍면동명": "양재2동",
+            "southWestLatitude": 37.37020876546732,
+            "southWestLongitude": 126.94395045980497,
+            "northEastLatitude": 37.53208665453269,
+            "northEastLongitude": 127.14785974019503
+        },
+        {
+            "읍면동명": "내곡동",
+            "southWestLatitude": 37.37558279546732,
+            "southWestLongitude": 126.96858603399201,
+            "northEastLatitude": 37.53746068453269,
+            "northEastLongitude": 127.17250996600802
+        }
+    ],
+    "강남구": [
+        {
+            "읍면동명": "신사동",
+            "southWestLatitude": 37.44477885546732,
+            "southWestLongitude": 126.91933863236258,
+            "northEastLatitude": 37.606656744532685,
+            "northEastLongitude": 127.12345156763742
+        },
+        {
+            "읍면동명": "논현1동",
+            "southWestLatitude": 37.43097056546732,
+            "southWestLongitude": 126.92445831633417,
+            "northEastLatitude": 37.592848454532685,
+            "northEastLongitude": 127.12853348366583
+        },
+        {
+            "읍면동명": "논현2동",
+            "southWestLatitude": 37.434266855467314,
+            "southWestLongitude": 126.9341762095602,
+            "northEastLatitude": 37.59614474453269,
+            "northEastLongitude": 127.13826039043983
+        },
+        {
+            "읍면동명": "압구정동",
+            "southWestLatitude": 37.44932776546732,
+            "southWestLongitude": 126.93142080852533,
+            "northEastLatitude": 37.61120565453268,
+            "northEastLongitude": 127.13554619147469
+        },
+        {
+            "읍면동명": "청담동",
+            "southWestLatitude": 37.44359897546732,
+            "southWestLongitude": 126.94844844645017,
+            "northEastLatitude": 37.60547686453269,
+            "northEastLongitude": 127.15255815354985
+        },
+        {
+            "읍면동명": "삼성1동",
+            "southWestLatitude": 37.43445807546732,
+            "southWestLongitude": 126.95858574809664,
+            "northEastLatitude": 37.596335964532685,
+            "northEastLongitude": 127.16267045190337
+        },
+        {
+            "읍면동명": "삼성2동",
+            "southWestLatitude": 37.43090040546732,
+            "southWestLongitude": 126.94672281225077,
+            "northEastLatitude": 37.592778294532685,
+            "northEastLongitude": 127.15079778774926
+        },
+        {
+            "읍면동명": "대치1동",
+            "southWestLatitude": 37.412452265467316,
+            "southWestLongitude": 126.95695312136473,
+            "northEastLatitude": 37.57433015453268,
+            "northEastLongitude": 127.16097767863528
+        },
+        {
+            "읍면동명": "대치2동",
+            "southWestLatitude": 37.419636415467316,
+            "southWestLongitude": 126.96439330706707,
+            "northEastLatitude": 37.58151430453268,
+            "northEastLongitude": 127.16843749293292
+        },
+        {
+            "읍면동명": "대치4동",
+            "southWestLatitude": 37.420721605467314,
+            "southWestLongitude": 126.95287542428082,
+            "northEastLatitude": 37.58259949453268,
+            "northEastLongitude": 127.15692257571922
+        },
+        {
+            "읍면동명": "역삼1동",
+            "southWestLatitude": 37.41995007546732,
+            "southWestLongitude": 126.93346837849523,
+            "northEastLatitude": 37.581827964532685,
+            "northEastLongitude": 127.13751342150476
+        },
+        {
+            "읍면동명": "역삼2동",
+            "southWestLatitude": 37.41756314546732,
+            "southWestLongitude": 126.94287173972847,
+            "northEastLatitude": 37.579441034532685,
+            "northEastLongitude": 127.14691026027155
+        },
+        {
+            "읍면동명": "도곡1동",
+            "southWestLatitude": 37.408106335467316,
+            "southWestLongitude": 126.93896945666303,
+            "northEastLatitude": 37.56998422453269,
+            "northEastLongitude": 127.14298214333698
+        },
+        {
+            "읍면동명": "도곡2동",
+            "southWestLatitude": 37.40727216546732,
+            "southWestLongitude": 126.94764849575469,
+            "northEastLatitude": 37.569150054532685,
+            "northEastLongitude": 127.15165890424531
+        },
+        {
+            "읍면동명": "개포1동",
+            "southWestLatitude": 37.398344955467316,
+            "southWestLongitude": 126.96271648326184,
+            "northEastLatitude": 37.56022284453268,
+            "northEastLongitude": 127.1667025167382
+        },
+        {
+            "읍면동명": "개포2동",
+            "southWestLatitude": 37.40553787546732,
+            "southWestLongitude": 126.96563216384472,
+            "northEastLatitude": 37.56741576453269,
+            "northEastLongitude": 127.16963783615527
+        },
+        {
+            "읍면동명": "개포4동",
+            "southWestLatitude": 37.39461341546732,
+            "southWestLongitude": 126.95124857599694,
+            "northEastLatitude": 37.55649130453269,
+            "northEastLongitude": 127.15522442400305
+        },
+        {
+            "읍면동명": "세곡동",
+            "southWestLatitude": 37.39013573546732,
+            "southWestLongitude": 127.00236568580763,
+            "northEastLatitude": 37.552013624532684,
+            "northEastLongitude": 127.20632931419237
+        },
+        {
+            "읍면동명": "일원본동",
+            "southWestLatitude": 37.40143076546732,
+            "southWestLongitude": 126.98267727109574,
+            "northEastLatitude": 37.56330865453268,
+            "northEastLongitude": 127.18667172890427
+        },
+        {
+            "읍면동명": "일원1동",
+            "southWestLatitude": 37.41244681546732,
+            "southWestLongitude": 126.98723372880868,
+            "northEastLatitude": 37.574324704532685,
+            "northEastLongitude": 127.19125827119133
+        },
+        {
+            "읍면동명": "일원2동",
+            "southWestLatitude": 37.41453462546731,
+            "southWestLongitude": 126.97730147700334,
+            "northEastLatitude": 37.576412514532684,
+            "northEastLongitude": 127.18133172299665
+        },
+        {
+            "읍면동명": "수서동",
+            "southWestLatitude": 37.40589789546732,
+            "southWestLongitude": 126.99856597227138,
+            "northEastLatitude": 37.567775784532685,
+            "northEastLongitude": 127.20257262772864
+        }
+    ],
+    "송파구": [
+        {
+            "읍면동명": "풍납1동",
+            "southWestLatitude": 37.45730035546732,
+            "southWestLongitude": 127.01222609701163,
+            "northEastLatitude": 37.619178244532684,
+            "northEastLongitude": 127.2163733029884
+        },
+        {
+            "읍면동명": "풍납2동",
+            "southWestLatitude": 37.44891152546732,
+            "southWestLongitude": 127.00806507808488,
+            "northEastLatitude": 37.61078941453268,
+            "northEastLongitude": 127.21218932191512
+        },
+        {
+            "읍면동명": "거여1동",
+            "southWestLatitude": 37.41344707546732,
+            "southWestLongitude": 127.0396626625589,
+            "northEastLatitude": 37.57532496453268,
+            "northEastLongitude": 127.24368993744112
+        },
+        {
+            "읍면동명": "거여2동",
+            "southWestLatitude": 37.41143622546732,
+            "southWestLongitude": 127.04516380909939,
+            "northEastLatitude": 37.573314114532685,
+            "northEastLongitude": 127.24918559090058
+        },
+        {
+            "읍면동명": "마천1동",
+            "southWestLatitude": 37.41384452546732,
+            "southWestLongitude": 127.05371041966525,
+            "northEastLatitude": 37.575722414532684,
+            "northEastLongitude": 127.25773878033475
+        },
+        {
+            "읍면동명": "마천2동",
+            "southWestLatitude": 37.41938947546732,
+            "southWestLongitude": 127.04943584447079,
+            "northEastLatitude": 37.581267364532685,
+            "northEastLongitude": 127.25347935552921
+        },
+        {
+            "읍면동명": "방이1동",
+            "southWestLatitude": 37.428832885467315,
+            "southWestLongitude": 127.02028043863292,
+            "northEastLatitude": 37.59071077453268,
+            "northEastLongitude": 127.22434976136708
+        },
+        {
+            "읍면동명": "방이2동",
+            "southWestLatitude": 37.432315685467316,
+            "southWestLongitude": 127.01178687733977,
+            "northEastLatitude": 37.59419357453269,
+            "northEastLongitude": 127.21586572266025
+        },
+        {
+            "읍면동명": "오륜동",
+            "southWestLatitude": 37.436678515467314,
+            "southWestLongitude": 127.02667591180938,
+            "northEastLatitude": 37.59855640453268,
+            "northEastLongitude": 127.23076668819064
+        },
+        {
+            "읍면동명": "오금동",
+            "southWestLatitude": 37.423050665467315,
+            "southWestLongitude": 127.03237174162136,
+            "northEastLatitude": 37.58492855453268,
+            "northEastLongitude": 127.23642525837866
+        },
+        {
+            "읍면동명": "송파1동",
+            "southWestLatitude": 37.42622874546732,
+            "southWestLongitude": 127.00828949818411,
+            "northEastLatitude": 37.588106634532686,
+            "northEastLongitude": 127.21235170181586
+        },
+        {
+            "읍면동명": "송파2동",
+            "southWestLatitude": 37.42189668546732,
+            "southWestLongitude": 127.0148060185804,
+            "northEastLatitude": 37.58377457453268,
+            "northEastLongitude": 127.21885638141958
+        },
+        {
+            "읍면동명": "석촌동",
+            "southWestLatitude": 37.421784675467315,
+            "southWestLongitude": 127.00043727164167,
+            "northEastLatitude": 37.58366256453269,
+            "northEastLongitude": 127.20448732835831
+        },
+        {
+            "읍면동명": "삼전동",
+            "southWestLatitude": 37.42078126546731,
+            "southWestLongitude": 126.98988224276005,
+            "northEastLatitude": 37.582659154532685,
+            "northEastLongitude": 127.19392955723998
+        },
+        {
+            "읍면동명": "가락본동",
+            "southWestLatitude": 37.41627791546732,
+            "southWestLongitude": 127.01962199556279,
+            "northEastLatitude": 37.578155804532685,
+            "northEastLongitude": 127.22365700443724
+        },
+        {
+            "읍면동명": "가락1동",
+            "southWestLatitude": 37.414390125467314,
+            "southWestLongitude": 127.00622007438994,
+            "northEastLatitude": 37.57626801453269,
+            "northEastLongitude": 127.21024992561006
+        },
+        {
+            "읍면동명": "가락2동",
+            "southWestLatitude": 37.414920695467316,
+            "southWestLongitude": 127.02862734962588,
+            "northEastLatitude": 37.57679858453268,
+            "northEastLongitude": 127.23265865037412
+        },
+        {
+            "읍면동명": "문정1동",
+            "southWestLatitude": 37.40723409546732,
+            "southWestLongitude": 127.02485414773963,
+            "northEastLatitude": 37.56911198453269,
+            "northEastLongitude": 127.22886445226035
+        },
+        {
+            "읍면동명": "문정2동",
+            "southWestLatitude": 37.39975498546732,
+            "southWestLongitude": 127.01714115863454,
+            "northEastLatitude": 37.56163287453269,
+            "northEastLongitude": 127.22113104136545
+        },
+        {
+            "읍면동명": "장지동",
+            "southWestLatitude": 37.40185000546732,
+            "southWestLongitude": 127.02963119877866,
+            "northEastLatitude": 37.56372789453268,
+            "northEastLongitude": 127.23362680122135
+        },
+        {
+            "읍면동명": "위례동",
+            "southWestLatitude": 37.400722155467314,
+            "southWestLongitude": 127.03924683841348,
+            "northEastLatitude": 37.56260004453268,
+            "northEastLongitude": 127.24323936158653
+        },
+        {
+            "읍면동명": "잠실본동",
+            "southWestLatitude": 37.42456804546732,
+            "southWestLongitude": 126.98026506792473,
+            "northEastLatitude": 37.586445934532684,
+            "northEastLongitude": 127.18432273207526
+        },
+        {
+            "읍면동명": "잠실2동",
+            "southWestLatitude": 37.43678051546732,
+            "southWestLongitude": 126.97677387232392,
+            "northEastLatitude": 37.59865840453269,
+            "northEastLongitude": 127.18086492767611
+        },
+        {
+            "읍면동명": "잠실3동",
+            "southWestLatitude": 37.43269942546732,
+            "southWestLongitude": 126.99227935268328,
+            "northEastLatitude": 37.594577314532685,
+            "northEastLongitude": 127.19635924731674
+        },
+        {
+            "읍면동명": "잠실4동",
+            "southWestLatitude": 37.440315645467315,
+            "southWestLongitude": 127.00610193758186,
+            "northEastLatitude": 37.60219353453268,
+            "northEastLongitude": 127.21020266241813
+        },
+        {
+            "읍면동명": "잠실6동",
+            "southWestLatitude": 37.43812633546732,
+            "southWestLongitude": 126.99793423184288,
+            "northEastLatitude": 37.60000422453268,
+            "northEastLongitude": 127.20202896815717
+        },
+        {
+            "읍면동명": "잠실7동",
+            "southWestLatitude": 37.426542135467315,
+            "southWestLongitude": 126.97206606984139,
+            "northEastLatitude": 37.58842002453268,
+            "northEastLongitude": 127.17612913015864
+        }
+    ],
+    "강동구": [
+        {
+            "읍면동명": "강일동",
+            "southWestLatitude": 37.482956185467316,
+            "southWestLongitude": 127.07190975445116,
+            "northEastLatitude": 37.64483407453268,
+            "northEastLongitude": 127.27612724554885
+        },
+        {
+            "읍면동명": "상일동",
+            "southWestLatitude": 37.46980563546732,
+            "southWestLongitude": 127.06275157324625,
+            "northEastLatitude": 37.63168352453268,
+            "northEastLongitude": 127.26693302675376
+        },
+        {
+            "읍면동명": "명일제1동",
+            "southWestLatitude": 37.46943245546732,
+            "southWestLongitude": 127.04385038440368,
+            "northEastLatitude": 37.63131034453269,
+            "northEastLongitude": 127.2480308155963
+        },
+        {
+            "읍면동명": "명일제2동",
+            "southWestLatitude": 37.467349735467316,
+            "southWestLongitude": 127.0521173370033,
+            "northEastLatitude": 37.62922762453268,
+            "northEastLongitude": 127.2562920629967
+        },
+        {
+            "읍면동명": "고덕제1동",
+            "southWestLatitude": 37.48240823546732,
+            "southWestLongitude": 127.04819920548296,
+            "northEastLatitude": 37.644286124532684,
+            "northEastLongitude": 127.25241519451703
+        },
+        {
+            "읍면동명": "고덕제2동",
+            "southWestLatitude": 37.48492620546732,
+            "southWestLongitude": 127.05952785413193,
+            "northEastLatitude": 37.64680409453268,
+            "northEastLongitude": 127.26375074586811
+        },
+        {
+            "읍면동명": "암사제1동",
+            "southWestLatitude": 37.47091605546732,
+            "southWestLongitude": 127.03249335220994,
+            "northEastLatitude": 37.632793944532686,
+            "northEastLongitude": 127.23667784779008
+        },
+        {
+            "읍면동명": "암사제2동",
+            "southWestLatitude": 37.476441615467316,
+            "southWestLongitude": 127.02114238213832,
+            "northEastLatitude": 37.63831950453268,
+            "northEastLongitude": 127.22534201786166
+        },
+        {
+            "읍면동명": "암사제3동",
+            "southWestLatitude": 37.48056604546732,
+            "southWestLongitude": 127.03640363027782,
+            "northEastLatitude": 37.64244393453269,
+            "northEastLongitude": 127.24061456972215
+        },
+        {
+            "읍면동명": "천호제1동",
+            "southWestLatitude": 37.465379565467316,
+            "southWestLongitude": 127.03649703517777,
+            "northEastLatitude": 37.62725745453268,
+            "northEastLongitude": 127.24066636482223
+        },
+        {
+            "읍면동명": "천호제2동",
+            "southWestLatitude": 37.463752035467316,
+            "southWestLongitude": 127.02019266390354,
+            "northEastLatitude": 37.62562992453268,
+            "northEastLongitude": 127.22435753609643
+        },
+        {
+            "읍면동명": "천호제3동",
+            "southWestLatitude": 37.45871492546732,
+            "southWestLongitude": 127.0311203605407,
+            "northEastLatitude": 37.620592814532685,
+            "northEastLongitude": 127.2352714394593
+        },
+        {
+            "읍면동명": "성내제1동",
+            "southWestLatitude": 37.44782513546732,
+            "southWestLongitude": 127.02345826458495,
+            "northEastLatitude": 37.609703024532685,
+            "northEastLongitude": 127.22757953541505
+        },
+        {
+            "읍면동명": "성내제2동",
+            "southWestLatitude": 37.453425575467314,
+            "southWestLongitude": 127.02566850068409,
+            "northEastLatitude": 37.61530346453268,
+            "northEastLongitude": 127.2298050993159
+        },
+        {
+            "읍면동명": "성내제3동",
+            "southWestLatitude": 37.44746461546732,
+            "southWestLongitude": 127.03173655786433,
+            "northEastLatitude": 37.60934250453269,
+            "northEastLongitude": 127.23585684213569
+        },
+        {
+            "읍면동명": "길동",
+            "southWestLatitude": 37.45878610546731,
+            "southWestLongitude": 127.04383116309548,
+            "northEastLatitude": 37.620663994532684,
+            "northEastLongitude": 127.24798243690454
+        },
+        {
+            "읍면동명": "둔촌제1동",
+            "southWestLatitude": 37.44220622546732,
+            "southWestLongitude": 127.03838175162466,
+            "northEastLatitude": 37.60408411453268,
+            "northEastLongitude": 127.24248764837535
+        },
+        {
+            "읍면동명": "둔촌제2동",
+            "southWestLatitude": 37.450575535467316,
+            "southWestLongitude": 127.04534940107618,
+            "northEastLatitude": 37.61245342453268,
+            "northEastLongitude": 127.2494781989238
+        }
+    ]
+}
