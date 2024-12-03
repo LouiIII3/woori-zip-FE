@@ -43,7 +43,7 @@ function Login({ onLogin }) {
     if (!emailError && !passwordError) {
       const response = await onLogin(username, password);
       if(!response.success) alert(`${response.message}`);
-      else router.push('http://localhost:3000');
+      else router.push(`${process.env.NEXT_PUBLIC_FRONT_PAGE_URL}`);
     } else {
       setErrors({ username: emailError, password: passwordError });
     }

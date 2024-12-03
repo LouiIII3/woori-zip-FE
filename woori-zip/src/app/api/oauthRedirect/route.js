@@ -8,5 +8,5 @@ export async function GET(req) {
     console.log('redirect code ', code)
     await signIn('oauth-woori', {code});
 
-    return Response.redirect('http://localhost:3000', 302);
+    return Response.redirect(`${process.env.NEXT_PUBLIC_FRONT_PAGE_URL}`, 302);
 }

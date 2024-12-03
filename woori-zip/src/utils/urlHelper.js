@@ -26,5 +26,5 @@ export const generateApiUrl = (mapState, categoryState, depositRange, priceRange
     );
 
     // URL 생성
-    return `http://localhost:8080/api/v1/houses?${params.toString()}`;
+    return `${process.env.NEXT_PUBLIC_API_BASE_URL}/houses?${params.toString()}`;
 };

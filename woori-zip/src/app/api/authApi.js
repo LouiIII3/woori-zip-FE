@@ -54,7 +54,7 @@ export const signIn = async ({ username, password }) => {
 };
 
 export const reissueToken = async (refresh_token) => {
-  const response = await fetch(`http://localhost:8080/api/v1/reissue`, {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/reissue`, {
     headers: {
       Cookie: `refresh_token=${refresh_token}`,
     },

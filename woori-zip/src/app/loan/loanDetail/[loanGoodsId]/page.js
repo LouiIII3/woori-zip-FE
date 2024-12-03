@@ -17,7 +17,7 @@ export default function LoanDetail() {
     const fetchLoanDetails = async () => {
       console.log('API 호출 시작', loanGoodsId);
       try {
-        const response = await fetch(`http://localhost:8080/api/v1/loans/${loanGoodsId}`);
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/loans/${loanGoodsId}`);
         if (!response.ok) {
           throw new Error('데이터를 불러오는데 실패했습니다');
         }

@@ -79,7 +79,7 @@ export default function CategoryMenu({
         }
       }
   
-      const apiUrl = `http://localhost:8080/api/v1/houses?${params.toString()}`;
+      const apiUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/houses?${params.toString()}`;
       console.log(`요청 URL: ${apiUrl}`);
   
       fetch(apiUrl, { method: "GET" })

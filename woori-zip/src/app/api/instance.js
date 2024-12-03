@@ -30,7 +30,7 @@ const fetchInstance = async (url, options) => {
   }
 
   try {
-    const response = await fetch(`http://localhost:8080/api/v1/${url}`, {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/${url}`, {
       ...options,
       headers,
     });

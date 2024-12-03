@@ -20,7 +20,7 @@ function LoginContent() {
       redirectUri,
     });
 
-    setRedirectUrl(`http://localhost:8082/woori-bank/auth?${params.toString()}`);
+    setRedirectUrl(`${process.env.NEXT_PUBLIC_API_BANK_URL}/auth?${params.toString()}`);
   };
 
   const handleWoorizipLogin = async (username, password) => {
