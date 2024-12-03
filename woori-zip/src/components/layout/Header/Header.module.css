@@ -1,3 +1,4 @@
+/* 기본 Header 스타일은 유지 */
 .header {
   display: flex;
   justify-content: space-between;
@@ -8,6 +9,7 @@
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .header_left {
@@ -22,76 +24,116 @@
   transition: transform 0.2s ease;
 }
 
-.header_title:hover {
+.header_right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* 프로필 메뉴 */
+.profile_menu {
+  position: relative;
+}
+
+.profile_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile_image:hover {
   transform: scale(1.05);
 }
 
+/* 드롭다운 메뉴 */
+.dropdown {
+  position: absolute;
+  top: 60px; /* 프로필 이미지 아래에 위치 */
+  right: 0;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* 드롭다운 헤더 */
+.dropdown_header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-blue-light);
+  color: white;
+  gap: 10px;
+}
+
+.dropdown_profile_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.dropdown_user_name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+}
+
+/* 드롭다운 구분선 */
+.dropdown_divider {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+/* 드롭다운 아이템 */
+.dropdown_item {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown_item:hover {
+  background-color: #f5f5f5;
+}
+
+/* 회원가입 및 로그인 */
 .signup_link {
   color: var(--color-blue);
   margin-right: 1.5rem;
   text-decoration: none;
-  cursor: pointer;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .signup_link:hover {
   color: var(--color-blue-dark);
-  text-decoration: underline;
 }
 
 .login_button {
   padding: 0.5rem 1.5rem;
   background-color: var(--color-blue);
   color: white;
-  border: 2px solid var(--color-blue-dark);
+  border: none;
   border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .login_button:hover {
   background-color: var(--color-blue-dark);
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-@media screen and (max-width: 393px) {
-  .header {
-    padding: 0.75rem 1rem;
-    background-color: white;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  .header_title {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-
-  .signup_link {
-    margin-right: 1rem;
-    font-size: 0.85rem;
-    font-weight: normal;
-    color: var(--color-blue);
-  }
-
-  .login_button {
-    background: none;
-    border: none;
-    padding: 0;
-    color: var(--color-blue);
-    font-size: 0.85rem;
-    font-weight: normal;
-    border-radius: none;
-    box-shadow: none;
-    background-color: none;
-  }
-
-  .login_button:hover {
-    background-color: transparent;
-    box-shadow: none;
-    transform: none;
-  }
 }

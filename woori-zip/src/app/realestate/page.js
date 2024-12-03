@@ -13,7 +13,6 @@ const RealEstate = () => {
 
   return (
     <div className={styles.pageWrapper}>
-      <Header />
       <div className={styles.container}>
         <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
         <div className={styles.content}>
@@ -21,7 +20,6 @@ const RealEstate = () => {
           {activeTab === '올린 방 조회' && <UploadedProperties />}
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

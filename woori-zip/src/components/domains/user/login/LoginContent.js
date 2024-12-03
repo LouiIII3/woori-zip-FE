@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import LoginIntro from './LoginIntro';
 import { useSearchParams } from 'next/navigation';
+import { handleCredentialsSignin } from '@/app/actions/authActions';
 
 function LoginContent() {
   const [redirectUrl, setRedirectUrl] = useState('');
@@ -24,13 +25,13 @@ function LoginContent() {
   };
 
   const handleWoorizipLogin = async (username, password) => {
-    // 가상의 로그인 API 호출 (리플레이스 필요)
-    return { username, password };
+    return await handleCredentialsSignin({username, password});
   };
 
   useEffect(() => {
     if (redirectUrl) {
-      window.location.href = redirectUrl; // 리다이렉트
+      console.log('Redirecting to:', redirectUrl);
+      window.location.href = redirectUrl; 
     }
   }, [redirectUrl]);
 
@@ -38,7 +39,7 @@ function LoginContent() {
       <LoginIntro
         handleWooriBankLogin={handleWooriBankLogin}
         handleWoorizipLogin={handleWoorizipLogin}
-        role={searchParams.get('role') || null} // role을 props로 전달
+        role={searchParams.get('role') || null}
       />
   );
 }
