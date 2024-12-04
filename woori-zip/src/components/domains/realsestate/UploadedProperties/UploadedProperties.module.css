@@ -1,7 +1,29 @@
 .container {
   width: 100%;
+}
+
+.cardList ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 312px;
+}
+
+.cardList li {
+  list-style: none;
+  display: inline-block;
+}
+
+.loadingMessage {
+  color: var(--color-light-gray);
+  text-align: center;
+}
+
+.containerNone {
+  width: 100%;
   padding: 20px 16px;
-  background-color: white;
+  background-color: var(--color-bg);
+  display: flex;
 }
 
 .emptyState {
@@ -12,160 +34,5 @@
   width: 100%;
   color: var(--color-light-gray);
   font-size: 16px;
-  background-color: #fff;
-}
-
-.propertyGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-
-.propertyCard {
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.imageContainer {
-  position: relative;
-  width: 100%;
-  padding-bottom: 75%;
-  background-color: #f5f5f5;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.imageContainer:hover::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.imagePlaceholder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-light-gray);
-  font-size: 14px;
-}
-
-.bookmarkButton {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  z-index: 1;
-  padding: 8px;
-}
-
-
-.propertyInfo {
-  padding: 16px;
-}
-
-.typeLocation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.type {
-  color: var(--color-blue);
-  font-size: 13px;
-}
-
-.location {
-  color: var(--color-light-gray);
-  font-size: 13px;
-}
-
-.price {
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 4px;
-}
-
-.details {
-  font-size: 13px;
-  color: var(--color-light-gray);
-  line-height: 1.5;
-}
-
-.details p {
-  margin: 0;
-}
-
-@media screen and (max-width: 393px) {
-  .container {
-    width: 100%;
-    padding: 0;
-    background-color: white;
-  }
-
-  .propertyGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    padding: 16px;
-  }
-
-  .propertyCard {
-    border-radius: 8px;
-    box-shadow: none;
-    overflow: hidden;
-  }
-
-  .imageContainer {
-    position: relative;
-    width: 100%;
-    padding-bottom: 75%;
-    border-radius: 8px;
-    background-color: white;
-  }
-
-  .bookmarkButton {
-    top: 8px;
-    right: 8px;
-  }
-
-  .propertyInfo {
-    padding: 12px 0;
-  }
-
-  .typeLocation {
-    margin-bottom: 4px;
-  }
-
-  .type {
-    color: var(--color-blue);
-    font-size: 13px;
-  }
-
-  .location {
-    font-size: 13px;
-  }
-
-  .price {
-    font-size: 16px;
-    margin: 4px 0;
-  }
-
-  .details {
-    font-size: 13px;
-    line-height: 1.4;
-  }
+  background-color: white;
 }

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useCallback } from 'react';
-import styles from './Loan.module.css';
+import styles from './loan.module.css';
 import { useLoan } from './hooks/useLoan';
 import LoanCard from './LoanCard';
 
