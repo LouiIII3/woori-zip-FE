@@ -2,9 +2,10 @@
 
 import React from 'react';
 import styles from './LoanCard.module.css'; // 스타일 파일 추가
+import Link from 'next/link';
 
-const LoanCard = ({property, hasNext}) => {
-    
+const LoanCard = ({ property, hasNext }) => {
+
     console.log("property: ", property);
     console.log("hasNexthoohoh: ", hasNext);
 
@@ -29,7 +30,11 @@ const LoanCard = ({property, hasNext}) => {
                         </div>
                     </div>
                     <div className={styles.buttonStack}>
-                        <button className={styles.button}>대출 상세보기</button>
+                        <button>
+                            <Link href={`/loan/loanDetail/${data?.id}`} className={styles.button}>
+                                대출 상세보기
+                            </Link>
+                        </button>
                     </div>
                 </li>
             ))}

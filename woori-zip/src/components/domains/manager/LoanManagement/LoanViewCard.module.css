@@ -1,0 +1,325 @@
+.container {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.cardItem {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 1300px;
+  height: 200px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  cursor: default;
+  margin: 0 auto 20px;
+}
+
+.cardItem:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1),
+              0px 0px 20px rgba(200, 200, 200, 0.1);
+}
+
+.cardTopContent {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  position: relative;
+}
+
+.cardContent {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.cardContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cardContent::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.cardContent::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.cardContent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.loanType {
+  text-align: left;
+  margin: 5px;
+  color: var(--color-blue);
+}
+
+.loanName {
+  text-align: left;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.loanSummary {
+  text-align: left;
+  margin: 5px;
+}
+
+.loanTarget, .loanDate, .loanLimit {
+  margin: 5px;
+  white-space: nowrap;
+  color: var(--color-text-dark);
+  font-weight: 800;
+}
+
+.loanTargetText, .loanDateText, .loanLimitText {
+  flex: 9;
+  margin: 5px;
+  max-width: 600px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: relative;
+}
+
+.loanTextBox1, .loanTextBox2, .loanTextBox3 {
+  display: flex;
+  font-family: var(--font-pretendard-regular);
+}
+
+.imageContainer {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  order: -1;
+}
+
+.cardImage {
+  width: 20vh;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.buttonContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.modifyButton, .removeButton {
+  width: 55px;
+  height: 35px;
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.modifyButton {
+  margin-right: 10px;
+  background-color: var(--color-blue);
+}
+
+.removeButton {
+  background-color: var(--color-red);
+}
+
+.modifyButton:hover {
+  background-color: var(--color-blue-dark);
+}
+
+.removeButton:hover {
+  background-color: var(--color-red-dark);
+}
+
+/* 수정 폼 스타일 */
+.formGroup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  min-height: 30px;
+}
+
+.formGroup:last-child {
+  margin-bottom: 20px;
+}
+
+.formGroup input, .formGroup select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--color-border-light);
+  border-radius: 4px;
+  font-family: var(--font-pretendard-regular);
+}
+
+.editButtonContainer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* 모달 관련 새로운 스타일 */
+.modalActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.button {
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: var(--font-pretendard-regular);
+}
+
+.confirmButton {
+  background-color: var(--color-blue);
+  color: white;
+  min-width: 80px;
+}
+
+.confirmButton:hover {
+  background-color: var(--color-blue-dark);
+}
+
+.cancelButton {
+  background-color: #f5f5f5;
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-border-light);
+  min-width: 80px;
+}
+
+.cancelButton:hover {
+  background-color: #e8e8e8;
+}
+
+.deleteConfirmation {
+  padding: 20px;
+  text-align: center;
+}
+
+.deleteConfirmation p {
+  margin-bottom: 24px;
+  font-size: 16px;
+  color: var(--color-text-dark);
+  font-family: var(--font-pretendard-regular);
+}
+
+.formContainer {
+  padding: 20px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.formContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.formContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.formContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.formContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.formGroup span {
+  min-width: 120px;
+  margin-right: 16px;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  font-family: var(--font-pretendard-regular);
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 2px rgba(0, 112, 243, 0.1);
+}
+
+.alertContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+  min-width: 300px;
+}
+
+.alertContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+  min-width: 300px;
+}
+
+.alertContent {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

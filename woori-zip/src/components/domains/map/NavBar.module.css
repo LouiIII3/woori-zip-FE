@@ -134,6 +134,137 @@
   color: white;
 }
 
+.profile {
+  position: relative;
+}
+
+.profileImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profileMenu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.profileMenuItem {
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.profileMenuItem:hover {
+  background-color: #f0f0f0;
+}
+
+
+/* 프로필 메뉴 */
+.profile_menu {
+  position: relative;
+}
+
+.profile_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.profile_image:hover {
+  transform: scale(1.05);
+}
+
+/* 드롭다운 메뉴 */
+.dropdown {
+  position: absolute;
+  top: 60px; /* 프로필 이미지 아래 위치 */
+  right: 0;
+  width: 200px;
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.dropdown_header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-blue-light);
+  color: white;
+  gap: 10px;
+}
+
+.dropdown_profile_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.dropdown_user_name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.dropdown_divider {
+  margin: 0;
+  border: none;
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
+.dropdown_item {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown_item:hover {
+  background-color: #f5f5f5;
+}
+
+.login_button {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color-blue);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login_button:hover {
+  background-color: var(--color-blue-dark);
+}
+
+.signup_link {
+  color: var(--color-blue);
+  margin-right: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
 /* 모바일에서 NavBar 숨김 */
 @media (max-width: 393px) {

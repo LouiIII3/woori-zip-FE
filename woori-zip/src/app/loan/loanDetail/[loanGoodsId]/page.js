@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from "next/navigation";
 import Details from '@/components/domains/loan/loanDetail/Detail';
 import WebViewLoanDetail from '@/components/domains/loan/loanDetail/WebViewLoanDetail';
+import { fetchLoanDetails } from '@/app/api/loan/loanAPI';
 
 export default function LoanDetail() {
   const { loanGoodsId } = useParams();
@@ -14,25 +15,21 @@ export default function LoanDetail() {
   useEffect(() => {
     if (!loanGoodsId) return;  
 
-    const fetchLoanDetails = async () => {
-      console.log('API 호출 시작', loanGoodsId);
+    const showLoanDetails = async () => {
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/loans/${loanGoodsId}`);
-        if (!response.ok) {
-          throw new Error('데이터를 불러오는데 실패했습니다');
-        }
-        const data = await response.json();
-        setLoanDetails(data);
+        setIsLoading(true);  
+        const data = await fetchLoanDetails(loanGoodsId); 
+        setLoanDetails(data); 
       } catch (err) {
-        setError(err.message);
-        console.log(err);
+        console.error("Error fetching loan details:", err);
+        setError("대출 정보를 불러오는 데 실패했습니다."); 
       } finally {
-        setIsLoading(false);
+        setIsLoading(false); 
       }
     };
 
     setIsLoading(true);  
-    fetchLoanDetails();  
+    showLoanDetails();  
   }, [loanGoodsId]);  
 
   useEffect(() => {

@@ -4,28 +4,59 @@ import { useState, useEffect } from 'react';
 import { getMembersList, updateBulkPermissions } from '../../../../../app/api/manager/managerAPI';
 import styles from './MembersList.module.css';
 
-export default function MembersList() {
+const getRoleType = (inputType) => {
+  const typeMap = {
+    'member': 'MEMBER',
+    'agent': 'AGENT',
+    'manager': 'ADMIN'
+  };
+  return typeMap[inputType.toLowerCase()] || 'MEMBER';
+};
+
+const getStatusText = (status) => {
+  const statusMap = {
+    'PENDING_APPROVAL': '권한 승인 대기',
+    'APPROVED': '권한 승인',
+    'REVOKED_APPROVAL': '권한 해제',
+    'NOT_ADMIN': '관리자 아님'
+  };
+  return statusMap[status] || status;
+};
+
+export default function MembersList({ type = 'MEMBER' }) {
   const [memberList, setMemberList] = useState([]);
   const [selectedIds, setSelectedIds] = useState([]);
   const [currentPage, setCurrentPage] = useState(0);
+  const [totalElements, setTotalElements] = useState(0);
+  const [totalPages, setTotalPages] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
+
   const pageSize = 6;
-  const totalPages = Math.ceil(memberList.length / pageSize);
 
   useEffect(() => {
-    const fetchMembers = async () => {
+    const fetchData = async () => {
       try {
-        const data = await getMembersList();
-        setMemberList(data);
+        setIsLoading(true);
+        setError(null);
+        const roleType = getRoleType(type);
+        const response = await getMembersList(roleType, currentPage, pageSize);
+        
+        // 페이지네이션 정보 설정
+        setTotalElements(response.totalElements || 0);
+        setTotalPages(response.totalPages || 1);
+        // content 배열에서 멤버 목록 추출
+        setMemberList(response.content || []);
       } catch (error) {
-        console.error('Failed to fetch members:', error);
+        setError('데이터를 불러오는데 실패했습니다.');
+        console.error('Failed to fetch data:', error);
       } finally {
         setIsLoading(false);
       }
     };
-    
-    fetchMembers();
-  }, []);
+
+    fetchData();
+  }, [type, currentPage]);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -39,27 +70,28 @@ export default function MembersList() {
 
   const handleBulkAction = async (action) => {
     try {
-      await updateBulkPermissions(selectedIds, action, 'members');
-      const updatedList = await getMembersList();
-      setMemberList(updatedList);
-      setSelectedIds([]); // Clear selection after action
+      const roleType = getRoleType(type);
+      await updateBulkPermissions(selectedIds, action, roleType);
+      // 데이터 다시 불러오기
+      const response = await getMembersList(roleType, currentPage, pageSize);
+      setMemberList(response.content || []);
+      setSelectedIds([]);
     } catch (error) {
       console.error('Failed to update permissions:', error);
+      alert('권한 변경에 실패했습니다.');
     }
   };
 
-  const displayedMembers = memberList.slice(
-    currentPage * pageSize,
-    (currentPage + 1) * pageSize
-  );
-
   if (isLoading) {
-    return <div className={styles.loading}>Loading...</div>;
+    return <div className={styles.loading}>로딩중...</div>;
+  }
+
+  if (error) {
+    return <div className={styles.error}>{error}</div>;
   }
 
   return (
     <div className={styles.container}>
-      {/* Action Buttons */}
       <div className={styles.actionButtons}>
         <button
           className={`${styles.actionButton} ${styles.approved}`}
@@ -77,7 +109,6 @@ export default function MembersList() {
         </button>
       </div>
 
-      {/* Table */}
       <div className={styles.tableContainer}>
         <table className={styles.table}>
           <thead>
@@ -105,7 +136,7 @@ export default function MembersList() {
             </tr>
           </thead>
           <tbody>
-            {displayedMembers.map((member) => (
+            {memberList.map((member) => (
               <tr key={member.id} className={styles.tableRow}>
                 <td>
                   <input
@@ -115,16 +146,16 @@ export default function MembersList() {
                   />
                 </td>
                 <td>{member.id}</td>
-                <td>{member.userId}</td>
+                <td>{member.username}</td>
                 <td>{member.name}</td>
                 <td>
-                  <button
-                    className={`${styles.statusButton} ${
-                      member.status === '권한 승인' ? styles.approved : styles.rejected
+                  <span
+                    className={`${styles.statusBadge} ${
+                      member.status === 'APPROVED' ? styles.approved : styles.rejected
                     }`}
                   >
-                    {member.status}
-                  </button>
+                    {getStatusText(member.status)}
+                  </span>
                 </td>
               </tr>
             ))}
@@ -132,7 +163,6 @@ export default function MembersList() {
         </table>
       </div>
 
-      {/* Pagination */}
       <div className={styles.pagination}>
         <button
           className={styles.paginationButton}

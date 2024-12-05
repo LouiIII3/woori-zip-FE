@@ -1,6 +1,6 @@
 'use client';
 import { instance } from '@/app/api/instance';
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
+
 
 // export const loanChecklistApi = {
 //     getChecklistQuestions: async (loanGoodsType) => {
@@ -16,16 +16,30 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8080';
    
 // };
 
-export const loanRecommendationApi = {
-    getLoanRecommendations: async () => {
-        try {
-            const response = await instance(`loans/recommendation`,{
-                method:'GET'
-            });
-            return response;
-        } catch (error) {
-            console.error('Error fetching loan recommendation:', error);
-            throw error;
-        }
-}
-};
+// export const loanRecommendationApi = {
+//     getLoanRecommendations: async () => {
+//         try {
+//             const response = await instance(`loans/recommendation`,{
+//                 method:'GET'
+//             });
+//             return response;
+//         } catch (error) {
+//             console.error('Error fetching loan recommendation:', error);
+//             throw error;
+//         }
+// }
+// };
+
+
+export const fetchLoanDetails = async (loanGoodsId) => {
+    try {
+      const response = await instance(`loangoods/${loanGoodsId}`, {
+        method: 'GET',
+        credentials: 'include',
+      });
+      return response.data; 
+    } catch (error) {
+      console.error("Error fetching loan details:", error);
+      throw error;
+    }
+  };

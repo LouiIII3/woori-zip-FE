@@ -1,143 +1,15 @@
 .container {
   width: 100%;
-  min-height: calc(100vh - 120px);
-  display: flex;
-  flex-direction: column;
-  background: var(--color-bg);
-  font-family: var(--font-pretendard);
-  position: relative;
+  padding: 20px 0;
 }
 
-.contentWrapper {
-  flex: 1;
-  width: 100%;
-  margin-bottom: 80px; /* 페이지네이션과의 간격 확보 */
-}
-
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.loanCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  background: var(--background);
-  border-radius: 8px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  border: 1px solid var(--color-border-light);
-  cursor: pointer; /* 손가락 모양 커서 */
-  transition: box-shadow 0.3s ease;
-}
-
-.loanCard:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contentContainer {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.loanImage {
-  width: 100px;
-  height: 100px;
-  border-radius: 8px;
-  object-fit: cover;
-  background-color: var(--color-border-light);
-}
-
-.loanInfo {
-  flex: 1;
-}
-
-.title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.description {
-  font-size: 0.875rem;
-  color: var(--color-light-gray);
-}
-
-.buttonContainer {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  display: flex;
-  gap: 8px;
-}
-
-.button {
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  font-size: 0.875rem;
-  cursor: pointer;
-  border: none;
-  font-family: var(--font-pretendard);
-  transition: all 0.3s ease;
-}
-
-.modifyButton {
-  background-color: var(--color-blue);
-  color: white;
-}
-
-.modifyButton:hover {
-  background-color: var(--color-blue-dark);
-}
-
-.deleteButton {
-  background-color: #dc2626;
-  color: white;
-}
-
-.deleteButton:hover {
-  background-color: #b91c1c;
-}
-
-/* Pagination Styles */
-.paginationBox {
+.emptyState {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.5rem;
-  padding: 1rem 0;
-  background-color: var(--color-bg);
-  margin-top: -80px;
-}
-
-.paginationButton {
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--color-border-light);
-  border-radius: 0.25rem;
-  background-color: var(--background);
-  color: var(--foreground);
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.paginationButton:hover {
-  background-color: var(--color-border-light);
-}
-
-.paginationButton:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-.paginationButton.active {
-  background-color: var(--color-blue);
-  color: white;
+  min-height: 400px;
+  width: 100%;
+  color: var(--color-light-gray);
+  font-size: 16px;
+  background-color: white;
 }

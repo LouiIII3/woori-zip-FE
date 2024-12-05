@@ -10,7 +10,7 @@
 }
 .cardItem {
     width: 90vh;
-    height: 40vh;
+    height: 35vh;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -52,7 +52,7 @@
  .loanContent {
     margin: 20px;
  }
-.goToChecklistButton{
+/* .goToChecklistButton{
     padding: 10px 20px;           
     font-size: 16px;               
     background-color: var(--color-blue);
@@ -68,7 +68,7 @@
 .goToChecklistButton:hover {
     background-color: var(--color-blue-dark);
   }
-
+ */
 
 
 
@@ -187,3 +187,45 @@
     background-color: #a73636;
    
 }
+
+.bottomBoxLabel {
+    color: #7C7C7C;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin: 20px;
+}
+
+.bottomBoxValue {
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.rateTable {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .rateTableHeader {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid #ddd;
+   
+  }
+  
+  .rateTableCell {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+   
+  }
+  .label {
+    color: #7C7C7C;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin: 20px;
+    margin-left: 5px;
+  }

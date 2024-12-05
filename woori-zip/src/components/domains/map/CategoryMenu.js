@@ -19,9 +19,18 @@ export default function CategoryMenu({
   const [maintenanceRange, setMaintenanceRange] = useState([0, 50000]); // 관리비 범위
 
   const [selectedTransactionType, setSelectedTransactionType] = useState(""); // 거래 유형
-  const [selectedCategory, setSelectedCategory] = useState(""); // 카테고리
-  const [walkingDistance, setWalkingDistance] = useState(10); // 도보 거리
-  const [facilityCount, setFacilityCount] = useState(3); // 시설 개수
+  const [selectedCategory, setSelectedCategory] = useState(() => {
+    const savedCategory = localStorage.getItem("selectedCategory");
+    return savedCategory || "선택하지 않음"; 
+  });
+  const [walkingDistance, setWalkingDistance] = useState(() => {
+    const savedDistance = localStorage.getItem("walkingDistance");
+    return savedDistance ? Number(savedDistance) : 10;
+  });
+  const [facilityCount, setFacilityCount] = useState(() => {
+    const savedValue = localStorage.getItem("facilityCount");
+    return savedValue ? Number(savedValue) : 3;
+  });
 
   useEffect(() => {
     const handleResize = () => {
@@ -42,6 +51,18 @@ export default function CategoryMenu({
     }
   }, [isVisible, buttonRef, isMobile]);
 
+  useEffect(() => {
+    localStorage.setItem("facilityCount", facilityCount);
+  }, [facilityCount]);
+
+  useEffect(() => {
+    localStorage.setItem("walkingDistance", walkingDistance);
+  }, [walkingDistance]);
+
+  useEffect(() => {
+    localStorage.setItem("selectedCategory", selectedCategory);
+  }, [selectedCategory]);
+  
   const handleApply = () => {
     if (isMobile) {
       // URLSearchParams 객체 생성
@@ -255,12 +276,12 @@ export default function CategoryMenu({
           <div className={styles.inputGroup}>
             <label className={styles.inputLabel}>카테고리 시설 개수</label>
             <div className={styles.inputFieldWrapper}>
-              <input
-                type="number"
-                value={facilityCount}
-                onChange={(e) => setFacilityCount(e.target.value)}
-                className={styles.inputField}
-              />
+            <input
+              type="number"
+              value={facilityCount}
+              onChange={(e) => setFacilityCount(Number(e.target.value))}
+              className={styles.inputField}
+            />
               <span className={styles.unitLabel}>개</span>
             </div>
           </div>

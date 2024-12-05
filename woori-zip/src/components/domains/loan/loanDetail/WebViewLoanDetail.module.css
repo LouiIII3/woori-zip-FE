@@ -12,7 +12,7 @@
     /* height를 auto로 변경하고 transition 추가 */
     height: auto;
     transition: all 0.3s ease;
-    margin-top: 30vw;
+    margin-top: 20vw;
     border-radius: 8px;
     border: 1px solid var(--color-border-light);
     margin-bottom: 24px;
@@ -71,7 +71,7 @@
     /* 다른 요소들보다 위에 보이도록 z-index 설정 */
     z-index: 10;
 }
-
+/* 
 .callBtn {
     width:160px;
     padding: 16px;
@@ -103,13 +103,13 @@
 
 .callBtn:hover {
     background-color: var(--color-border-light);
-}
+} */
 
 
 
 .cardItem {
     width: 90vh;
-    height: 50vh;
+    height: 30vh;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -121,7 +121,7 @@
     flex: 0 0 auto;
     width: 100%;
     max-width: 1000px;
-    height: 450px;
+    height: 350px;
     border-radius: 10px;
     background-color: white;
     overflow: hidden;
@@ -206,8 +206,46 @@
     display: flex;  
 }
 
+.bottomBoxLabel {
+    color: #7C7C7C;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin: 20px;
+}
+
+.bottomBoxValue {
+    margin: 20px;
+    margin-bottom: 30px;
+}
 
 
-
-
+.rateTable {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  
+  .rateTableHeader {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid #ddd;
+   
+  }
+  
+  .rateTableCell {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+   
+  }
+  .label {
+    color: #7C7C7C;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin: 20px;
+    margin-left: 5px;
+  }
 }

@@ -18,15 +18,33 @@
     overflow: hidden;
 }
 
-.leftBox {
-    width: 55%;
-    padding: 20px;
-    box-sizing: border-box;
+/* 393px 이하일 때 적용되는 스타일 */
+@media (max-width: 393px) {
+    .leftBox {
+        width: 0%;
+        box-sizing: border-box;
+    }
+    
+    .rightBox {
+        width: 100%;
+        padding: 20px;
+        border-left: 1px solid #ddd;
+        box-sizing: border-box;
+    }   
 }
 
-.rightBox {
-    width: 45%;
-    padding: 20px;
-    border-left: 1px solid #ddd;
-    box-sizing: border-box;
+/* 393px 초과일 때 적용되는 스타일 */
+@media (min-width: 394px) {
+    .leftBox {
+        width: 55%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .rightBox {
+        width: 45%;
+        padding: 20px;
+        border-left: 1px solid #ddd;
+        box-sizing: border-box;
+    }
 }

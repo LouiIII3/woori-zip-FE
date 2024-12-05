@@ -1,80 +1,178 @@
 .cardList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cardItem {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.containBox {
+  display: flex;
+  align-items: flex-start;
+}
+
+.imageBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageBox img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-light-gray);
+}
+
+.loanType {
+  font-size: 14px;
+  color: var(--color-blue);
+}
+
+.name {
+  font-size: 20px;
+  color: var(--color-text-dark);
+}
+
+.textInfo {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: var(--font-pretendard-regular);
+  color: var(--color-text-dark);
+}
+
+.textBox {
+  margin-left: 30px;
+}
+
+.buttonStack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonStack button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  background-color: var(--color-blue);
+  border: none;
+  border-radius: 10px;
+}
+
+.buttonStack button:hover {
+  background-color: var(--color-blue-dark);
+}
+
+/* 화면 너비가 393px 미만일 때 적용 */
+@media (max-width: 393px) {
+  .cardList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style: none;
-    padding: 0;
-    margin: 0;
   }
   
   .cardItem {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 20px;
-  
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  @media (max-width: 393px) {
+    .cardItem {
+      flex-direction: column; /* Stack content vertically */
+    }
   }
   
   .containBox {
     display: flex;
-    align-items: flex-start;
-  }
-  
-  .imageBox {
-    display: flex;  
-    align-items: center;
-    justify-content: center; 
-    margin: 10px
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
   }
   
   .imageBox img {
-    width: 100px;
-    height: 100px;
-    display: flex;  
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--color-light-gray);
-  }
-  
-  .loanType {
-    font-size: 14px;
-    color : var(--color-blue);
-  }
-  
-  .name {
-    font-size: 20px;
-    color : var(--color-text-dark);
-  }
-  
-  .textInfo {
-    margin-top: 10px;
-    font-size: 16px;
-    font-family: var(--font-pretendard-regular);
-    color: var(--color-text-dark);
   }
   
   .textBox {
-    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    margin-left: 0px;
+  }
+  
+  .textTitle p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--color-text-dark);
+  }
+  
+  .textInfo p {
+    font-size: 12px;
+    margin: 0;
+    color: var(--color-light-gray);
   }
   
   .buttonStack {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
   }
   
+  /* .button {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--color-blue);
+    border-radius: 8px;
+    cursor: pointer;
+  } */
+  
+  .button:hover {
+    background-color: var(--color-blue-dark);
+  }
+
   .buttonStack button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 50px;
-    padding: 20px;
+    width: 120px;
+    height: 33px;
+    padding: 0px;
     color: white;
     background-color: var(--color-blue);
-    border: none; 
+    border: none;
     border-radius: 10px;
   }
   
-  .buttonStack button:hover {
-    background-color: var(--color-blue-dark);
-  }
+}

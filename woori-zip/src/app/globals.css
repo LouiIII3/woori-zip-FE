@@ -9,6 +9,10 @@
     --color-blue: #0070f3;
   /* 진한 파란색 */
   --color-blue-dark: #0065C4;
+    /* 빨강색 */
+  --color-red: #f30101;
+  /* 진한 빨강색*/
+  --color-red-dark: #cf0000dc;
   /* 배경 색 */
   --color-bg: #F4FCFF;
   /* 글씨 색깔 */

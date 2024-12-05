@@ -2,7 +2,10 @@
 
 import { useState } from 'react';
 import styles from './page.module.css';
-import MembersList from '@/components/domains/manager/userManagement/MembersList/MembersList';
+// import MembersList from '@/components/domains/manager/userManagement/MembersList/MembersList';
+import MembersList from '../../components/domains/manager/userManagement/MembersList/MembersList';
+// @/components/domains/manager/userManagement/MembersList/MembersList
+
 import AgentList from '@/components/domains/manager/userManagement/AgentList/AgentList';
 import ManagerList from '@/components/domains/manager/userManagement/ManagerList/ManagerList';
 import LogSearch from '@/components/domains/manager/LogManagement/LogSearch';

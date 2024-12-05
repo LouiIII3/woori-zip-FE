@@ -1,24 +1,24 @@
 .pageWrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-bg);
-  }
-  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg);
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.main {
+  width: 100%;
+}
+
+@media screen and (max-width: 393px) {
   .container {
-    flex: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px 16px;
   }
-  
-  .main {
-    width: 100%;
-  }
-  
-  @media screen and (max-width: 393px) {
-    .container {
-      padding: 20px 16px;
-    }
-  }
+}

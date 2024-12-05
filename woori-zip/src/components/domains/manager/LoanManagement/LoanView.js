@@ -1,119 +1,150 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 import styles from './LoanView.module.css';
+import LoanViewCard from './LoanViewCard';
+import { useLoanManager } from '../hooks/useLoanManager';
+import { deleteLoanProduct, updateLoanProduct } from '../../../../app/api/manager/managerAPI';
 
 const LoanView = () => {
-  const [recentLoans, setRecentLoans] = useState([]);
-  const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 10;
+  const {
+    loanData,
+    isLoading,
+    showLoadingMessage,
+    error,
+    loadMore,
+    setLoanData,
+  } = useLoanManager();
+
+  const observerRef = useRef(null);
+  const previousLastItemRef = useRef(null);
+  const scrollPositionKey = 'loanViewScrollPosition';
+
+  const lastItemRef = useCallback(
+    (node) => {
+      if (isLoading) return;
+
+      if (observerRef.current) {
+        observerRef.current.disconnect();
+      }
+
+      observerRef.current = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && loanData.hasNext) {
+          if (node) previousLastItemRef.current = node;
+          loadMore();
+        }
+      });
+
+      if (node) {
+        observerRef.current.observe(node);
+      }
+    },
+    [isLoading, loanData.hasNext, loadMore]
+  );
 
   useEffect(() => {
-    const loadedLoans = JSON.parse(localStorage.getItem('recentLoans')) || [];
-    if (loadedLoans.length > 0) {
-      setRecentLoans(loadedLoans);
-    } else {
-      const dummyData = Array.from({ length: 19 }, (_, i) => ({
-        id: i + 1,
-        title: `대출 상품 ${i + 1}`,
-        description: `이것은 대출 상품 ${i + 1}의 설명입니다.`,
-        link: `https://example.com/loan/${i + 1}`,
-      }));
-      setRecentLoans(dummyData);
-      localStorage.setItem('recentLoans', JSON.stringify(dummyData));
+    const savedScrollPosition = localStorage.getItem(scrollPositionKey);
+    if (savedScrollPosition) {
+      window.scrollTo(0, parseInt(savedScrollPosition, 10));
     }
+
+    const saveScrollPosition = () => {
+      const position = window.scrollY.toString();
+      localStorage.setItem(scrollPositionKey, position);
+    };
+
+    window.addEventListener('scroll', saveScrollPosition);
+    return () => window.removeEventListener('scroll', saveScrollPosition);
   }, []);
 
-  const totalPages = Math.ceil(recentLoans.length / itemsPerPage);
+  useEffect(() => {
+    if (
+      !isLoading &&
+      previousLastItemRef.current &&
+      document.body.contains(previousLastItemRef.current)
+    ) {
+      previousLastItemRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }, [loanData.loans, isLoading]);
 
-  const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
+  const handleEdit = async (loanId, editedData) => {
+    try {
+      await updateLoanProduct(loanId, editedData);
+      
+      setLoanData(prevData => ({
+        ...prevData,
+        loans: prevData.loans.map(loan =>
+          loan.id === loanId ? { ...loan, ...editedData } : loan
+        )
+      }));
+    } catch (error) {
+      console.error('수정 중 오류:', error);
+      throw error;
+    }
   };
 
-  const handleLoanClick = (link) => {
-    window.location.href = link; // 대출 상세 페이지로 이동
+  const handleDelete = async (loanId) => {
+    try {
+      await deleteLoanProduct(loanId);
+      
+      setLoanData(prevData => ({
+        ...prevData,
+        loans: prevData.loans.filter(loan => loan.id !== loanId),
+        numberOfElements: prevData.numberOfElements - 1
+      }));
+    } catch (error) {
+      console.error('삭제 중 오류:', error);
+      throw error;
+    }
   };
 
-  const displayedLoans = recentLoans.slice(
-    currentPage * itemsPerPage,
-    (currentPage + 1) * itemsPerPage
-  );
+  if (error) {
+    return (
+      <div className={styles.errorState}>
+        <p>데이터를 불러오는 중 오류가 발생했습니다.</p>
+        <p>{error}</p>
+        <button
+          type="button"
+          onClick={() => window.location.reload()}
+          className={styles.retryButton}
+        >
+          다시 시도
+        </button>
+      </div>
+    );
+  }
+
+  if (!loanData.loans?.length && !isLoading) {
+    return <div className={styles.emptyState}>대출 상품이 존재하지 않습니다.</div>;
+  }
 
   return (
     <div className={styles.container}>
-      <div className={styles.contentWrapper}>
-        <div className={styles.gridContainer}>
-          {displayedLoans.map((loan) => (
-            <div
-              key={loan.id}
-              className={styles.loanCard}
-              onClick={() => handleLoanClick(loan.link)}
+      <div className={styles.cardList}>
+        {loanData.loans.map((loan, index) => {
+          const isLastItem = index === loanData.loans.length - 1;
+          return (
+            <div 
+              key={loan.id || index} 
+              ref={isLastItem ? lastItemRef : null}
             >
-              <div className={styles.contentContainer}>
-                <img
-                  className={styles.loanImage}
-                  src="https://via.placeholder.com/100"
-                  alt="Loan Thumbnail"
-                />
-                <div className={styles.loanInfo}>
-                  <h3 className={styles.title}>{loan.title}</h3>
-                  <p className={styles.description}>{loan.description}</p>
-                </div>
-              </div>
-              <div className={styles.buttonContainer}>
-                <button
-                  className={`${styles.button} ${styles.modifyButton}`}
-                  onClick={(e) => {
-                    e.stopPropagation(); // 부모 이벤트 전파 방지
-                    console.log(`수정: ${loan.id}`);
-                  }}
-                >
-                  수정
-                </button>
-                <button
-                  className={`${styles.button} ${styles.deleteButton}`}
-                  onClick={(e) => {
-                    e.stopPropagation(); // 부모 이벤트 전파 방지
-                    setRecentLoans((prevLoans) =>
-                      prevLoans.filter((item) => item.id !== loan.id)
-                    );
-                  }}
-                >
-                  삭제
-                </button>
-              </div>
+              <LoanViewCard
+                loanGoods={loan}
+                onEdit={handleEdit}
+                onDelete={handleDelete}
+              />
             </div>
-          ))}
+          );
+        })}
+      </div>
+      {(showLoadingMessage && loanData.hasNext) && (
+        <div className={styles.loadingMessage}>
+          데이터를 불러오는 중...
         </div>
-      </div>
-
-      <div className={styles.paginationBox}>
-        <button
-          className={styles.paginationButton}
-          disabled={currentPage === 0}
-          onClick={() => handlePageChange(currentPage - 1)}
-        >
-          이전
-        </button>
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index}
-            onClick={() => handlePageChange(index)}
-            className={`${styles.paginationButton} ${
-              currentPage === index ? styles.active : ''
-            }`}
-          >
-            {index + 1}
-          </button>
-        ))}
-        <button
-          className={styles.paginationButton}
-          disabled={currentPage >= totalPages - 1}
-          onClick={() => handlePageChange(currentPage + 1)}
-        >
-          다음
-        </button>
-      </div>
+      )}
     </div>
   );
 };

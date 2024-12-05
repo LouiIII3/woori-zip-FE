@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import WideCard from '@/components/domains/loan/loanRecommendation/WideCard';
 import BottomCard from '@/components/domains/loan/loanRecommendation/BottomCard';
-import { loanRecommendationApi } from '@/app/api/loan/loanAPI';
 import WebViewLoanRecommendation from '@/components/domains/loan/loanRecommendation/WebViewLoanRecommendation';
 
 export default function LoanRecommendation() {
@@ -12,22 +11,22 @@ export default function LoanRecommendation() {
   const [error, setError] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const fetchLoanRecommendations = async () => {
-      try {
-        setIsLoading(true);
-        const response = await loanRecommendationApi.getLoanRecommendations();
-        console.log(response);
-        setLoanRecommendations(response);
-      } catch (err) {
-        setError(err.message);
-        console.log(err);
-      } finally {
-        setIsLoading(false);
-      }
-    };
-    fetchLoanRecommendations();
-  }, []);
+  // useEffect(() => {
+  //   const fetchLoanRecommendations = async () => {
+  //     try {
+  //       setIsLoading(true);
+  //       const response = await loanRecommendationApi.getLoanRecommendations();
+  //       console.log(response);
+  //       setLoanRecommendations(response);
+  //     } catch (err) {
+  //       setError(err.message);
+  //       console.log(err);
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   };
+  //   fetchLoanRecommendations();
+  // }, []);
 
  
   useEffect(() => {

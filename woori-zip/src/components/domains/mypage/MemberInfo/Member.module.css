@@ -51,3 +51,41 @@
   font-family: var(--font-pretendard-regular);
   color: var(--color-border-light);
 }
+
+
+/* 화면 너비가 393px 미만일 때 적용 */
+@media (max-width: 393px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .img {
+    width: 200px;
+    height: 200px;
+    order: 1;
+  }
+
+  .messageBox {
+    width: 100%; /* 모바일에서는 전체 너비 사용 */
+    padding: 10px;
+    order: 2;
+    margin-bottom: 40px;
+  }
+
+  .textGroup {
+    margin-bottom: 10px;
+  }
+
+  .titleText {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .contentText {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
