@@ -89,9 +89,10 @@ const UploadedProperties = () => {
 
   return (
     <div className={styles.container}>
-      <ul className={styles.cardList}>
+      <ul className={styles.cardListUl}>
         {propertyData.houses.map((data, index) => (
           <li
+            className={styles.cardListLi}
             key={data.id || index}
             ref={
               index === propertyData.houses.length - 1

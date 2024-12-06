@@ -6,8 +6,7 @@ import styles from './Chat.module.css';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
-export default function Chart({ data, activeCategory, onCategoryChange }) {
-    // 데이터 유효성 검사 추가
+export default function Chat({ data, activeCategory, onCategoryChange }) {
     if (!data?.items?.length) {
         return <div>데이터가 없습니다.</div>;
     }
@@ -18,7 +17,7 @@ export default function Chart({ data, activeCategory, onCategoryChange }) {
             data: data.items.map(item => item.value),
             backgroundColor: data.items.map(item => item.color),
             borderWidth: data.items.map(item => 
-                (item.key && item.key.toUpperCase() === activeCategory) ? 2 : 0
+                (item.key && item.key === activeCategory) ? 2 : 0
             ),
             borderColor: '#000',
             hoverBorderWidth: 2,
@@ -48,13 +47,12 @@ export default function Chart({ data, activeCategory, onCategoryChange }) {
                 const index = elements[0].index;
                 const clickedItem = data.items[index];
                 if (clickedItem && clickedItem.key) {
-                    onCategoryChange?.(clickedItem.key.toUpperCase());
+                    onCategoryChange?.(clickedItem.key);
                 }
             }
         },
     };
 
-    // 데이터를 두 그룹으로 나누기
     const midIndex = Math.ceil(data.items.length / 2);
     const firstGroup = data.items.slice(0, midIndex);
     const secondGroup = data.items.slice(midIndex);
@@ -70,9 +68,9 @@ export default function Chart({ data, activeCategory, onCategoryChange }) {
                         <div
                             key={index}
                             className={`${styles.legendItem} ${
-                                item.key && item.key.toUpperCase() === activeCategory ? styles.active : ''
+                                item.key === activeCategory ? styles.selected : ''
                             }`}
-                            onClick={() => item.key && onCategoryChange?.(item.key.toUpperCase())}
+                            onClick={() => item.key && onCategoryChange?.(item.key)}
                         >
                             <span
                                 className={styles.legendBox}
@@ -89,9 +87,9 @@ export default function Chart({ data, activeCategory, onCategoryChange }) {
                         <div
                             key={index}
                             className={`${styles.legendItem} ${
-                                item.key && item.key.toUpperCase() === activeCategory ? styles.active : ''
+                                item.key === activeCategory ? styles.selected : ''
                             }`}
-                            onClick={() => item.key && onCategoryChange?.(item.key.toUpperCase())}
+                            onClick={() => item.key && onCategoryChange?.(item.key)}
                         >
                             <span
                                 className={styles.legendBox}

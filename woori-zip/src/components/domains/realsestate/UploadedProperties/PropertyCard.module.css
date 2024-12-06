@@ -1,72 +1,128 @@
 .cardList {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cardItem {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 25.5px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containBox {
+  display: block;
+}
+
+.imageBox {
+  display: flex;
+  margin: 10px;
+}
+
+.imageBox img {
+  width: 200px;
+  height: 100px;
+  display: flex;  
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  font-size: 20px;
+  color: var(--color-text-dark);
+}
+
+.textInfo {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: var(--font-pretendard-regular);
+  color: var(--color-text-dark);
+}
+
+.textBox {
+  margin: 10px;
+}
+
+.buttonStack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonStack button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 50px;
+  padding: 20px;
+  color: white;
+  background-color: var(--color-blue);
+  border: none;
+  border-radius: 10px;
+}
+
+.buttonStack button:hover {
+  background-color: var(--color-blue-dark);
+}
+
+
+/* 화면 너비가 393px 미만일 때 적용 */
+@media (max-width: 393px) {
+  .containBox{
+    width: 100%;
   }
-  
+
   .cardItem {
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    margin: 20px;
-  
+    margin: 0px;
+    width: 170px;
+  }
+
+  .cardList {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
   }
-  
-  .containBox {
-    display: block;
+
+  .cardList ul {
+    display: inline;
   }
-  
-  .imageBox {
-    display: flex;
-    margin: 10px;
+
+  .cardList li {
+    display: inline;
   }
-  
-  .imageBox img {
-    width: 200px;
-    height: 100px;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--color-light-gray);
-  }
-  
-  .name {
-    font-size: 20px;
-    color : var(--color-text-dark);
-  }
-  
+
   .textInfo {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 12px;
     font-family: var(--font-pretendard-regular);
     color: var(--color-text-dark);
   }
   
   .textBox {
     margin: 10px;
+    font-size: 14px;
   }
-  
-  .buttonStack {
+
+  .imageBox {
+    width: 130px; 
+    height: 100px; 
+    overflow: hidden; 
+    border-radius: 5px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center; 
   }
   
-  .buttonStack button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 150px;
-    height: 50px;
-    padding: 20px;
-    color: white;
-    background-color: var(--color-blue);
-    border: none; 
-    border-radius: 10px;
+  .imageBox img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
   }
-  
-  .buttonStack button:hover {
-    background-color: var(--color-blue-dark);
-  }
+}

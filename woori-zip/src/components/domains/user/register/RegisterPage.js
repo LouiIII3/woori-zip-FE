@@ -17,9 +17,28 @@ export default function RegisterForm() {
   const [licenseId, setLicenseId] = useState('');
   const [gender, setGender] = useState('MALE');
   const [errors, setErrors] = useState({ email: ' ', name: ' ', password: ' ', rePassword: ' ', birthday: ' ', licenseId: ' ' });
-
+  const [redirectUrl, setRedirectUrl] = useState('');
   const searchParams = useSearchParams();
   const role = searchParams.get('role') || "0";
+
+  const handleWooriBankLogin = async (e) => {
+    e.preventDefault();
+    const responseType = process.env.NEXT_PUBLIC_RESPONSE_TYPE;
+    const clientId = process.env.NEXT_PUBLIC_CLIENT_ID;
+    const redirectUri = process.env.NEXT_PUBLIC_REDIRECT_URL;
+
+    const params = new URLSearchParams({
+      responseType,
+      clientId,
+      redirectUri,
+    });
+
+    const loginUrl = `${process.env.NEXT_PUBLIC_API_BANK_URL}/auth?${params.toString()}`;
+    setRedirectUrl(loginUrl);
+
+    // 새 창으로 로그인 URL 열기
+    window.location.href = loginUrl;
+  };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
@@ -159,7 +178,12 @@ export default function RegisterForm() {
               <br />
               우리은행 데이터와 간편 연결하기
             </p>
-            <button className={styles.loginButton}>우리은행으로 로그인</button>
+            <button
+              className={styles.loginButton}
+              onClick={handleWooriBankLogin}
+            >
+              우리은행으로 로그인
+            </button>
           </div>:
           <form className={styles.form} onSubmit={handleSubmit}>
 

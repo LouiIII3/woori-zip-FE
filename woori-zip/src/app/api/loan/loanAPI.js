@@ -2,33 +2,41 @@
 import { instance } from '@/app/api/instance';
 
 
-// export const loanChecklistApi = {
-//     getChecklistQuestions: async (loanGoodsType) => {
-//         try {
-//             const response = await fetch(`${API_BASE_URL}/api/v1/loanchecklists?loanGoodsType=${loanGoodsType}`);
-//             if (!response.ok) throw new Error('Failed to fetch questions');
-//             return await response.json();
-//         } catch (error) {
-//             console.error('Error fetching checklist questions:', error);
-//             throw error;
-//         }
-//     },   
-   
-// };
 
-// export const loanRecommendationApi = {
-//     getLoanRecommendations: async () => {
-//         try {
-//             const response = await instance(`loans/recommendation`,{
-//                 method:'GET'
-//             });
-//             return response;
-//         } catch (error) {
-//             console.error('Error fetching loan recommendation:', error);
-//             throw error;
-//         }
-// }
-// };
+export const fetchLoanRecommendations = async (houseId,loanCheckListRequest) => {
+    console.log("fetched1");
+    loanCheckListRequest = loanCheckListRequest || {};
+
+    const {
+        annualIncome = 0, 
+        totalAssets = 0, 
+        marriageStatus = "NONE_MARRIAGE",  
+        contract = "",  
+        workStatus = "NONE_WORK_STATUS",  
+        workTerm = "NONE_TERM" 
+      } = loanCheckListRequest;
+
+    try {
+        const params = new URLSearchParams({
+            annualIncome,
+            totalAssets,
+            marriageStatus,
+            contract,
+            workStatus,
+            workTerm
+          });
+    
+      const response = await instance(`loangoods/recommend/${houseId}?${params.toString()}`, {
+        method: 'GET',
+        credentials: 'include',
+      });
+      console.log("fetched2");
+      return response.data; 
+    } catch (error) {
+      console.error("Error fetching loan recommend:", error);
+      throw error;
+    }
+  };
 
 
 export const fetchLoanDetails = async (loanGoodsId) => {

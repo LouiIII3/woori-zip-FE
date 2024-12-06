@@ -2,14 +2,27 @@
   width: 100%;
 }
 
-.cardList ul {
+.cardList {
+  list-style: none;
+}
+
+/* .cardList ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  list-style: none;
+  width: 312px;
+} */
+
+.cardListUl {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
   width: 312px;
 }
 
-.cardList li {
+.cardListLi {
   list-style: none;
   display: inline-block;
 }
@@ -35,4 +48,20 @@
   color: var(--color-light-gray);
   font-size: 16px;
   background-color: white;
+}
+
+/* 화면 너비가 393px 미만일 때 적용 */
+@media (max-width: 393px) {
+  .container {
+    width: 100%;
+  }
+  
+  .cardListUl {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; 
+    justify-content: center;
+    width: auto; 
+  }
 }

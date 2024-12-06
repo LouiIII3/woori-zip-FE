@@ -2,9 +2,9 @@
 
 import { instance } from "../instance";
 
-export const fetchUploadedProperty = async (page) => {
+export const fetchUploadedProperty = async (page = 0, size = 8) => {
   try {
-      const response = await instance(`agent/houses?page=${page}`, {
+      const response = await instance(`agent/houses?page=${page}&size=${size}`, {
           method: 'GET',
           credentials: 'include',
       });
@@ -17,3 +17,4 @@ export const fetchUploadedProperty = async (page) => {
       throw error;
   }
 };
+

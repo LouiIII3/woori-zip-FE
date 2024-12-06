@@ -1,143 +1,106 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
+import InfrastructureSelector from './InfrastructureSelector';
+import RegionSelector from './RegionSelector';
+import AnalysisResult from './AnalysisResult';
 import styles from './Search.module.css';
-import SearchController from './search.controller';
 
-export default function Search({ onChartClick, chartItems }) {
-    const [selectedCategory, setSelectedCategory] = useState('');
-    const [walkingDistance, setWalkingDistance] = useState('');
-    const [facilitiesCount, setFacilitiesCount] = useState('');
-    const [selectedDistrict, setSelectedDistrict] = useState('');
-    const [selectedDong, setSelectedDong] = useState('');
-    const controller = new SearchController();
-
+export default function Search({
+    selectedData,
+    districtData = {},
+    userData,
+    consumptionData,
+    onDataChange,
+    onDistrictChange,
+    onDongSelect,
+    onCategoryChange
+}) {
+    // selectedData의 변화 감지
     useEffect(() => {
-        if (onChartClick) {
-            setSelectedCategory(onChartClick);
-        }
-    }, [onChartClick]);
+        console.log('===== 지도보기 데이터 변화 감지 =====');
+        console.log('현재 선택된 데이터:', {
+            category: selectedData?.category,
+            district: selectedData?.district,
+            dong: selectedData?.dong,
+            coordinates: {
+                southWest: {
+                    latitude: selectedData?.southWestLatitude,
+                    longitude: selectedData?.southWestLongitude
+                },
+                northEast: {
+                    latitude: selectedData?.northEastLatitude,
+                    longitude: selectedData?.northEastLongitude
+                }
+            }
+        });
+        console.log('================================');
+    }, [selectedData]);
 
-    const handleCategoryClick = (categoryId) => {
-        setSelectedCategory(categoryId);
-        if (chartItems) {
-            const chartItem = chartItems.find(item => item.key === categoryId);
-            if (chartItem) {
-                // 차트 항목 클릭 효과
+    const getBestCategory = (data) => {
+        if (!data?.memberConsumption) return 'FOOD';
+
+        const consumption = data.memberConsumption;
+        const categories = {
+            FOOD: consumption.food || 0,
+            CULTURE: consumption.culture || 0,
+            GROCERY: consumption.grocery || 0,
+            CLOTH: consumption.cloth || 0,
+            BOOK: consumption.book || 0,
+            CAR: consumption.car || 0
+        };
+
+        return Object.entries(categories)
+            .sort(([,a], [,b]) => b - a)[0][0];
+    };
+
+    const bestCategory = getBestCategory(consumptionData);
+
+    // 차트 데이터 로깅
+    console.log('===== 소비패턴분석 페이지 데이터 =====');
+    console.log('[1] 차트 데이터:', {
+        회원소비: consumptionData?.memberConsumption,
+        유사그룹소비: consumptionData?.otherConsumption
+    });
+    
+    // 최종 분석 결과 로깅
+    console.log('[2] 최종 분석 결과:', {
+        최적소비카테고리: bestCategory,
+        회원명: userData?.name
+    });
+    
+    console.log('[3] 지도로 전달되는 데이터:', {
+        선택카테고리: selectedData.category,
+        선택구: selectedData.district,
+        선택동: selectedData.dong,
+        좌표: {
+            남서: {
+                위도: selectedData.southWestLatitude,
+                경도: selectedData.southWestLongitude
+            },
+            북동: {
+                위도: selectedData.northEastLatitude,
+                경도: selectedData.northEastLongitude
             }
         }
-    };
-
-    const handleSubmit = () => {
-        const searchData = controller.processSearchData({
-            category: selectedCategory,
-            walkingDistance: walkingDistance,
-            facilitiesCount: facilitiesCount,
-            district: selectedDistrict,
-            dong: selectedDong
-        });
-        localStorage.setItem('searchData', JSON.stringify(searchData));
-        window.location.href = '/search/result';
-    };
+    });
+    console.log('================================');
 
     return (
         <div className={styles.searchWrapper}>
-            <h3 className={styles.searchTitle}>
-                원하시는 인프라 카테고리를 선택하세요!
-            </h3>
-            
-            <div className={styles.mainContent}>
-                <div className={styles.categoryGrid}>
-                    {controller.getCategories().map((category) => (
-                        <button
-                            key={category.id}
-                            className={`${styles.categoryButton} ${
-                                selectedCategory === category.id ? styles.selected : ''
-                            }`}
-                            onClick={() => handleCategoryClick(category.id)}
-                        >
-                            {category.label}
-                        </button>
-                    ))}
-                </div>
-
-                <div className={styles.inputSection}>
-                    <div className={styles.inputGroup}>
-                        <label>집에서부터 도보 거리</label>
-                        <div className={styles.inputContainer}>
-                            <input
-                                type="number"
-                                value={walkingDistance}
-                                onChange={(e) => setWalkingDistance(e.target.value)}
-                                className={styles.numberInput}
-                            />
-                            <span className={styles.unit}>분</span>
-                        </div>
-                    </div>
-
-                    <div className={styles.inputGroup}>
-                        <label>카테고리 시설 개수</label>
-                        <div className={styles.inputContainer}>
-                            <input
-                                type="number"
-                                value={facilitiesCount}
-                                onChange={(e) => setFacilitiesCount(e.target.value)}
-                                className={styles.numberInput}
-                            />
-                            <span className={styles.unit}>개</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div className={styles.locationSection}>
-                <h4>지역 선택</h4>
-                <div className={styles.locationSelector}>
-                    <select
-                        value={selectedDistrict}
-                        onChange={(e) => setSelectedDistrict(e.target.value)}
-                        className={styles.districtSelect}
-                    >
-                        <option value="">구 선택</option>
-                        {controller.getDistricts().map((district) => (
-                            <option key={district} value={district}>
-                                {district}
-                            </option>
-                        ))}
-                    </select>
-
-                    {selectedDistrict && (
-                        <div className={styles.dongButtons}>
-                            {controller.getDongsByDistrict(selectedDistrict).map((dong) => (
-                                <button
-                                    key={dong}
-                                    className={`${styles.dongButton} ${
-                                        selectedDong === dong ? styles.selected : ''
-                                    }`}
-                                    onClick={() => setSelectedDong(dong)}
-                                >
-                                    {dong}
-                                </button>
-                            ))}
-                        </div>
-                    )}
-                </div>
-            </div>
-
-            <div className={styles.actionButtons}>
-                <button 
-                    className={styles.searchButton}
-                    onClick={handleSubmit}
-                >
-                    집 검색하기
-                </button>
-                <button 
-                    className={styles.mainButton}
-                    onClick={() => window.location.href = '/'}
-                >
-                    메인으로
-                </button>
-            </div>
+            <AnalysisResult 
+                category={bestCategory}
+            />
+            <InfrastructureSelector 
+                selectedData={selectedData}
+                onCategoryChange={onCategoryChange}
+            />
+            <RegionSelector 
+                selectedData={selectedData}
+                districtData={districtData}
+                onDistrictChange={onDistrictChange}
+                onDongSelect={onDongSelect}
+            />
         </div>
     );
 }

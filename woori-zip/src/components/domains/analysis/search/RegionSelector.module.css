@@ -1,0 +1,71 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.locationSection {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #FAFAFA;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+.locationTitle {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.locationSelector {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.districtSelect {
+    width: 200px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.dongButtons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+}
+
+.dongButton {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.dongButton:hover {
+    border-color: #5778A3;
+}
+
+.dongButton.selected {
+    border-color: #5778A3;
+    background: #5778A3;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .dongButtons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .districtSelect {
+        width: 100%;
+    }
+}

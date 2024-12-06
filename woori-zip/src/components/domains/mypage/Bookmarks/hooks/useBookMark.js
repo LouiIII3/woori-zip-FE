@@ -23,7 +23,7 @@ export const useBookmarks = () => {
         try {
             setIsLoading(true);
         const data = await fetchBookmarks(0);
-        setBookmarkData(data);
+        setBookmarkData(data.data);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -44,9 +44,9 @@ export const useBookmarks = () => {
       const newData = await fetchBookmarks(nextPage);
       
       setBookmarkData(prev => ({
-        bookmarks: [...prev.bookmarks, ...newData.bookmarks],
-        hasNext: newData.hasNext,
-        numberOfElements: prev.numberOfElements + newData.numberOfElements
+        bookmarks: [...prev.bookmarks, ...newData.data.bookmarks],
+        hasNext: newData.data.hasNext,
+        numberOfElements: prev.numberOfElements + newData.data.numberOfElements
       }));
       
       setPage(nextPage);

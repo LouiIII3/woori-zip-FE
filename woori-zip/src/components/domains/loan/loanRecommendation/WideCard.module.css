@@ -192,3 +192,54 @@
     max-width: 500px;
     margin: 0;
 }
+
+
+@media screen and (max-width: 393px) {
+
+    .form {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;
+      
+    }
+
+    .formRow, .formRow2 {
+        flex-direction: column; 
+        gap: 25px; 
+        margin-bottom: 20px;
+      
+    }
+    .formRow2 {
+        margin-top: 0px;
+    }
+    .marriageStatus, .contractStatus {
+        margin-bottom: 20px; 
+    }
+    .subBox, .subBox2 {
+        width: 100%; 
+        
+    }
+    .subBox {
+        margin-bottom: 10px;
+    }
+    .subBox2 > label {
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    .subBox2 {
+        margin-bottom: 10px;
+    }
+    .dropdown-content, .radioWrapper {
+        width: 100%; 
+    }
+
+    .wideCardButton {
+        width: 100%; 
+    }
+
+    .input, .dropdown-content select {
+        width: 100%; 
+    }
+}

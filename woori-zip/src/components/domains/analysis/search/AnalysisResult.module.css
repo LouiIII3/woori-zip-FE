@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+.analysisResult {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #FAFAFA;
+    padding: 32px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.resultText {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.highlight {
+    font-weight: 600;
+}
+
+.underline {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
