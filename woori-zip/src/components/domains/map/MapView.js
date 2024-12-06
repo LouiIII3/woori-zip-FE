@@ -10,13 +10,7 @@ const MapView = ({ filters, locations = [], facilities = [],mapViewData, onMapCh
   const markers = useRef([]);
   const facilityMarkers = useRef([]);
   const searchParams = useSearchParams();
-  // useEffect(() => {
-  //   if (mapViewData) {
-  //     console.log("MapView에서 받은 데이터:", mapViewData);
-  //     // 필요한 데이터 처리 로직 추가
-  //   }
-  // }, [mapViewData]);
-
+  
   useEffect(() => {
     if (!isMapLoaded.current) {
       const script = document.createElement('script');

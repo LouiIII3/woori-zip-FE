@@ -37,11 +37,12 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
         return response.data;
       },
-      profile(accessToken, name) {
+      profile(accessToken, name, role) {
         return {
           id: name,
           username: name,
           accessToken,
+          role,
         };
       },
     }),
@@ -104,6 +105,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         session.user.accessToken = token.user.accessToken;
         session.user.name = token.user.name;
         session.user.expires_at = token.expires_at;
+        session.user.role = token.user.role;
         session.error = token.error;
       }
       return session;

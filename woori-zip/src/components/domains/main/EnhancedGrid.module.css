@@ -9,7 +9,7 @@
     background-color: var(--color-bg);
     font-family: var(--font-pretendard);
 }
-  
+
 /* 메인 배너 */
 .banner {
     position: relative;
@@ -17,15 +17,15 @@
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
-  
+
 .banner img {
     width: 100%;
     max-width: 1200px;
     height: 400px;
-    object-fit: cover; 
+    object-fit: cover;
     border-radius: 8px;
 }
-  
+
 .banner_text {
     position: absolute;
     bottom: 30px;
@@ -38,12 +38,12 @@
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-  
+
 .banner_text h2 {
     font-size: 24px;
     margin: 0;
 }
-  
+
 .banner_text p {
     font-size: 16px;
     margin-top: 10px;
@@ -53,20 +53,20 @@
 .icon_menu {
     text-align: center;
 }
-  
+
 .icon_menu h2 {
     font-size: 24px;
     color: var(--color-text-dark);
     margin-bottom: 20px;
 }
-  
+
 .icon_list {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
     flex-wrap: wrap;
 }
-  
+
 .icon_item {
     display: flex;
     flex-direction: column;
@@ -78,38 +78,38 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-  
+
 .icon_item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     background-color: var(--color-bg);
 }
-  
+
 .icon_item p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--color-light-gray);
     margin: 0;
 }
-  
+
 /* 서비스 섹션 */
 .services {
     text-align: center;
 }
-  
+
 .services h2 {
     font-size: 24px;
     color: var(--color-text-dark);
     margin-bottom: 20px;
 }
-  
+
 .service_cards {
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
 }
-  
+
 .service_card {
     background-color: var(--background);
     padding: 20px;
@@ -119,42 +119,42 @@
     text-align: center;
     max-width: 320px;
 }
-  
+
 .service_card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-  
+
 .service_card h3 {
     margin-top: 15px;
     font-size: 18px;
     color: var(--color-text-dark);
 }
-  
+
 .service_card p {
     font-size: 14px;
     color: var(--color-light-gray);
     margin-top: 10px;
 }
-  
+
 /* 추천 매물 섹션 */
 .recommendations {
     text-align: center;
 }
-  
+
 .recommendations h2 {
     font-size: 24px;
     color: var(--color-text-dark);
     margin-bottom: 20px;
 }
-  
+
 .recommendation_list {
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
 }
-  
+
 .recommendation_card {
     background-color: var(--background);
     padding: 15px;
@@ -164,69 +164,85 @@
     text-align: center;
     max-width: 320px;
 }
-  
+
 .recommendation_card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-  
+
 .recommendation_card h3 {
     font-size: 18px;
     color: var(--color-text-dark);
     margin: 15px 0 10px;
 }
-  
+
 .recommendation_card p {
     font-size: 14px;
     color: var(--color-light-gray);
 }
-  
+
 /* 고객 리뷰 섹션 */
 .reviews {
     text-align: center;
 }
-  
+
 .reviews h2 {
     font-size: 24px;
     color: var(--color-text-dark);
     margin-bottom: 20px;
 }
-  
+
 .review_list {
     display: flex;
     justify-content: center;
     gap: 25px;
     flex-wrap: wrap;
 }
-  
+
 .review_card {
     background-color: var(--background);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    max-width: 300px;
+    width: 300px;
+    display: flex;
+    /* 플렉스 박스 활성화 */
+    flex-direction: column;
+    /* 자식 요소를 세로 정렬 */
+    align-items: center;
+    /* 자식 요소 가로 중앙 정렬 */
+    justify-content: space-between;
 }
-  
+
 .review_card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
-  
+
 .review_name {
+    display: block;
     font-weight: 700;
     font-size: 16px;
     color: var(--color-text-dark);
     margin-bottom: 10px;
+    text-align: center;
 }
-  
+
 .review_feedback {
     font-size: 14px;
     color: var(--color-light-gray);
+    max-width: 80%;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+    margin: 0 auto; /* 중앙 배치 */
 }
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
+
     .banner,
     .icon_menu {
         display: none;

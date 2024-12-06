@@ -43,9 +43,9 @@ const PropertyList = ({ data = [], onPropertyClick }) => {
   const renderBookmarkIcon = (houseId) => {
     const numericId = Number(houseId); // ID를 숫자로 변환
     return bookmarkedIds.includes(numericId) ? (
-      <span style={{ color: "red", fontSize: "20px" }}>❤️</span>
+      <span style={{ color: "yellow", fontSize: "20px" }}>★</span>
     ) : (
-      <span style={{ color: "gray", fontSize: "20px" }}>🤍</span>
+      <span style={{ color: "gray", fontSize: "20px" }}>★</span>
     );
   };
 

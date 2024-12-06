@@ -21,13 +21,30 @@ export default function Header() {
   };
 
   const handleProfileClick = () => {
-    router.push('/mypage');
+    if (data?.user?.role) {
+      switch (data.user.role) {
+        case 'MEMBER':
+          router.push('/mypage');          
+          break;
+        case 'AGENT':
+          router.push('/realestate');
+          break;
+        case 'ADMIN':
+          router.push('/manager');
+          break;
+        default:
+          console.warn('Unknown role:', data.user.role);
+      }
+    } else {
+      console.error('User role is not defined');
+    }
     setIsDropdownOpen(false); // Close dropdown after navigation
   };
 
   useEffect(() => {
     if (status === 'authenticated') {
       console.log('로그인 상태 확인:', data);
+      console.log("확인이다용", data.user?.role);
     }
   }, [status, data]);
 

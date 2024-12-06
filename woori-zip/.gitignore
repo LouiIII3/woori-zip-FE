@@ -41,3 +41,12 @@ next-env.d.ts
 
 #images
 /public/images/
+
+# Cypress cache
+.cypress_cache/
+cypress/screenshots/
+cypress/videos/
+cypress/results/
+
+# Cypress env
+cypress.env.json

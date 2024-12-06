@@ -2,7 +2,7 @@
 import { instance } from "../instance";
 
 export const fetchMemberInfo = async () => {
-    return await instance(`members/info`, {
+    return await instance(`members/profile`, {
       method: 'GET',
       credentials: 'include',
     });

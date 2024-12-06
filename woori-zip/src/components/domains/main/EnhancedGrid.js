@@ -104,8 +104,8 @@ export default function EnhancedGrid() {
               <Image
                 src={category.icon}
                 alt={category.title}
-                width={50}
-                height={50}
+                width={70}
+                height={70}
               />
               <p>{category.title}</p>
             </Link>
@@ -126,8 +126,8 @@ export default function EnhancedGrid() {
               <Image
                 src={service.image}
                 alt={service.title}
-                width={300}
-                height={200}
+                width={280}
+                height={180}
               />
               <h3>{service.title}</h3>
               <p>{service.description}</p>
@@ -149,8 +149,8 @@ export default function EnhancedGrid() {
               <Image
                 src={item.image}
                 alt={item.title}
-                width={300}
-                height={200}
+                width={280}
+                height={180}
               />
               <h3>{item.title}</h3>
               <p>{item.description}</p>

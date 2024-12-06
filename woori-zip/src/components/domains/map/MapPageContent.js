@@ -19,15 +19,13 @@ export default function MapPageContent() {
   const southWestLongitudeData = searchParams.get("southWestLongitude");
   const northEastLatitudeData = searchParams.get("northEastLatitude");
   const northEastLongitudeData = searchParams.get("northEastLongitude");
-
   const defaultFilters = {
     level: 7,
-    southWestLatitude: southWestLatitudeData || 37.5189,
-    southWestLongitude: southWestLongitudeData || 126.8952,
-    northEastLatitude: northEastLatitudeData || 37.6157,
-    northEastLongitude: northEastLongitudeData || 127.0601,
+    southWestLatitude: southWestLatitudeData || 37.518062917095584,
+    southWestLongitude: southWestLongitudeData || 126.89557051604238,
+    northEastLatitude: northEastLatitudeData || 37.614824485991925,
+    northEastLongitude: northEastLongitudeData || 127.06052789768778,
     minDeposit: 0,
-    housetype: "아파트",
     maxDeposit: 1000000000,
     minMonthlyRentFee: 0,
     maxMonthlyRentFee: 2000000000,
