@@ -1,13 +1,121 @@
 # Woori Zip: 우리 집
-🏡 소비 내역 기반 집 추천 서비스
-> 청년들을 대상으로, 주변 인프라를 고려하며 집을 선택할 수 있도록 `카테고리` 를 통한 집 추천 서비스를 제공합니다. </br>
-> 사용자의 `소비내역` 에 기반하여 자동으로 카테고리를 선정하여 집을 추천받을 수 있습니다. </br>
-> 체크리스트를 통해 현재 사용자에게 적합한 전세 또는 월세 `대출 상품` 을 추천받을 수 있습니다.
 
-## Team 👥
-| 이름 | 맡은 기능 |
-|----------|----------|
-| 곽지은  | 로그인 페이지, 회원가입 페이지 |
-| 김민지  | 대출 상품 상세 페이지, 대출 상품 추천 페이지   |
-| 이성희  | 지도 페이지, 인프라 구축 |
-| 정석진  | 메인 페이지, 소비 패턴 분석 페이지 |
+## 1. 프로젝트 소개
+
+"Woori Zip: 우리 집" 프로젝트는 사용자가 주도적으로 개발하고 경험을 쌓아온 부동산 추천 웹 애플리케이션입니다. 다음은 프로젝트의 주요 특징과 분석입니다:
+
+![Woori Zip Header](https://example.com/image)
+
+---
+
+### **1. 주요 기능**
+|기능|설명|사용 기술|
+|-----|------|---|
+|부동산 추천|금융 데이터와 부동산 정보를 결합하여 사용자 맞춤형 부동산 추천 제공|Next.js, Spring Boot|
+|위치 기반 필터링|Kakao Maps API를 활용한 부동산 위치 표시 및 필터링|Kakao Maps API, React|
+|사용자 계정 관리|회원가입, 로그인 및 사용자 정보 관리|JWT|
+|데이터 시각화|부동산 데이터의 시각적 분석 제공|Chart.js, React|
+
+---
+
+### **2. 실행 화면**
+
+#### **클라이언트**
+|메인 페이지|추천 결과|지도 필터링|
+|-----|-----|-----|
+
+|로그인|회원가입|
+|-----|-----|
+|![register](https://github.com/user-attachments/assets/e0c1132f-f110-4fdc-adca-877b7c4f924f)|![mypage]()|
+
+|회원-마이페이지|관리자-마이페이지|
+|-----|-----|
+|![register](https://github.com/user-attachments/assets/30bc4818-14b5-4eaa-8edb-cfc237bcd6c0)|![mypage]()|
+
+|소비패턴 분석 페이지|지도 페이지|
+|-----|-----|
+|![register]()|![mypage]()|
+
+#### **서버 및 배포**
+|CI/CD 프로세스|AWS 배포 상태|
+|-----|-----|
+|![cicd](https://example.com/cicd.gif)|![awsDeployment](https://example.com/aws-deployment.gif)|
+
+---
+
+### **3. 기술 스택**
+
+#### **Frontend (Next.js)**
+- **기술**: React, Context API, Axios, Styled Components
+- **특징**:
+  - Kakao Maps API 연동으로 위치 기반 필터링 구현
+  - 반응형 UI 설계로 다양한 디바이스 지원
+
+#### **Backend (Spring Boot)**
+- **기술**: Spring Boot, JPA, MariaDB
+- **특징**:
+  - RESTful API 설계로 효율적인 데이터 통신 제공
+  - JWT 기반 인증 시스템 구현
+
+#### **Cloud Infrastructure**
+- **AWS 기반**:
+  - 서비스 서버와 뱅킹 서버를 분리하여 설계
+  - CodeDeploy를 이용한 지속적 배포
+  - S3를 이용한 정적 파일 관리
+  - Route 53을 통한 도메인 관리
+  - 가비아에서 구매한 도메인 연동
+  - IAM으로 보안 정책 설정 및 접근 제어
+  - EC2와 로드 밸런서를 활용한 트래픽 분산
+  - RDS(MariaDB)로 데이터베이스 관리
+  - Prometheus로 성능 모니터링
+  - 개발 환경은 포트 8081에서 실행하며, 운영 환경은 포트 8080에서 실행
+
+---
+
+### **4. 개발 및 기여 분석**
+
+#### **Frontend Development**
+- **기능 구현**: 
+  - 필터링 UI 개발 및 Kakao Maps API 통합
+  - 사용자 친화적인 페이지 전환 및 데이터 표시
+
+#### **Backend Development**
+- **특징**:
+  - 부동산 데이터 CRUD API 설계 및 구현
+  - 데이터베이스 최적화를 통한 고성능 제공
+
+#### **CI/CD 구축**
+- **효율적인 배포**:
+  - GitHub Actions를 활용한 CI/CD 파이프라인 구축
+  - CodeDeploy와 S3를 통해 안정적인 배포 프로세스 구성
+
+---
+
+### **5. 아키텍처**
+![Woori Zip Architecture](https://example.com/architecture.png)
+
+---
+
+### **6. 프로젝트 실행**
+#### **Frontend**
+1. `npm install` 실행
+2. `.env.local` 파일 생성 후 아래 내용 추가:
+```
+NEXT_PUBLIC_API_URL=https://api.woorizip.com
+NEXT_PUBLIC_KAKAO_MAPS_KEY=your-kakao-maps-key
+```
+3. `npm run dev`로 실행
+
+#### **Backend**
+1. `application.yml` 파일에 데이터베이스 및 AWS 설정 추가
+2. Spring Boot 애플리케이션 실행: `./mvnw spring-boot:run`
+
+#### **배포**
+1. CodeDeploy와 S3를 통해 배포 설정
+2. EC2와 로드 밸런서 설정으로 배포된 서비스 확인
+
+---
+
+### **마치며**
+Woori Zip 프로젝트는 금융 및 부동산 IT 서비스에 대한 프로젝트 입니다.
+
