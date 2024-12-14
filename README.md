@@ -2,11 +2,25 @@
 
 ## 1. 프로젝트 소개
 
-"Woori Zip: 우리 집" 프로젝트는 사용자가 주도적으로 개발하고 경험을 쌓아온 부동산 추천 웹 애플리케이션입니다. 다음은 프로젝트의 주요 특징과 분석입니다:
+주거 정보와 대출 추천을 결합하여 청년들의 경제적 부담을 줄이고, <br>
+소비 패턴 분석을 통해 만족도 높은 주거 환경을 제공하는 맞춤형 부동산 금융 플랫폼 "Woori Zip" 입니다.
+<div align="center">
+  <img width="700" alt="image" src="https://github.com/user-attachments/assets/e099a48e-cbb6-4eb2-9316-baf68b1a669a">
+</div>
 
-![Woori Zip Header](https://example.com/image)
 
 ---
+
+## 팀원소개
+
+| <img src="https://github.com/LouiIII3.png" width="200" /> | <img src="https://github.com/Jieun-KWAK.png" width="200" /> | <img src="https://github.com/min20ta.png" width="200" /> | <img src="https://github.com/Jeongseokjin.png" width="200" />  |  <img src="https://github.com/rlfrkdms1.png" width="200" /> | <img src="https://github.com/qbobl5.png" width="200" /> |
+| :-------------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------: | :---------------------------------------------------------: |
+|         [이성희](https://github.com/LouiIII3)          |          [곽지은](https://github.com/Jieun-KWAK)           |          [김민지](https://github.com/min20ta)              |            [정석진](https://github.com/Jeongseokjin)             |  [길가은](https://github.com/rlfrkdms1)           |  [김혜빈](https://github.com/qbobl5)
+| Cloud / Front-end | Server / Front-end | Server / Front-end | Server / Front-end | Server / Front-end | Server / Front-end | 
+
+
+
+<br/>
 
 ### **1. 주요 기능**
 |기능|설명|사용 기술|
