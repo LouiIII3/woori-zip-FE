@@ -1,5 +1,3 @@
-# Woori Zip: 우리 집
-
 ## 1. 프로젝트 소개
 
 주거 정보와 대출 추천을 결합하여 청년들의 경제적 부담을 줄이고, <br>
@@ -32,32 +30,28 @@
 
 ---
 
-### **2. 실행 화면**
+## **2. 실행 화면**
 
 #### **클라이언트**
-|메인 페이지|추천 결과|지도 필터링|
+|메인 페이지|로그인|회원가입|
 |-----|-----|-----|
+|<video src="https://github.com/user-attachments/assets/185d5e14-3b00-47d6-bd84-e55666044336" controls width="300"></video>|<video src="https://github.com/user-attachments/assets/de77957d-c304-4d54-8e8d-c84a07ecdf01" controls width="300"></video>|<video src="https://github.com/user-attachments/assets/060d8855-1f53-4dc1-8486-8179b4a659e9" controls width="300"></video>|
 
-|로그인|회원가입|
-|-----|-----|
-|![register](https://github.com/user-attachments/assets/e0c1132f-f110-4fdc-adca-877b7c4f924f)|![mypage]()|
+| 지도 페이지 | 소비 패턴 분석 페이지 |
+|-------------|-----------------------|
+| <video src="https://github.com/user-attachments/assets/57469847-a3ab-4f12-9bee-ba8ca8860edc" controls width="300"></video> | <video src="https://github.com/user-attachments/assets/8596ff1c-ad95-48bc-b127-96937e2187dd" controls width="300"></video>|
 
-|회원-마이페이지|관리자-마이페이지|
-|-----|-----|
-|![register](https://github.com/user-attachments/assets/30bc4818-14b5-4eaa-8edb-cfc237bcd6c0)|![mypage]()|
 
-|소비패턴 분석 페이지|지도 페이지|
-|-----|-----|
-|![register]()|![mypage]()|
-
-#### **서버 및 배포**
-|CI/CD 프로세스|AWS 배포 상태|
-|-----|-----|
-|![cicd](https://example.com/cicd.gif)|![awsDeployment](https://example.com/aws-deployment.gif)|
+| 회원-마이페이지 | 관리자-마이페이지 |
+|------------------|-------------------|
+| <video src="https://github.com/user-attachments/assets/b0eaa7a5-d170-4e3d-9316-e27e41c1d797" controls width="300"></video> | <video src="https://github.com/user-attachments/assets/7bee0bca-a5e1-42f3-a98d-51d3273d1cee" controls width="300"></video> |
 
 ---
 
-### **3. 기술 스택**
+## **3. 기술 스택**
+![기술 스택](https://github.com/user-attachments/assets/55389294-a71c-4d05-95ec-d79b0f651130)
+
+
 
 #### **Frontend (Next.js)**
 - **기술**: React, Context API, Axios, Styled Components
@@ -86,7 +80,7 @@
 
 ---
 
-### **4. 개발 및 기여 분석**
+## **4. 개발 및 기여 분석**
 
 #### **Frontend Development**
 - **기능 구현**: 
@@ -105,12 +99,20 @@
 
 ---
 
-### **5. 아키텍처**
-![Woori Zip Architecture](https://example.com/architecture.png)
+## **5. 아키텍처**
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/b6480dcb-ffd4-4946-a812-f48e3cbb1e73" alt="전체 아키텍처" width="600">
+</div>
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/7001be2f-8397-455c-b5ff-c02e3c08b4d8" alt="Untitled (4) (1)" width="400">
+</div>
+
 
 ---
 
-### **6. 프로젝트 실행**
+## **6. 프로젝트 실행**
 #### **Frontend**
 1. `npm install` 실행
 2. `.env.local` 파일 생성 후 아래 내용 추가:
